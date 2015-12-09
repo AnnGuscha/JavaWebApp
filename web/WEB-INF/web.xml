@@ -11,7 +11,15 @@
         <servlet-name>Hi</servlet-name>
         <servlet-class>Controllers.Hi</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StudentController</servlet-name>
+        <servlet-class>Controllers.StudentController</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Hello</servlet-name>
         <url-pattern>/Hello</url-pattern>

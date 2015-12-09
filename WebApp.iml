@@ -11,6 +11,146 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/conf/logging.properties" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/conf" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/num" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/docs/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/docs" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/ROOT/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/ROOT" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web6">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/jsp/jsp2/tagfiles" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/jsp/jsp2" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/docs/virtual-hosting-howto.html" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/docs" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/docs/appdev/sample/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/docs/appdev/sample/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.class" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/websocket/drawboard" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/host-manager/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/host-manager" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web11">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web12">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web13">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/filters/ExampleFilter.class" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/examples/WEB-INF/classes/filters" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web14">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/conf" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web15">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/manager/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/apache-tomcat-8.0.29/webapps/manager" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -20,5 +160,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="module" module-name="DAOlevel" />
   </component>
 </module>
