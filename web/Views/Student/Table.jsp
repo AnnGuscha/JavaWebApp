@@ -26,9 +26,9 @@
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + '\" href=\"Edit/' + data + '\" > <img src="/Content/Images/pen-20.png"/></a> |' +
+                        return ' <a  data = \"' + data + '\" href=\"student/edit/' + data + '\" > <img src="/Content/Images/pen-20.png"/></a> |' +
                                     //'<a href=\"Details/' + data + '\">Details</a> |' +
-                                ' <a href=\"Delete/' + data + '\"><img src="/Content/Images/delete-20.png"/></a> ';
+                                ' <a href=\"student/delete/' + data + '\"><img src="/Content/Images/delete-20.png"/></a> ';
                     },
                     "width": "120px",
                     "targets": 0

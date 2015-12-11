@@ -15,20 +15,18 @@ import java.io.IOException;
  * Created by Anna on 12/9/2015.
  */
 @WebServlet(
-        name = "StudentController",
-        urlPatterns = {"/student"}
+        name = "StudentEditController",
+        urlPatterns = {"/student/edit/*"}
 )
 
 
-public class StudentController extends HttpServlet {
+public class StudentEditController extends HttpServlet {
     StudentDAO studentDAO = ServiceLocator.getFactory().getStudentDAO();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-//create JQuerryDataTableParamDto
 
-
-        String nextJSP = "/Views/Student/Table.jsp";
+        String nextJSP = "/Views/Student/Edit.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
         dispatcher.forward(request, resp);
 
