@@ -15,7 +15,15 @@
         <servlet-name>StudentController</servlet-name>
         <servlet-class>Controllers.StudentController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AjaxHandler</servlet-name>
+        <servlet-class>Controllers.AjaxHandler</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>AjaxHandler</servlet-name>
+        <url-pattern>/AjaxHandler</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>StudentController</servlet-name>
         <url-pattern>/student</url-pattern>
@@ -24,7 +32,6 @@
         <servlet-name>Hello</servlet-name>
         <url-pattern>/Hello</url-pattern>
     </servlet-mapping>
-
     <servlet-mapping>
         <servlet-name>Hi</servlet-name>
         <url-pattern>/Hi</url-pattern>
