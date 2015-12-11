@@ -19,7 +19,7 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "StudentController",
+            "sAjaxSource": "api/student",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
@@ -32,7 +32,13 @@
                     },
                     "width": "120px",
                     "targets": 0
-                }
+                },
+            ],
+            "columns": [
+                {"data": "id"},
+                {"data": "name"},
+                {"data": "surName"},
+                {"data": "patronymicName"}
             ],
             initComplete: function () {
                 this.api().columns().every(function () {
