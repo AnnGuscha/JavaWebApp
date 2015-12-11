@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.web.Student;
 
 import Infrastructure.ServiceLocator;
 import levelDAO.StudentDAO;
@@ -25,6 +25,12 @@ public class StudentEditController extends HttpServlet {
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+        String rawParam = request.getPathInfo();
+        int idParam = Integer.parseInt(rawParam.split("/")[1]);
+
+        //get object from dao
+        //create model
+
 
         String nextJSP = "/Views/Student/Edit.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
