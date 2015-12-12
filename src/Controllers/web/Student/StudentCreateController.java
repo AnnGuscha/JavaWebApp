@@ -1,6 +1,5 @@
 package Controllers.web.Student;
 
-import Entity.Student;
 import Infrastructure.ServiceLocator;
 import levelDAO.StudentDAO;
 
@@ -13,29 +12,19 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Anna on 12/9/2015.
+ * Created by Anna on 12/12/2015.
  */
 @WebServlet(
-        name = "StudentEditController",
-        urlPatterns = {"/student/edit/*"}
+        name = "StudentCreateController",
+        urlPatterns = {"/student/create"}
 )
-
-public class StudentEditController extends HttpServlet {
+public class StudentCreateController extends HttpServlet {
     StudentDAO studentDAO = ServiceLocator.getFactory().getStudentDAO();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-        String rawParam = request.getPathInfo();
-        int idParam = Integer.parseInt(rawParam.split("/")[1]);
-
-        //get object from dao
-        Student student = studentDAO.find(idParam);
-        //create model
-
-
-        String nextJSP = "/Views/Student/Edit.jsp";
+        String nextJSP = "/Views/Student/Create.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("student", student);
         dispatcher.forward(request, resp);
     }
 }

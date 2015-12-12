@@ -19,7 +19,15 @@
         <servlet-name>AjaxHandler</servlet-name>
         <servlet-class>Controllers.AjaxHandler</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StudentEditController</servlet-name>
+        <servlet-class>Controllers.web.Student.StudentEditController</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>StudentEditController</servlet-name>
+        <url-pattern>/student/edit/*</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AjaxHandler</servlet-name>
         <url-pattern>/AjaxHandler</url-pattern>

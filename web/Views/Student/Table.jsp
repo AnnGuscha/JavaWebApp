@@ -26,7 +26,7 @@
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + '\" href=\"student/edit/' + data + '\" > <img src="/Content/Images/pen-20.png"/></a> |' +
+                        return ' <a  data = \"' + data + "\" href=\"student/edit/" + data + '\" > <img src="/Content/Images/pen-20.png"/></a> |' +
                                     //'<a href=\"Details/' + data + '\">Details</a> |' +
                                 ' <a href=\"student/delete/' + data + '\"><img src="/Content/Images/delete-20.png"/></a> ';
                     },
@@ -79,7 +79,7 @@
     <h2>Students</h2>
 
     <p>
-        <a href="Create.jsp">Create</a>
+        <a href="student/create">Create</a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
