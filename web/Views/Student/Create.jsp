@@ -32,7 +32,7 @@
             <input type="text" name="surName" id="surName" class="form-control" value=""
                    required="true"/>
 
-            <label for="patronymicName" class="control-label col-xs-4">Patronymic name:</label>
+            <label for="patronymicName" class="control-label col-xs-6">Patronymic name:</label>
             <input type="text" name="patronymicName" id="patronymicName" class="form-control" value=""
                    required="true"/>
 

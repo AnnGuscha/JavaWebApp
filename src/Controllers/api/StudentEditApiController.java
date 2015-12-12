@@ -1,20 +1,15 @@
 package Controllers.api;
 
-import DTO.JsonDTO;
 import Entity.Student;
 import Infrastructure.ServiceLocator;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import levelDAO.StudentDAO;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by Anna on 12/9/2015.
@@ -32,7 +27,13 @@ public class StudentEditApiController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //parse sanded student
+        int id = Integer.parseInt(request.getParameter("idStudent"));
+        String name = request.getParameter("name");
+        String surName = request.getParameter("surName");
+        String patronymicName = request.getParameter("patronymicName");
         //dao/service update stud
+        Student newStudent = new Student(id, name, surName, patronymicName);
+        studentDAO.update(newStudent);
         //redirect
 
         response.sendRedirect("/student");

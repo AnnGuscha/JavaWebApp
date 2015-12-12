@@ -39,21 +39,7 @@
                 {"data": "name"},
                 {"data": "surName"},
                 {"data": "patronymicName"}
-            ],
-            initComplete: function () {
-                this.api().columns().every(function () {
-                    var column = this;
-                    if ($(column.footer()).text() != "") {
-                        var select = $('.vidselect')
-                                .on('change', function () {
-                                    var val = $(this).val();
-                                    column
-                                            .search(val)
-                                            .draw();
-                                });
-                    }
-                });
-            }
+            ]
         });
 
 

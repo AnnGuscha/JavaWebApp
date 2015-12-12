@@ -1,5 +1,6 @@
 package Controllers.api;
 
+import DTO.JQueryDataTableParamModel;
 import DTO.JsonDTO;
 import Entity.Student;
 import Infrastructure.ServiceLocator;
@@ -23,23 +24,29 @@ import java.util.List;
         urlPatterns = {"/api/student"}
 )
 
-
 public class StudentApiController extends HttpServlet {
     StudentDAO studentDAO = ServiceLocator.getFactory().getStudentDAO();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//create JQuerryDataTableParamDto
 
-        String sEcho = getRequestParam(request);
+        JQueryDataTableParamModel param = getRequestParam(request);
 
-        String json = getJsonAll(sEcho);
+        String json = getJsonAll(param);
 
         responseJson(response, json);
     }
 
-    private String getRequestParam(HttpServletRequest request) {
-        return (String) request.getAttribute("sEcho");
+    private JQueryDataTableParamModel getRequestParam(HttpServletRequest request) {
+        JQueryDataTableParamModel param = new JQueryDataTableParamModel();
+        param.sEcho = (String) request.getAttribute("sEcho");
+        param.iColumns = Integer.parseInt((String) request.getAttribute("iColumns"));
+        param.iDisplayLength = Integer.parseInt((String) request.getAttribute("iDisplayLength"));
+        param.iDisplayStart = Integer.parseInt((String) request.getAttribute("iDisplayStart"));
+        param.iSortingCols = Integer.parseInt((String) request.getAttribute("iSortingCols"));
+        param.sSearch = (String) request.getAttribute("sSearch");
+        param.sColumns = (String) request.getAttribute("sColumns");
+        return param;
     }
 
     private void responseJson(HttpServletResponse response, String json) throws IOException {
@@ -48,10 +55,10 @@ public class StudentApiController extends HttpServlet {
         response.getWriter().write(json);
     }
 
-    private String getJsonAll(String sEcho) {
+    private String getJsonAll(JQueryDataTableParamModel param) {
         List<Student> studentList = studentDAO.getAll();
         int size = studentList.size();
-        JsonDTO jsonDTO = new JsonDTO(sEcho, size, size, studentList);
+        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, studentList);
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
