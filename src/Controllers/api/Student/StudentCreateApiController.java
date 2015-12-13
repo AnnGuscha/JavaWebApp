@@ -1,8 +1,8 @@
-package Controllers.api;
+package Controllers.api.Student;
 
 import Entity.Student;
 import Infrastructure.ServiceLocator;
-import levelDAO.StudentDAO;
+import Infrastructure.StudentService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +20,7 @@ import java.io.IOException;
 )
 public class StudentCreateApiController extends HttpServlet {
 
-    StudentDAO studentDAO = ServiceLocator.getFactory().getStudentDAO();
+    StudentService studentService = ServiceLocator.getStudentService();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,9 +31,8 @@ public class StudentCreateApiController extends HttpServlet {
 
         Student newStudent = new Student(name, surName, patronymicName);
 
-        studentDAO.insert(newStudent);
+        studentService.insert(newStudent);
 
         response.sendRedirect("/student");
     }
-
 }

@@ -13,7 +13,7 @@
     </servlet>
     <servlet>
         <servlet-name>StudentController</servlet-name>
-        <servlet-class>Controllers.StudentController</servlet-class>
+        <servlet-class>Controllers.web.Student.StudentController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AjaxHandler</servlet-name>

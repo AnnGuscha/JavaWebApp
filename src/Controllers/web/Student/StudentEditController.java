@@ -2,7 +2,7 @@ package Controllers.web.Student;
 
 import Entity.Student;
 import Infrastructure.ServiceLocator;
-import levelDAO.StudentDAO;
+import Infrastructure.StudentService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,7 +21,8 @@ import java.io.IOException;
 )
 
 public class StudentEditController extends HttpServlet {
-    StudentDAO studentDAO = ServiceLocator.getFactory().getStudentDAO();
+
+    StudentService studentService = ServiceLocator.getStudentService();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
@@ -29,7 +30,7 @@ public class StudentEditController extends HttpServlet {
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
 
         //get object from dao
-        Student student = studentDAO.find(idParam);
+        Student student = studentService.find(idParam);
         //create model
 
 

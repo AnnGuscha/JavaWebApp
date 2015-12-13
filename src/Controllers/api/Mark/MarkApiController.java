@@ -1,12 +1,12 @@
-package Controllers.api;
+package Controllers.api.Mark;
 
 import DTO.JQueryDataTableParamModel;
 import DTO.JsonDTO;
-import Entity.Student;
+import Entity.Mark;
+import Infrastructure.MarkService;
 import Infrastructure.ServiceLocator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import levelDAO.StudentDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,15 +17,16 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by Anna on 12/9/2015.
+ * Created by Anna on 12/13/2015.
  */
 @WebServlet(
-        name = "StudentApiController",
-        urlPatterns = {"/api/student"}
+        name = "MarkApiController",
+        urlPatterns = {"/api/mark"}
 )
 
-public class StudentApiController extends HttpServlet {
-    StudentDAO studentDAO = ServiceLocator.getFactory().getStudentDAO();
+public class MarkApiController extends HttpServlet {
+
+    MarkService markService = ServiceLocator.getMarkService();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -56,15 +57,12 @@ public class StudentApiController extends HttpServlet {
     }
 
     private String getJsonAll(JQueryDataTableParamModel param) {
-        List<Student> studentList = studentDAO.getAll();
-        int size = studentList.size();
-        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, studentList);
+        List<Mark> markList = markService.getAll();
+        int size = markList.size();
+        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, markList);
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
         return gson.toJson(jsonDTO);
     }
-
-
 }
-
