@@ -11,7 +11,17 @@ public class ServiceLocator {
     private static DAOFactory MySQLFactory =
             DAOFactory.getDAOFactory(DAOFactory.MYSQL);
 
+    private static int idCurrentUser;
+
     private ServiceLocator() {
+    }
+
+    public static int getIdCurrentUser() {
+        return 1;
+    }
+
+    public static void setIdCurrentUser(int id) {
+        idCurrentUser = id;
     }
 
     public static ServiceLocator getInstance() {
@@ -29,10 +39,10 @@ public class ServiceLocator {
     }
 
     public static ProfessorService getProfessorService() {
-        return getProfessorService().getInstance();
+        return ProfessorService.getInstance();
     }
 
-    public static CourseService getCourceService() {
+    public static CourseService getCourseService() {
         return CourseService.getInstance();
     }
 

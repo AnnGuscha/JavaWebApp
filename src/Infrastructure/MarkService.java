@@ -13,6 +13,7 @@ public class MarkService {
     private MarkDAO markDAO;
 
     private MarkService() {
+        markDAO = ServiceLocator.getFactory().getMarkDAO();
     }
 
     public static MarkService getInstance() {
