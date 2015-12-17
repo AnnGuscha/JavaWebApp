@@ -13,7 +13,7 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/student",
+            "sAjaxSource": "api/student_allcourses",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
@@ -29,7 +29,7 @@
             "columns": [
                 {"data": "id"},
                 {"data": "name"},
-                {"data": "professor"},
+                {"data": "nameProfessor"},
                 {"data": "description"}
             ]
         });
@@ -54,7 +54,7 @@
 <jsp:include page="MenuForStudent.jsp"/>
 
 <div id="demo">
-
+    <h2>All courses</h2>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
         <tr>

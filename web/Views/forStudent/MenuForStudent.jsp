@@ -13,9 +13,9 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" role="navigation">
-                <li><a href="StudentHome.jsp" class="navbar-brand">About me</a></li>
-                <li><a href="StudentCourses.jsp" class="navbar-brand">My aducation</a></li>
-                <li><a href="AllCourses.jsp" class="navbar-brand">All courses</a></li>
+                <li><a href="/student_home" class="navbar-brand">About me</a></li>
+                <li><a href="/student_courses" class="navbar-brand">My aducation</a></li>
+                <li><a href="/student_allcourses" class="navbar-brand">All courses</a></li>
             </ul>
             <%--@Html.Partial("_LoginPartial")--%>
         </div>
