@@ -15,12 +15,10 @@ import java.io.IOException;
 /**
  * Created by Anna on 12/13/2015.
  */
-
 @WebServlet(
         name = "ListStudentsEditController",
         urlPatterns = {"/liststudents/edit/*"}
 )
-
 
 public class ListStudentsEditController extends HttpServlet {
     ListStudentsService listStudentsService = ServiceLocator.getListStudentsService();

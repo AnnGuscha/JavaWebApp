@@ -17,14 +17,15 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by Anna on 12/17/2015.
+ * Created by Anna on 12/18/2015.
  */
+
 @WebServlet(
-        name = "StudentAllCoursesApiController",
-        urlPatterns = {"/api/student_allcourses"}
+        name = "StudentCoursesApiController",
+        urlPatterns = {"/api/student_courses"}
 )
 
-public class StudentAllCoursesApiController extends HttpServlet {
+public class StudentCoursesApiController extends HttpServlet {
 
     ParticularService particularService = ServiceLocator.getParticularService();
 
@@ -51,7 +52,7 @@ public class StudentAllCoursesApiController extends HttpServlet {
 
     private String getJsonAll(JQueryDataTableParamModel param) {
 
-        List<CourseModel> courseList = particularService.getAllCourses();
+        List<CourseModel> courseList = particularService.getCoursesForStudent();
 
         int size = courseList.size();
 

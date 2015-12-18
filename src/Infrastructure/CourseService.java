@@ -2,7 +2,7 @@ package Infrastructure;
 
 import Entity.Course;
 import ExtendedEntity.CourseExtend;
-import Models.forAdmin.CourseModel;
+import Models.forStudent.CourseModel;
 import levelDAO.CourseDAO;
 
 import java.util.ArrayList;
@@ -27,14 +27,22 @@ public class CourseService {
         return courseDAO.getAll();
     }
 
-    public List<CourseModel> getModelList() {
+    public List<CourseModel> getCourseModelList() {
 
         List<CourseExtend> courseExtentdList = courseDAO.getCourseExtentdList();
 
         List<CourseModel> courseModelList = new ArrayList<>();
 
         for (CourseExtend item : courseExtentdList) {
-            courseModelList.add(new CourseModel(item.getId(), item.getName(), item.getIdProfessor(), item.getDescription(), item.getNameProfessor()));
+            CourseModel courseModel = new Models.forStudent.CourseModel();
+            courseModel.setId(item.getId());
+            courseModel.setName(item.getName());
+            courseModel.setIdProfessor(item.getIdProfessor());
+            courseModel.setDescription(item.getDescription());
+            courseModel.setNameProfessor(item.getNameProfessor());
+
+            courseModel.setSubscribed(true);
+            courseModelList.add(courseModel);
         }
         return courseModelList;
     }

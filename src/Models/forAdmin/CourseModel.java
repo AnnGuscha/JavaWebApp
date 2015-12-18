@@ -10,6 +10,10 @@ public class CourseModel {
     String name;
     String nameProfessor;
     String description;
+    String mark;
+
+    public CourseModel() {
+    }
 
     public CourseModel(String name, int idProfessor, String description, String nameProfessor) {
         this.name = name;
@@ -64,5 +68,13 @@ public class CourseModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public void setMark(String mark) {
+        this.mark = mark;
     }
 }

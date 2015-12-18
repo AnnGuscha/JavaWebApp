@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Anna on 12/13/2015.
  */
 public class ProfessorService {
-    private static ProfessorService ourInstance;
+    private static ProfessorService ourInstance = new ProfessorService();
     private ProfessorDAO professorDAO;
 
     private ProfessorService() {
@@ -17,8 +17,6 @@ public class ProfessorService {
     }
 
     public static ProfessorService getInstance() {
-        if (ourInstance == null)
-            ourInstance = new ProfessorService();
         return ourInstance;
     }
 

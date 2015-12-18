@@ -20,7 +20,10 @@
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a href=\"student/delete/' + data + '\">Подписаться</a> ';
+                        if (row.isSubscribed == true)
+                            return ' <a href=\"student/unsubs/' + data + '\">Unsubscribe</a> ';
+                        else
+                            return ' <a href=\"student/subs/' + data + '\">Subscribe</a> ';
                     },
                     "width": "120px",
                     "targets": 0

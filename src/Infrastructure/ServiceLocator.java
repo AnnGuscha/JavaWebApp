@@ -7,7 +7,7 @@ import levelDAO.DAOFactory;
  */
 public class ServiceLocator {
 
-    private static ServiceLocator ourInstance;
+    private static ServiceLocator ourInstance = new ServiceLocator();
     private static DAOFactory MySQLFactory =
             DAOFactory.getDAOFactory(DAOFactory.MYSQL);
 
@@ -25,8 +25,6 @@ public class ServiceLocator {
     }
 
     public static ServiceLocator getInstance() {
-        if (ourInstance == null)
-            ourInstance = new ServiceLocator();
         return ourInstance;
     }
 
@@ -52,5 +50,9 @@ public class ServiceLocator {
 
     public static ListStudentsService getListStudentsService() {
         return ListStudentsService.getInstance();
+    }
+
+    public static ParticularService getParticularService() {
+        return ParticularService.getInstance();
     }
 }

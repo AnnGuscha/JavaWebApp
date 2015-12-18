@@ -12,20 +12,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Anna on 12/17/2015.
+ * Created by Anna on 12/18/2015.
  */
+
 @WebServlet(
-        name = "StudentAllCoursesController",
-        urlPatterns = {"/student_allcourses"}
+        name = "StudentCoursesController",
+        urlPatterns = {"/student_courses"}
 )
 
-public class StudentAllCoursesController extends HttpServlet {
+public class StudentCoursesController extends HttpServlet {
     StudentService studentService = ServiceLocator.getStudentService();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
-        String nextJSP = "/Views/forStudent/AllCourses.jsp";
+        String nextJSP = "/Views/forStudent/StudentCourses.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
         dispatcher.forward(request, resp);
     }

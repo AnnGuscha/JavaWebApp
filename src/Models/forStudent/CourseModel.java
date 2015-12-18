@@ -5,19 +5,15 @@ package Models.forStudent;
  */
 public class CourseModel {
 
-    private int id;
-    private String name;
-    private int idProfessor;
-    private String professor;
+    int id;
+    int idProfessor;
+    String name;
+    String nameProfessor;
+    String description;
+    String mark;
+    boolean isSubscribed;
 
     public CourseModel() {
-    }
-
-    public CourseModel(int id, String name, int idProfessor, String professor) {
-        this.id = id;
-        this.name = name;
-        this.idProfessor = idProfessor;
-        this.professor = professor;
     }
 
     public int getId() {
@@ -44,11 +40,35 @@ public class CourseModel {
         this.idProfessor = idProfessor;
     }
 
-    public String getProfessor() {
-        return professor;
+    public String getNameProfessor() {
+        return nameProfessor;
     }
 
-    public void setProfessor(String professor) {
-        this.professor = professor;
+    public void setNameProfessor(String nameProfessor) {
+        this.nameProfessor = nameProfessor;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public void setMark(String mark) {
+        this.mark = mark;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isSubscribed() {
+        return isSubscribed;
+    }
+
+    public void setSubscribed(boolean subscription) {
+        isSubscribed = subscription;
     }
 }

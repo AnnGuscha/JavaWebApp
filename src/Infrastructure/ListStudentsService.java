@@ -28,8 +28,8 @@ public class ListStudentsService {
         return listStudentsDAO.find(id);
     }
 
-    public int insert(ListStudents professor) {
-        return listStudentsDAO.insert(professor);
+    public int insert(ListStudents listStudents) {
+        return listStudentsDAO.insert(listStudents);
     }
 
     public boolean update(ListStudents newListStudents) {
@@ -38,5 +38,9 @@ public class ListStudentsService {
 
     public boolean delete(int id) {
         return listStudentsDAO.delete(id);
+    }
+
+    public boolean delete(ListStudents listStudents) {
+        return listStudentsDAO.delete(listStudents);
     }
 }
