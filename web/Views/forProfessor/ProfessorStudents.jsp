@@ -1,36 +1,47 @@
-<%--
+<%@ page import="Models.forProfessor.CourseModel" %><%--
   Created by IntelliJ IDEA.
   User: Anna
-  Date: 12/16/2015
-  Time: 6:51 PM
+  Date: 12/19/2015
+  Time: 3:10 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<jsp:include page="../Header.jsp"/>
 
+<jsp:include page="../Header.jsp"/>
+<%
+    CourseModel course = (CourseModel) request.getAttribute("courseModel");
+%>
 <script type="text/javascript">
+    var course =<%= course.getId()%>;
+
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/student_courses",
+            "sAjaxSource": "api/professor_students",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
             "columnDefs": [
                 {
-                    "render": function (data, type, row) {
-                        return ' <a href=\"student/unsubs/' + data + '\">Unsubscribe</a> ';
-                    },
-                    "width": "120px",
+                    "visible": false,
                     "targets": 0
                 },
+                {
+                    "render": function (data, type, row) {
+                        if (data == null)
+                            return ' <a href=\"professor_home/create_mark?id=' + row.id + '&course=' + course + '\"><img src="/Content/Images/add-20.png"/></a> ';
+                        else
+                            return data + ' <a href=\"professor_home/edit_mark?id=' + row.id + '&course=' + course + '\"><img src="/Content/Images/pen-20.png"/></a>' +
+                                    '<a href=\"professor_home/delete_mark?id=' + row.id + '&course=' + course + '\"><img src="/Content/Images/delete-20.png"/></a>';
+                    },
+                    "width": "30%",
+                    "targets": 2
+                }
             ],
             "columns": [
                 {"data": "id"},
                 {"data": "name"},
-                {"data": "nameProfessor"},
-                {"data": "description"},
                 {"data": "mark"}
             ]
         });
@@ -54,21 +65,28 @@
 <body>
 <jsp:include page="Menu.jsp"/>
 
-<div id="demo">
-    <h2>Student courses</h2>
+<div id="container">
+
+    <br/>
+    <br/>
+
+    <h2><%= course.getName()%>
+    </h2>
+    <h5><%= course.getDescription()%>
+    </h5>
+    <br/>
+    <h4>Students</h4>
+
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
         <tr>
             <th></th>
-            <th>Name</th>
-            <th>Professor</th>
-            <th>Description</th>
+            <th>Student name</th>
             <th>Mark</th>
         </tr>
         </thead>
     </table>
-
+</div>
 </div>
 </body>
 </html>
-

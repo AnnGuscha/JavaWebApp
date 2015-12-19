@@ -28,6 +28,11 @@ public class ProfessorService {
         return professorDAO.find(id);
     }
 
+    public Professor find() {
+        int id = ServiceLocator.getIdCurrentUser();
+        return professorDAO.find(id);
+    }
+
     public int insert(Professor professor) {
         return professorDAO.insert(professor);
     }

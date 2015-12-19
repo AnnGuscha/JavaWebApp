@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Anna
-  Date: 12/11/2015
-  Time: 5:37 PM
+  Date: 12/19/2015
+  Time: 2:44 PM
   To change this template use File | Settings | File Templates.
 --%>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -18,9 +18,8 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" role="navigation">
-                <li><a href="Index" class="navbar-brand">Home</a></li>
-                <li><a href="About" class="navbar-brand">About</a></li>
-                <li><a href="Contact" class="navbar-brand">Contact</a></li>
+                <li><a href="/professor_home" class="navbar-brand">About me</a></li>
+                <li><a href="/professor_students" class="navbar-brand">My students</a></li>
             </ul>
         </div>
     </div>

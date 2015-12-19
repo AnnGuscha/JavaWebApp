@@ -28,6 +28,10 @@ public class MarkService {
         return markDAO.find(id);
     }
 
+    public Mark find(int idCourse, int idStudent) {
+        return markDAO.find(idCourse, idStudent);
+    }
+
     public int insert(Mark mark) {
         return markDAO.insert(mark);
     }
@@ -38,5 +42,9 @@ public class MarkService {
 
     public boolean delete(int id) {
         return markDAO.delete(id);
+    }
+
+    public boolean delete(Mark mark) {
+        return markDAO.delete(mark);
     }
 }

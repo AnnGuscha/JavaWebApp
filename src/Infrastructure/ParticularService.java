@@ -1,6 +1,11 @@
 package Infrastructure;
 
+
 import ExtendedEntity.CourseExtend;
+import ExtendedEntity.MarkExtend;
+import ExtendedEntity.StudentExtend;
+import Models.forProfessor.MarkModel;
+import Models.forProfessor.StudentsForProfessorModel;
 import Models.forStudent.CourseModel;
 import levelDAO.ParticularQueriesDAO;
 
@@ -60,4 +65,44 @@ public class ParticularService {
         return courseModelList;
     }
 
+    public List<StudentsForProfessorModel> getStudentsByCourse(int idCourse) {
+
+        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByCourse(ServiceLocator.getIdCurrentUser());
+
+        List<StudentsForProfessorModel> studentsModelList = new ArrayList<>();
+        for (StudentExtend item : studentExtendList) {
+            StudentsForProfessorModel studentsModel = new StudentsForProfessorModel();
+            studentsModel.setId(item.getId());
+            studentsModel.setName(item.getName());
+            studentsModelList.add(studentsModel);
+        }
+        return studentsModelList;
+    }
+
+    public List<StudentsForProfessorModel> getStudentsByProfessor() {
+
+        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByProfessor(ServiceLocator.getIdCurrentUser());
+
+        List<StudentsForProfessorModel> studentsModelList = new ArrayList<>();
+        for (StudentExtend item : studentExtendList) {
+            StudentsForProfessorModel studentsModel = new StudentsForProfessorModel();
+            studentsModel.setId(item.getId());
+            studentsModel.setName(item.getSurName() + " " + item.getName() + " " + item.getPatronymicName());
+            studentsModel.setMark(item.getMark());
+            studentsModelList.add(studentsModel);
+        }
+        return studentsModelList;
+    }
+
+    public MarkModel findMark(int idCourse, int idStudent) {
+        MarkModel model = new MarkModel();
+        MarkExtend mark = particularQueriesDAO.find(idCourse, idStudent);
+        model.setId(mark.getId());
+        model.setIdStudent(mark.getIdStudent());
+        model.setIdCourse(mark.getIdCourse());
+        model.setNameStudent(mark.getNameStudent());
+        model.setNameCourse(mark.getNameCourse());
+        model.setComment(mark.getComment());
+        return model;
+    }
 }

@@ -24,6 +24,11 @@ public class StudentService {
         return studentDAO.getAll();
     }
 
+    public Student find() {
+        int id = ServiceLocator.getIdCurrentUser();
+        return studentDAO.find(id);
+    }
+
     public Student find(int id) {
         return studentDAO.find(id);
     }

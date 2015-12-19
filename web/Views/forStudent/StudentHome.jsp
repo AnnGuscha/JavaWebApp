@@ -9,15 +9,16 @@
 <html>
 <jsp:include page="../Header.jsp"/>
 <body>
-<jsp:include page="MenuForStudent.jsp"/>
+<jsp:include page="Menu.jsp"/>
 <% Student student = (Student) request.getAttribute("student");%>
 <div id="demo">
 
     <h2>Student</h2>
 
-    <p><%= student.getSurName() %> <%= student.getName() %> <%= student.getPatronymicName() %>
+    <p>
+        <%= student.getSurName() %> <%= student.getName() %> <%= student.getPatronymicName() %>
     </p>
-
+    <a href="student_home/edit"> <img src="/Content/Images/pen-20.png"/></a>
 </div>
 </body>
 </html>

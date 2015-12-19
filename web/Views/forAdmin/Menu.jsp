@@ -5,11 +5,16 @@
   Time: 5:37 PM
   To change this template use File | Settings | File Templates.
 --%>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a href="HomeController" class="navbar-brand">Home</a>
-            <%--@Html.ActionLink("Компьютерная фирма", "Index", "Home", null, new { @class = "navbar-brand" })--%>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" role="navigation">
@@ -19,7 +24,6 @@
                 <li><a href="/mark" class="navbar-brand">Marks</a></li>
                 <li><a href="/liststudents" class="navbar-brand">ListStudents</a></li>
             </ul>
-            <%--@Html.Partial("_LoginPartial")--%>
         </div>
     </div>
 </div>

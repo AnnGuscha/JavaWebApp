@@ -54,7 +54,7 @@
     });
 </script>
 <body>
-<jsp:include page="MenuForStudent.jsp"/>
+<jsp:include page="Menu.jsp"/>
 
 <div id="demo">
     <h2>All courses</h2>

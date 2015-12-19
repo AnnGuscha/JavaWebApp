@@ -47,6 +47,17 @@ public class CourseService {
         return courseModelList;
     }
 
+    public Models.forProfessor.CourseModel getCourseModelForProfessor() {
+
+        Course course = courseDAO.getCourseByProfessor(ServiceLocator.getIdCurrentUser());
+
+        Models.forProfessor.CourseModel courseModel = new Models.forProfessor.CourseModel();
+        courseModel.setId(course.getId());
+        courseModel.setName(course.getName());
+        courseModel.setDescription(course.getDescription());
+        return courseModel;
+    }
+
     public Course find(int id) {
         return courseDAO.find(id);
     }
