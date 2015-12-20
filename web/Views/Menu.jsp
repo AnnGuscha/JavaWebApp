@@ -16,12 +16,5 @@
             </button>
             <a class="navbar-brand" href="#">Project name</a>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav" role="navigation">
-                <li><a href="Index" class="navbar-brand">Home</a></li>
-                <li><a href="About" class="navbar-brand">About</a></li>
-                <li><a href="Contact" class="navbar-brand">Contact</a></li>
-            </ul>
-        </div>
     </div>
 </div>

@@ -5,6 +5,16 @@
   Time: 2:44 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%
+    String userName = null;
+    Cookie[] cookies = request.getCookies();
+    if (cookies != null) {
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equals("user")) userName = cookie.getValue();
+        }
+    }
+    if (userName == null) response.sendRedirect("/login");
+%>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -20,6 +30,14 @@
             <ul class="nav navbar-nav" role="navigation">
                 <li><a href="/professor_home" class="navbar-brand">About me</a></li>
                 <li><a href="/professor_students" class="navbar-brand">My students</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/logout">Log Out</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="" class="navbar-brand">Hi <%=userName %>
+                </a></li>
+                <li><a href="/logout">Log Out</a></li>
             </ul>
         </div>
     </div>
