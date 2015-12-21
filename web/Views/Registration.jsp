@@ -11,10 +11,10 @@
 <jsp:include page="Header.jsp"/>
 
 <body>
-<jsp:include page="Menu.jsp"/>
 <div class="container">
+    <h2 class="form-signin-heading">Registration</h2>
 
-    <form action="/hello" method=post role="form" data-toggle="validator">
+    <form action="/registr" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
 
             <label for="login" class="control-label col-xs-4">Login:</label>

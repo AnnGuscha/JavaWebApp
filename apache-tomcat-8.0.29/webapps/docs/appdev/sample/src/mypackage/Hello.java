@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 /**
- * Simple servlet to validate that the Hello, World example can
+ * Simple servlet to validate that the MainServlet, World example can
  * execute servlets.  In the web application deployment descriptor,
  * this servlet must be mapped to correspond to the link in the
  * "index.html" file.
@@ -71,7 +71,7 @@ public final class Hello extends HttpServlet {
             writer.println("<h1>Sample Application Servlet</h1>");
             writer.println("<p>");
             writer.println("This is the output of a servlet that is part of");
-            writer.println("the Hello, World application.");
+            writer.println("the MainServlet, World application.");
             writer.println("</p>");
 
             writer.println("</body>");

@@ -3,8 +3,8 @@ package Controllers.forAdmin.api.ListStudents;
 import DTO.JQueryDataTableParamModel;
 import DTO.JsonDTO;
 import Entity.ListStudents;
-import Infrastructure.ListStudentsService;
-import Infrastructure.ServiceLocator;
+import Services.ListStudentsService;
+import Services.ServiceLocator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

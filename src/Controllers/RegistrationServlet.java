@@ -1,8 +1,6 @@
 package Controllers;
 
-import Commands.Role;
 import Entity.User;
-import Infrastructure.ServletRole;
 import Services.ServiceLocator;
 import Services.UserService;
 
@@ -17,15 +15,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Created by Anna on 12/20/2015.
+ * Created by Anna on 12/21/2015.
  */
-
 @WebServlet(
-        name = "LoginServlet",
-        urlPatterns = {"/login"}
+        name = "RegistrationServlet",
+        urlPatterns = {"/registr"}
 )
-@ServletRole(role = Role.Anonymous)
-public class LoginServlet extends HttpServlet {
+
+public class RegistrationServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
     private UserService userService = ServiceLocator.getUserService();
@@ -36,26 +33,27 @@ public class LoginServlet extends HttpServlet {
         // get request parameters for userID and password
         String login = request.getParameter("login");
         String pwd = request.getParameter("password");
-        User user = userService.find(login, pwd);
-        if (user != null) {
+        User user = userService.find(login);
+        if (user == null) {
+            user = new User(login, pwd);
+            userService.insert(user);
             Cookie loginCookie = new Cookie("user", login);
             //setting cookie to expiry in 30 mins
             loginCookie.setMaxAge(30 * 60);
             response.addCookie(loginCookie);
             response.sendRedirect("/index");
         } else {
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/Views/Authentication.jsp");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/Views/Registration.jsp");
             PrintWriter out = response.getWriter();
-            out.println("<font color=red>Either login name or password is wrong.</font>");
+            out.println("<font color=red>Enter another login.</font>");
             rd.include(request, response);
         }
-
     }
 
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/Views/Authentication.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/Views/Registration.jsp");
         rd.include(request, response);
     }
 }

@@ -3,8 +3,8 @@ package Controllers.forAdmin.api.Mark;
 import DTO.JQueryDataTableParamModel;
 import DTO.JsonDTO;
 import Entity.Mark;
-import Infrastructure.MarkService;
-import Infrastructure.ServiceLocator;
+import Services.MarkService;
+import Services.ServiceLocator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

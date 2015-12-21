@@ -1,8 +1,8 @@
 package Controllers.forProfessor.web;
 
-import Infrastructure.ParticularService;
-import Infrastructure.ServiceLocator;
 import Models.forProfessor.MarkModel;
+import Services.ParticularService;
+import Services.ServiceLocator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

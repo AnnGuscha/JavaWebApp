@@ -1,8 +1,8 @@
 package Controllers.forProfessor.web;
 
 import Entity.Professor;
-import Infrastructure.ProfessorService;
-import Infrastructure.ServiceLocator;
+import Services.ProfessorService;
+import Services.ServiceLocator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

@@ -2,7 +2,7 @@ package Controllers.forProfessor.web;
 
 import Entity.Course;
 import Entity.Student;
-import Infrastructure.ServiceLocator;
+import Services.ServiceLocator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

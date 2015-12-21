@@ -1,4 +1,4 @@
-package Infrastructure;
+package Services;
 
 import Entity.Course;
 import ExtendedEntity.CourseExtend;

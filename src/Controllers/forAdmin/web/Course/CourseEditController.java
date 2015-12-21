@@ -1,8 +1,8 @@
 package Controllers.forAdmin.web.Course;
 
 import Entity.Course;
-import Infrastructure.CourseService;
-import Infrastructure.ServiceLocator;
+import Services.CourseService;
+import Services.ServiceLocator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

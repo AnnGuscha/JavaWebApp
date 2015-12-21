@@ -2,9 +2,9 @@ package Controllers.forAdmin.web.Mark;
 
 import Entity.Course;
 import Entity.Mark;
-import Infrastructure.CourseService;
-import Infrastructure.MarkService;
-import Infrastructure.ServiceLocator;
+import Services.CourseService;
+import Services.MarkService;
+import Services.ServiceLocator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

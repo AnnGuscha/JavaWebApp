@@ -1,7 +1,7 @@
 package Controllers.forStudent.web;
 
-import Infrastructure.ServiceLocator;
-import Infrastructure.StudentService;
+import Services.ServiceLocator;
+import Services.StudentService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

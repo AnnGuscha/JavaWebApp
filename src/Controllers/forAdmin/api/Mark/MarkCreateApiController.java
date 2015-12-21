@@ -1,8 +1,8 @@
 package Controllers.forAdmin.api.Mark;
 
 import Entity.Mark;
-import Infrastructure.MarkService;
-import Infrastructure.ServiceLocator;
+import Services.MarkService;
+import Services.ServiceLocator;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

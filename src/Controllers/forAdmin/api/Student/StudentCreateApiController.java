@@ -1,8 +1,8 @@
 package Controllers.forAdmin.api.Student;
 
 import Entity.Student;
-import Infrastructure.ServiceLocator;
-import Infrastructure.StudentService;
+import Services.ServiceLocator;
+import Services.StudentService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

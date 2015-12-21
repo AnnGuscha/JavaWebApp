@@ -24,11 +24,11 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 /**
- * SimpleTag handler that prints "Hello, world!"
+ * SimpleTag handler that prints "MainServlet, world!"
  */
 public class HelloWorldSimpleTag extends SimpleTagSupport {
     @Override
     public void doTag() throws JspException, IOException {
-        getJspContext().getOut().write( "Hello, world!" );
+        getJspContext().getOut().write( "MainServlet, world!" );
     }
 }

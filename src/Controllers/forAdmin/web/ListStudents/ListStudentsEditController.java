@@ -1,8 +1,8 @@
 package Controllers.forAdmin.web.ListStudents;
 
 import Entity.ListStudents;
-import Infrastructure.ListStudentsService;
-import Infrastructure.ServiceLocator;
+import Services.ListStudentsService;
+import Services.ServiceLocator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

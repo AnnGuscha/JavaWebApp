@@ -3,8 +3,8 @@ package Controllers.forProfessor.api;
 import DTO.JQueryDataTableParamModel;
 import DTO.JsonDTO;
 import Entity.Professor;
-import Infrastructure.ProfessorService;
-import Infrastructure.ServiceLocator;
+import Services.ProfessorService;
+import Services.ServiceLocator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

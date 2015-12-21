@@ -2,9 +2,9 @@ package Controllers.forStudent.api;
 
 import DTO.JQueryDataTableParamModel;
 import DTO.JsonDTO;
-import Infrastructure.ParticularService;
-import Infrastructure.ServiceLocator;
 import Models.forStudent.CourseModel;
+import Services.ParticularService;
+import Services.ServiceLocator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

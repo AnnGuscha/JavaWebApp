@@ -26,7 +26,7 @@ public class Hi extends HttpServlet {
                         "</head> \n" +
                         "<body> \n" +
                         "<font size=\"12px\" color=\"" + color + "\">" +
-                        "Hello World" +
+                        "MainServlet World" +
                         "</font> \n" +
                         "</body> \n" +
                         "</html>"

@@ -1,4 +1,4 @@
-package Infrastructure;
+package Services;
 
 import levelDAO.DAOFactory;
 
@@ -24,6 +24,7 @@ public class ServiceLocator {
         idCurrentUser = id;
     }
 
+
     public static ServiceLocator getInstance() {
         return ourInstance;
     }
@@ -31,6 +32,7 @@ public class ServiceLocator {
     public static DAOFactory getFactory() {
         return MySQLFactory;
     }
+
 
     public static StudentService getStudentService() {
         return StudentService.getInstance();
@@ -54,5 +56,9 @@ public class ServiceLocator {
 
     public static ParticularService getParticularService() {
         return ParticularService.getInstance();
+    }
+
+    public static UserService getUserService() {
+        return UserService.getInstance();
     }
 }
