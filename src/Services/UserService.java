@@ -24,11 +24,6 @@ public class UserService {
         return userDAO.getAll();
     }
 
-    public User find() {
-        int id = ServiceLocator.getIdCurrentUser();
-        return userDAO.find(id);
-    }
-
     public User find(int id) {
         return userDAO.find(id);
     }

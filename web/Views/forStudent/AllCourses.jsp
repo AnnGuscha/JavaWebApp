@@ -62,7 +62,7 @@
         <thead>
         <tr>
             <th></th>
-            <th>Name</th>
+            <th>Name course</th>
             <th>Professor</th>
             <th>Description</th>
         </tr>

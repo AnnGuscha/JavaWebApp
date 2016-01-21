@@ -11,18 +11,18 @@ public class ServiceLocator {
     private static DAOFactory MySQLFactory =
             DAOFactory.getDAOFactory(DAOFactory.MYSQL);
 
-    private static int idCurrentUser;
+    //private static int idCurrentUser;
 
     private ServiceLocator() {
     }
 
-    public static int getIdCurrentUser() {
-        return 1;
-    }
+//    public static int getIdCurrentUser() {
+//        return 1;
+//    }
 
-    public static void setIdCurrentUser(int id) {
-        idCurrentUser = id;
-    }
+//    public static void setIdCurrentUser(int id) {
+//        idCurrentUser = id;
+//    }
 
 
     public static ServiceLocator getInstance() {

@@ -30,9 +30,10 @@ public class ProfessorEditApiController extends HttpServlet {
         String firstName = request.getParameter("firstName");
         String surName = request.getParameter("surName");
         String patronymicName = request.getParameter("patronymicName");
+        int userId = Integer.parseInt(request.getParameter("userId"));
 
         //choice model or entity
-        Professor newProfessor = new Professor(id, firstName, surName, patronymicName);
+        Professor newProfessor = new Professor(id, firstName, surName, patronymicName, userId);
         professorService.update(newProfessor);
 
         response.sendRedirect("/professor");

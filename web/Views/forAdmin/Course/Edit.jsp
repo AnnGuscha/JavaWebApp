@@ -22,8 +22,9 @@
         Course course = (Course) request.getAttribute("course");
     %>
 
-    <form action="/api/course/edit" method=post role="form" data-toggle="validator">
+    <form action="/api/course" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
+            <input type="hidden" name="_method" value="post"/>
             <input type="hidden" id="idCourse" name="idCourse" value="<%= course.getId() %>"/>
 
             <label for="name" class="control-label col-xs-4">Name:</label>

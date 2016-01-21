@@ -28,9 +28,8 @@ public class ProfessorService {
         return professorDAO.find(id);
     }
 
-    public Professor find() {
-        int id = ServiceLocator.getIdCurrentUser();
-        return professorDAO.find(id);
+    public Professor findByUserId(int userId) {
+        return professorDAO.findByUserId(userId);
     }
 
     public int insert(Professor professor) {

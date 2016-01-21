@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        name = "ProfessorHomeController",
+        name = "AdminController",
         urlPatterns = {"/index"}
 )
 
@@ -25,5 +25,4 @@ public class AdminController extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
         dispatcher.forward(request, resp);
     }
-
 }

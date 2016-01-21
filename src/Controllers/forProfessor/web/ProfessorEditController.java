@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -27,8 +28,14 @@ public class ProfessorEditController extends HttpServlet {
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
+        HttpSession session = request.getSession();
+        int userId = 0;
+        if (session.getAttribute("userId") == null) {
+            resp.sendRedirect("/login");
+        } else
+            userId = Integer.parseInt(session.getAttribute("userId").toString());
         //get object from dao
-        Professor professor = professorService.find();
+        Professor professor = professorService.findByUserId(userId);
         //create model
 
         String nextJSP = "/Views/forProfessor/ProfessorEdit.jsp";

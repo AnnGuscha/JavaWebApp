@@ -47,9 +47,9 @@ public class CourseService {
         return courseModelList;
     }
 
-    public Models.forProfessor.CourseModel getCourseModelForProfessor() {
+    public Models.forProfessor.CourseModel getCourseModelForProfessor(int idProfessor) {
 
-        Course course = courseDAO.getCourseByProfessor(ServiceLocator.getIdCurrentUser());
+        Course course = courseDAO.getCourseByProfessor(idProfessor);
 
         Models.forProfessor.CourseModel courseModel = new Models.forProfessor.CourseModel();
         courseModel.setId(course.getId());

@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -31,9 +32,18 @@ public class StudentAllCoursesApiController extends HttpServlet {
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        HttpSession session = request.getSession();
+        int userId = 0;
+        if (session.getAttribute("user") == null) {
+            response.sendRedirect("/login");
+        } else
+            userId = Integer.parseInt(session.getAttribute("userId").toString());
+        int idStudent = ServiceLocator.getStudentService().findByUserId(userId).getId();
         JQueryDataTableParamModel param = getRequestParam(request);
 
-        String json = getJsonAll(param);
+        List<CourseModel> courseList = particularService.getAllCourses(idStudent);
+
+        String json = getJsonAll(param, courseList);
 
         responseJson(response, json);
     }
@@ -49,9 +59,7 @@ public class StudentAllCoursesApiController extends HttpServlet {
         response.getWriter().write(json);
     }
 
-    private String getJsonAll(JQueryDataTableParamModel param) {
-
-        List<CourseModel> courseList = particularService.getAllCourses();
+    private String getJsonAll(JQueryDataTableParamModel param, List<CourseModel> courseList) {
 
         int size = courseList.size();
 

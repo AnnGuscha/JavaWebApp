@@ -31,8 +31,9 @@ public class StudentEditApiController extends HttpServlet {
         String name = request.getParameter("name");
         String surName = request.getParameter("surName");
         String patronymicName = request.getParameter("patronymicName");
+        int userId = Integer.parseInt(request.getParameter("userId"));
         //dao/service update stud
-        Student newStudent = new Student(id, name, surName, patronymicName);
+        Student newStudent = new Student(id, name, surName, patronymicName, userId);
         studentService.update(newStudent);
         //redirect
 

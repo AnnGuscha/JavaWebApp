@@ -33,7 +33,8 @@
                 {"data": "id"},
                 {"data": "name"},
                 {"data": "surName"},
-                {"data": "patronymicName"}
+                {"data": "patronymicName"},
+                {"data": "userId"}
             ]
         });
 
@@ -48,7 +49,7 @@
                 $(this).addClass('selected');
             }
             var href = $('a:contains(" ")', this).attr('data');
-            window.location.href = "Details/" + href;
+            window.location.href = "student/details/" + href;
 
         });
     });
@@ -69,6 +70,7 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Patronymic name</th>
+            <th>User id</th>
         </tr>
         </thead>
     </table>

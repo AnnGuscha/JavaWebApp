@@ -28,8 +28,9 @@ public class StudentCreateApiController extends HttpServlet {
         String name = request.getParameter("name");
         String surName = request.getParameter("surName");
         String patronymicName = request.getParameter("patronymicName");
+        int userId = Integer.parseInt(request.getParameter("userId"));
 
-        Student newStudent = new Student(name, surName, patronymicName);
+        Student newStudent = new Student(name, surName, patronymicName, userId);
 
         studentService.insert(newStudent);
 

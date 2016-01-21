@@ -1,4 +1,4 @@
-package Controllers.forStudent.web;
+package Controllers.forAdmin.web.Student;
 
 import Entity.Student;
 import Services.ServiceLocator;
@@ -10,38 +10,31 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by Anna on 12/9/2015.
+ * Created by Anna on 12/23/2015.
  */
 @WebServlet(
-        name = "Controllers.forStudent.web.StudentEditController",
-        urlPatterns = {"/student_home/edit"}
+        name = "StudentDetailsController",
+        urlPatterns = {"/student/details/*"}
 )
-
-public class StudentEditController extends HttpServlet {
+public class StudentDetailsController extends HttpServlet {
 
     StudentService studentService = ServiceLocator.getStudentService();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+        String rawParam = request.getPathInfo();
+        int idParam = Integer.parseInt(rawParam.split("/")[1]);
 
-        HttpSession session = request.getSession();
-        int userId = 0;
-        if (session.getAttribute("user") == null) {
-            resp.sendRedirect("/login");
-        } else
-            userId = Integer.parseInt(session.getAttribute("userId").toString());
         //get object from dao
-        Student student = studentService.find(userId);
+        Student student = studentService.find(idParam);
         //create model
 
-        String nextJSP = "/Views/forStudent/StudentEdit.jsp";
+        String nextJSP = "/Views/forAdmin/Student/Details.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
         request.setAttribute("student", student);
         dispatcher.forward(request, resp);
     }
 }
-

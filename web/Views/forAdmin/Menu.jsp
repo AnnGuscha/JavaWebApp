@@ -7,13 +7,9 @@
 --%>
 <%
     String userName = null;
-    Cookie[] cookies = request.getCookies();
-    if (cookies != null) {
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("user")) userName = cookie.getValue();
-        }
-    }
-    if (userName == null) response.sendRedirect("/login");
+    if (session.getAttribute("user") == null) {
+        response.sendRedirect("/login");
+    } else userName = (String) session.getAttribute("user");
 %>
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">

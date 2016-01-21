@@ -42,6 +42,11 @@
                    value="<%= professor.getPatronymicName() %>"
                    required="true"/>
             <br/>
+            <label for="userId" class="control-label col-xs-4">User id:</label>
+            <input type="text" name="userId" id="userId" class="form-control"
+                   value="<%= professor.getUserId() %>"
+                   required="true"/>
+            <br/>
             <button type="submit" class="btn btn-primary  btn-md">Accept</button>
         </div>
     </form>

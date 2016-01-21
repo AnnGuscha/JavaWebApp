@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -32,9 +33,18 @@ public class StudentCoursesApiController extends HttpServlet {
     //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        HttpSession session = request.getSession();
+        int userId = 0;
+        if (session.getAttribute("user") == null) {
+            response.sendRedirect("/login");
+        } else userId =
+                Integer.parseInt(session.getAttribute("userId").toString());
+
         JQueryDataTableParamModel param = getRequestParam(request);
 
-        String json = getJsonAll(param);
+        List<CourseModel> courseList = particularService.getCoursesForStudent(userId);
+
+        String json = getJsonAll(param, courseList);
 
         responseJson(response, json);
     }
@@ -50,9 +60,7 @@ public class StudentCoursesApiController extends HttpServlet {
         response.getWriter().write(json);
     }
 
-    private String getJsonAll(JQueryDataTableParamModel param) {
-
-        List<CourseModel> courseList = particularService.getCoursesForStudent();
+    private String getJsonAll(JQueryDataTableParamModel param, List<CourseModel> courseList) {
 
         int size = courseList.size();
 

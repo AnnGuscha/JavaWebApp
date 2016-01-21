@@ -8,13 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String userName = null;
-    Cookie[] cookies = request.getCookies();
-    if (cookies != null) {
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("user")) userName = cookie.getValue();
-        }
-    }
-    if (userName == null) response.sendRedirect("/login");
+    if (session.getAttribute("user") == null) {
+        response.sendRedirect("/login");
+    } else userName = (String) session.getAttribute("user");
 %>
 <html>
 <jsp:include page="Header.jsp"/>

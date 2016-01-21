@@ -17,8 +17,9 @@
 <div class="container">
     <h2>Course</h2>
 
-    <form action="/api/course/create" method=post role="form" data-toggle="validator">
+    <form action="/api/course" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
+            <input type="hidden" name="_method" value="put"/>
             <input type="hidden" id="idCourse" name="idCourse" value=""/>
 
 

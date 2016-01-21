@@ -35,7 +35,11 @@
             <input type="text" name="patronymicName" id="patronymicName" class="form-control"
                    value="<%= student.getPatronymicName() %>"
                    required="true"/>
-
+            <br/>
+            <label for="userId" class="control-label col-xs-6">User id:</label>
+            <input type="text" name="userId" id="userId" class="form-control"
+                   value="<%= student.getUserId() %>"
+                   required="true"/>
             <br/>
             <button type="submit" class="btn btn-primary  btn-md">Accept</button>
         </div>

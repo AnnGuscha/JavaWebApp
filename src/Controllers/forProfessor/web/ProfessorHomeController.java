@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -23,10 +24,16 @@ import java.io.IOException;
 public class ProfessorHomeController extends HttpServlet {
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
-        Professor professor = professorService.find();
+        HttpSession session = request.getSession();
+        int userId = 0;
+        if (session.getAttribute("userId") == null) {
+            resp.sendRedirect("/login");
+        } else
+            userId = Integer.parseInt(session.getAttribute("userId").toString());
+
+        Professor professor = professorService.findByUserId(userId);
 
         String nextJSP = "/Views/forProfessor/ProfessorHome.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);

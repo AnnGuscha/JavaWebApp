@@ -63,4 +63,35 @@ public class CourseApiController extends HttpServlet {
 
         return gson.toJson(jsonDTO);
     }
+
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        int idProfessor = Integer.parseInt(request.getParameter("idProfessor"));
+        String name = request.getParameter("name");
+        String description = request.getParameter("description");
+
+        //choice model or entity
+        Course newCourse = new Course(name, idProfessor, description);
+        courseService.insert(newCourse);
+
+        response.sendRedirect("/course");
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        if (request.getParameter("_method").equals("put"))
+            doPut(request, response);
+        else {
+            int id = Integer.parseInt(request.getParameter("idCourse"));
+            int idProfessor = Integer.parseInt(request.getParameter("idProfessor"));
+            String name = request.getParameter("name");
+            String description = request.getParameter("description");
+
+            //choice model or entity
+            Course newCourse = new Course(id, name, idProfessor, description);
+            courseService.update(newCourse);
+
+            response.sendRedirect("/course");
+        }
+    }
 }

@@ -24,17 +24,16 @@ public class StudentService {
         return studentDAO.getAll();
     }
 
-    public Student find() {
-        int id = ServiceLocator.getIdCurrentUser();
-        return studentDAO.find(id);
-    }
-
-    public Student find(int id) {
-        return studentDAO.find(id);
+    public Student findByUserId(int userId) {
+        return studentDAO.find(userId);
     }
 
     public List<Student> find(String name) {
         return studentDAO.find(name);
+    }
+
+    public Student find(int id) {
+        return studentDAO.find(id);
     }
 
     public int insert(Student student) {

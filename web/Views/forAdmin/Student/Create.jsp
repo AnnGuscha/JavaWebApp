@@ -36,6 +36,9 @@
             <input type="text" name="patronymicName" id="patronymicName" class="form-control" value=""
                    required="true"/>
 
+            <label for="userId" class="control-label col-xs-6">User id:</label>
+            <input type="text" name="userId" id="userId" class="form-control" value=""
+                   required="true"/>
             <br/>
             <button type="submit" class="btn btn-primary  btn-md">Accept</button>
         </div>

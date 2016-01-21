@@ -29,9 +29,10 @@ public class ProfessorCreateApiController extends HttpServlet {
         String firstName = request.getParameter("firstName");
         String surName = request.getParameter("surName");
         String patronymicName = request.getParameter("patronymicName");
+        int userId = Integer.parseInt(request.getParameter("userId"));
 
         //choice model or entity
-        Professor professor = new Professor(firstName, surName, patronymicName);
+        Professor professor = new Professor(firstName, surName, patronymicName, userId);
         professorService.insert(professor);
 
         response.sendRedirect("/professor");

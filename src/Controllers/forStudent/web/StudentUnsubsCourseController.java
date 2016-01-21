@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -27,7 +28,13 @@ public class StudentUnsubsCourseController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String rawParam = request.getPathInfo();
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
-        int idStudent = ServiceLocator.getIdCurrentUser();
+        HttpSession session = request.getSession();
+        int userId = 0;
+        if (session.getAttribute("user") == null) {
+            response.sendRedirect("/login");
+        } else
+            userId = Integer.parseInt(session.getAttribute("userId").toString());
+        int idStudent = ServiceLocator.getStudentService().findByUserId(userId).getId();
         ListStudents listStudents = new ListStudents(idParam, idStudent);
         //get object from dao
         listStudentsService.delete(listStudents);

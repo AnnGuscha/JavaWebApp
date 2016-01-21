@@ -27,9 +27,9 @@ public class ParticularService {
         return ourInstance;
     }
 
-    public List<CourseModel> getCoursesForStudent() {
+    public List<CourseModel> getCoursesForStudent(int id) {
 
-        List<CourseExtend> courseExtentdList = particularQueriesDAO.getCoursesForStudent(ServiceLocator.getIdCurrentUser());
+        List<CourseExtend> courseExtentdList = particularQueriesDAO.getCoursesForStudent(id);
 
         List<CourseModel> courseModelList = new ArrayList<>();
 
@@ -47,8 +47,8 @@ public class ParticularService {
         return courseModelList;
     }
 
-    public List<CourseModel> getAllCourses() {
-        List<CourseExtend> courseExtentdList = particularQueriesDAO.getCourses(ServiceLocator.getIdCurrentUser());
+    public List<CourseModel> getAllCourses(int id) {
+        List<CourseExtend> courseExtentdList = particularQueriesDAO.getCourses(id);
 
         List<CourseModel> courseModelList = new ArrayList<>();
 
@@ -67,7 +67,7 @@ public class ParticularService {
 
     public List<StudentsForProfessorModel> getStudentsByCourse(int idCourse) {
 
-        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByCourse(ServiceLocator.getIdCurrentUser());
+        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByCourse(idCourse);
 
         List<StudentsForProfessorModel> studentsModelList = new ArrayList<>();
         for (StudentExtend item : studentExtendList) {
@@ -79,9 +79,9 @@ public class ParticularService {
         return studentsModelList;
     }
 
-    public List<StudentsForProfessorModel> getStudentsByProfessor() {
+    public List<StudentsForProfessorModel> getStudentsByProfessor(int idProfessor) {
 
-        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByProfessor(ServiceLocator.getIdCurrentUser());
+        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByProfessor(idProfessor);
 
         List<StudentsForProfessorModel> studentsModelList = new ArrayList<>();
         for (StudentExtend item : studentExtendList) {
