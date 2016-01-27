@@ -1,4 +1,4 @@
-package DTO;
+package dto;
 
 /**
  * Created by Anna on 12/11/2015.

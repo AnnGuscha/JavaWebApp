@@ -1,9 +1,9 @@
-package Services;
+package services;
 
-import Entity.Course;
-import ExtendedEntity.CourseExtend;
-import Models.forStudent.CourseModel;
-import levelDAO.CourseDAO;
+import dao.CourseDAO;
+import entity.Course;
+import entity.extended.CourseExtend;
+import models.student.CourseModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class CourseService {
         List<CourseModel> courseModelList = new ArrayList<>();
 
         for (CourseExtend item : courseExtentdList) {
-            CourseModel courseModel = new Models.forStudent.CourseModel();
+            CourseModel courseModel = new models.student.CourseModel();
             courseModel.setId(item.getId());
             courseModel.setName(item.getName());
             courseModel.setIdProfessor(item.getIdProfessor());
@@ -47,11 +47,11 @@ public class CourseService {
         return courseModelList;
     }
 
-    public Models.forProfessor.CourseModel getCourseModelForProfessor(int idProfessor) {
+    public models.professor.CourseModel getCourseModelForProfessor(int idProfessor) {
 
         Course course = courseDAO.getCourseByProfessor(idProfessor);
 
-        Models.forProfessor.CourseModel courseModel = new Models.forProfessor.CourseModel();
+        models.professor.CourseModel courseModel = new models.professor.CourseModel();
         courseModel.setId(course.getId());
         courseModel.setName(course.getName());
         courseModel.setDescription(course.getDescription());

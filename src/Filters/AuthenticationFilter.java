@@ -1,9 +1,9 @@
-package Filters;
+package filters;
 
-import Commands.Role;
-import Entity.User;
-import Services.ServiceLocator;
-import Services.UserService;
+import commands.Role;
+import entity.User;
+import services.ServiceLocator;
+import services.UserService;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

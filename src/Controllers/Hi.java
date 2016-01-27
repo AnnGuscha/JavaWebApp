@@ -1,4 +1,4 @@
-package Controllers; /**
+package controllers; /**
  * Created by Anna on 12/6/2015.
  */
 

@@ -15,7 +15,7 @@
     <link rel="Stylesheet" href="./Content/StyleTable.css" type="text/css"/>
 
 </head>
-<body style="background-image: url(/Content/Images/partners.jpg); background-position: center;background-repeat: no-repeat;">
+<body style="background-image: url(/content/images/partners.jpg); background-position: center;background-repeat: no-repeat;">
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -44,9 +44,9 @@
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + '\" href=\"Edit/' + data + '\" > <img src="/Content/Images/pen-20.png"/></a> |' +
+                        return ' <a  data = \"' + data + '\" href=\"Edit/' + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
                                     //'<a href=\"Details/' + data + '\">Details</a> |' +
-                                ' <a href=\"Delete/' + data + '\"><img src="/Content/Images/delete-20.png"/></a> ';
+                                ' <a href=\"Delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
                     },
                     "width": "120px",
                     "targets": 0

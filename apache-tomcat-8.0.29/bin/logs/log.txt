@@ -23,7 +23,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLStudentDAO.find(MySQLStudentDAO.java:53)
+	at dao.mysql.MySQLStudentDAO.find(MySQLStudentDAO.java:53)
 	at StudentController.searchStudentByName(StudentController.java:69)
 	at StudentController.doGet(StudentController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -65,7 +65,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLStudentDAO.find(MySQLStudentDAO.java:53)
+	at dao.mysql.MySQLStudentDAO.find(MySQLStudentDAO.java:53)
 	at StudentController.searchStudentByName(StudentController.java:69)
 	at StudentController.doGet(StudentController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -108,7 +108,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLStudentDAO.find(MySQLStudentDAO.java:53)
+	at dao.mysql.MySQLStudentDAO.find(MySQLStudentDAO.java:53)
 	at StudentController.searchStudentByName(StudentController.java:69)
 	at StudentController.doGet(StudentController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -307,7 +307,7 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:38)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:38)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -345,7 +345,7 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:38)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:38)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -385,7 +385,7 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:38)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:38)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -500,7 +500,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:28)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:19)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:36)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:36)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -539,7 +539,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:28)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:19)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:36)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:36)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -576,7 +576,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:28)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:19)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:36)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:36)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -621,7 +621,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:40)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -666,7 +666,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:40)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -711,7 +711,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:40)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -752,7 +752,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:40)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -795,7 +795,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:40)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -840,7 +840,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:41)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -885,7 +885,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1604)
 	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1535)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:93)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:93)
 	at StudentEditApiController.doPost(StudentEditApiController.java:41)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -928,7 +928,7 @@ java.sql.SQLException: Parameter index out of range (4 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:31)
 	at fillStatementParamsForSelect(MySQLStudentDAO.java:19)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:36)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:36)
 	at StudentCreateApiController.doPost(StudentCreateApiController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -976,12 +976,12 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1013,88 +1013,12 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-Create pool connection.
-Find 4 records in database.
-Error: 
-java.sql.SQLException: Column 'idCourses' not found.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
-	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
-	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-Error: 
-java.sql.SQLException: Column 'idCourses' not found.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
-	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
-	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1128,12 +1052,49 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error: 
+java.sql.SQLException: Column 'idCourses' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at Infrastructure.MarkService.getAll(MarkService.java:24)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1167,12 +1128,12 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1206,12 +1167,51 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Create pool connection.
+Find 4 records in database.
+Error: 
+java.sql.SQLException: Column 'idCourses' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at Infrastructure.MarkService.getAll(MarkService.java:24)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1244,12 +1244,12 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1281,12 +1281,12 @@ java.sql.SQLException: Column 'idCourses' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
-	at levelMYSQL.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:47)
+	at dao.mysql.MySQLMarkDAO.getT(MySQLMarkDAO.java:15)
+	at dao.mysql.BaseDAOImpl.getAll(BaseDAOImpl.java:117)
 	at Infrastructure.MarkService.getAll(MarkService.java:24)
-	at Controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
-	at Controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
+	at controllers.api.Mark.MarkApiController.getJsonAll(MarkApiController.java:60)
+	at controllers.api.Mark.MarkApiController.doGet(MarkApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1331,7 +1331,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Colu
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.MarkService.find(MarkService.java:28)
 	at MarkEditController.doGet(MarkEditController.java:39)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -1373,7 +1373,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Colu
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.MarkService.find(MarkService.java:28)
 	at MarkEditController.doGet(MarkEditController.java:39)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -1455,9 +1455,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'isStu
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:99)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.MarkService.update(MarkService.java:36)
-	at Controllers.api.Mark.MarkEditApiController.doPost(MarkEditApiController.java:37)
+	at controllers.api.Mark.MarkEditApiController.doPost(MarkEditApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1753,11 +1753,11 @@ java.sql.SQLException: Parameter index out of range (2 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:33)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:98)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:33)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1792,11 +1792,11 @@ java.sql.SQLException: Parameter index out of range (2 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:33)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:98)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:33)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1831,11 +1831,11 @@ java.sql.SQLException: Parameter index out of range (2 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:33)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:98)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:33)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1884,9 +1884,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:99)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1930,9 +1930,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:99)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1976,9 +1976,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:99)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2022,9 +2022,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:99)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at Controllers.forAdmin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2067,9 +2067,9 @@ java.sql.SQLException: No value specified for parameter 4
 	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2233)
 	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2163)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1159)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2106,9 +2106,9 @@ java.sql.SQLException: No value specified for parameter 4
 	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2233)
 	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2163)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1159)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2146,11 +2146,11 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:24)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:41)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:24)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2185,11 +2185,11 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:24)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:41)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:24)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2224,11 +2224,11 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:24)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:41)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:24)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2266,11 +2266,11 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:24)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:41)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:24)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2305,11 +2305,11 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3367)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4078)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:24)
-	at levelMYSQL.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:41)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:24)
+	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:15)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2358,11 +2358,11 @@ java.sql.SQLException: Parameter index out of range (4 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3389)
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
-	at levelMYSQL.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:35)
-	at levelMYSQL.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:98)
+	at dao.mysql.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:35)
+	at dao.mysql.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:15)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.CourseService.update(CourseService.java:36)
-	at Controllers.forAdmin.api.Course.CourseEditApiController.doPost(CourseEditApiController.java:38)
+	at controllers.admin.api.Course.CourseEditApiController.doPost(CourseEditApiController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2399,11 +2399,11 @@ java.sql.SQLException: Parameter index out of range (4 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3389)
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
-	at levelMYSQL.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:35)
-	at levelMYSQL.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.update(BaseDAOImpl.java:98)
+	at dao.mysql.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:35)
+	at dao.mysql.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:15)
+	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.CourseService.update(CourseService.java:36)
-	at Controllers.forAdmin.api.Course.CourseEditApiController.doPost(CourseEditApiController.java:38)
+	at controllers.admin.api.Course.CourseEditApiController.doPost(CourseEditApiController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2483,9 +2483,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idLis
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2529,9 +2529,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idLis
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2574,9 +2574,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idLis
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2617,97 +2617,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idLis
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-Create pool connection.
-Find 16 records in database.
-Find 16 records in database.
-Error: 
-com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idListStudents' in 'where clause'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
-	at com.mysql.jdbc.Util.getInstance(Util.java:383)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
-	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-Find 16 records in database.
-Error: 
-com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idListStudents' in 'where clause'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
-	at com.mysql.jdbc.Util.getInstance(Util.java:383)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
-	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2734,6 +2646,94 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idLis
 Create pool connection.
 Find 16 records in database.
 Find 16 records in database.
+Error: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idListStudents' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Find 16 records in database.
+Error: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idListStudents' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Create pool connection.
+Find 16 records in database.
+Find 16 records in database.
 Find 16 records in database.
 Find 16 records in database.
 Find 16 records in database.
@@ -2753,9 +2753,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idLis
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:81)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:81)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2794,11 +2794,11 @@ java.sql.SQLException: Column 'idListStudent' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:83)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:83)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2831,11 +2831,11 @@ java.sql.SQLException: Column 'idListStudent' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:83)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:83)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2867,11 +2867,11 @@ java.sql.SQLException: Column 'idListStudent' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:83)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:83)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2904,11 +2904,11 @@ java.sql.SQLException: Column 'idListStudent' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
-	at levelMYSQL.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:83)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:44)
+	at dao.mysql.MySQLListStudentsDAO.getT(MySQLListStudentsDAO.java:15)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:83)
 	at Infrastructure.ListStudentsService.find(ListStudentsService.java:28)
-	at Controllers.forAdmin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
+	at controllers.admin.web.ListStudents.ListStudentsEditController.doGet(ListStudentsEditController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2989,10 +2989,10 @@ java.sql.SQLException: Column 'idCourse' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
+	at dao.mysql.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
 	at getCourseModelList(CourseService.java:32)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3024,10 +3024,10 @@ java.sql.SQLException: Column 'idCourse' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
+	at dao.mysql.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
 	at getCourseModelList(CourseService.java:32)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3059,10 +3059,10 @@ java.sql.SQLException: Column 'idCourse' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
+	at dao.mysql.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
 	at getCourseModelList(CourseService.java:32)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3094,10 +3094,10 @@ java.sql.SQLException: Column 'idCourse' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
+	at dao.mysql.MySQLCourseDAO.getCourseExtentdList(MySQLCourseDAO.java:63)
 	at getCourseModelList(CourseService.java:32)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:55)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3150,10 +3150,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3193,10 +3193,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3236,10 +3236,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3411,10 +3411,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3454,10 +3454,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3497,10 +3497,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3540,10 +3540,10 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:29)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3578,11 +3578,11 @@ java.sql.SQLException: Column 'ProfessorName' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:58)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:58)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3614,11 +3614,11 @@ java.sql.SQLException: Column 'ProfessorName' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:58)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:58)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3653,11 +3653,11 @@ java.sql.SQLException: Column 'Mark' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:60)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:60)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3689,11 +3689,11 @@ java.sql.SQLException: Column 'Mark' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:60)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:60)
+	at dao.mysql.MySQLParticularQueriesDAO.getCoursesForStudent(MySQLParticularQueriesDAO.java:31)
 	at Infrastructure.ParticularService.getCoursesForStudent(ParticularService.java:27)
-	at Controllers.forStudent.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
-	at Controllers.forStudent.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
+	at controllers.student.api.StudentCoursesApiController.getJsonAll(StudentCoursesApiController.java:55)
+	at controllers.student.api.StudentCoursesApiController.doGet(StudentCoursesApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3748,10 +3748,10 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3389)
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:68)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:68)
 	at Infrastructure.ParticularService.getAllCourses(ParticularService.java:47)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3785,10 +3785,10 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3389)
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:68)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:68)
 	at Infrastructure.ParticularService.getAllCourses(ParticularService.java:47)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3823,11 +3823,11 @@ java.sql.SQLException: Column 'Mark' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:59)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:71)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:59)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:71)
 	at Infrastructure.ParticularService.getAllCourses(ParticularService.java:47)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -3859,11 +3859,11 @@ java.sql.SQLException: Column 'Mark' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:59)
-	at levelMYSQL.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:71)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourseExtend(MySQLParticularQueriesDAO.java:59)
+	at dao.mysql.MySQLParticularQueriesDAO.getCourses(MySQLParticularQueriesDAO.java:71)
 	at Infrastructure.ParticularService.getAllCourses(ParticularService.java:47)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
-	at Controllers.forStudent.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
+	at controllers.student.api.StudentAllCoursesApiController.getJsonAll(StudentAllCoursesApiController.java:54)
+	at controllers.student.api.StudentAllCoursesApiController.doGet(StudentAllCoursesApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4215,9 +4215,9 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3389)
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
-	at levelMYSQL.MySQLParticularQueriesDAO.find(MySQLParticularQueriesDAO.java:182)
+	at dao.mysql.MySQLParticularQueriesDAO.find(MySQLParticularQueriesDAO.java:182)
 	at Infrastructure.ParticularService.findMark(ParticularService.java:98)
-	at Controllers.forProfessor.web.ProfessorEditMarkController.doGet(ProfessorEditMarkController.java:34)
+	at controllers.professor.web.ProfessorEditMarkController.doGet(ProfessorEditMarkController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4253,9 +4253,9 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3352)
 	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3389)
 	at com.mysql.jdbc.PreparedStatement.setInt(PreparedStatement.java:3342)
-	at levelMYSQL.MySQLParticularQueriesDAO.find(MySQLParticularQueriesDAO.java:182)
+	at dao.mysql.MySQLParticularQueriesDAO.find(MySQLParticularQueriesDAO.java:182)
 	at Infrastructure.ParticularService.findMark(ParticularService.java:98)
-	at Controllers.forProfessor.web.ProfessorEditMarkController.doGet(ProfessorEditMarkController.java:34)
+	at controllers.professor.web.ProfessorEditMarkController.doGet(ProfessorEditMarkController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4396,9 +4396,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.MySQLMarkDAO.delete(MySQLMarkDAO.java:81)
+	at dao.mysql.MySQLMarkDAO.delete(MySQLMarkDAO.java:81)
 	at Infrastructure.MarkService.delete(MarkService.java:48)
-	at Controllers.forProfessor.web.ProfessorDeleteMarkController.doGet(ProfessorDeleteMarkController.java:34)
+	at controllers.professor.web.ProfessorDeleteMarkController.doGet(ProfessorDeleteMarkController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4445,9 +4445,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
-	at levelMYSQL.MySQLMarkDAO.delete(MySQLMarkDAO.java:81)
+	at dao.mysql.MySQLMarkDAO.delete(MySQLMarkDAO.java:81)
 	at Infrastructure.MarkService.delete(MarkService.java:48)
-	at Controllers.forProfessor.web.ProfessorDeleteMarkController.doGet(ProfessorDeleteMarkController.java:34)
+	at controllers.professor.web.ProfessorDeleteMarkController.doGet(ProfessorDeleteMarkController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4563,9 +4563,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:62)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:62)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4605,9 +4605,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:62)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:62)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4647,9 +4647,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:62)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:62)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4683,10 +4683,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4719,10 +4719,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
+	at controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4755,10 +4755,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
+	at controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4791,10 +4791,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
+	at controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4827,10 +4827,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
+	at controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4863,10 +4863,10 @@ java.sql.SQLException: Column 'Name' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4898,10 +4898,10 @@ java.sql.SQLException: Column 'Name' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4933,10 +4933,10 @@ java.sql.SQLException: Column 'Name' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5212)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:64)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:64)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -4977,10 +4977,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:84)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:84)
 	at Infrastructure.UserService.find(UserService.java:42)
-	at Controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
+	at controllers.RegistrationServlet.doPost(RegistrationServlet.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5017,10 +5017,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:787)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2466)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLUserDAO.getT(MySQLUserDAO.java:50)
-	at levelMYSQL.MySQLUserDAO.find(MySQLUserDAO.java:67)
+	at dao.mysql.MySQLUserDAO.getT(MySQLUserDAO.java:50)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:67)
 	at Infrastructure.UserService.find(UserService.java:38)
-	at Controllers.LoginServlet.doPost(LoginServlet.java:38)
+	at controllers.LoginServlet.doPost(LoginServlet.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5563,9 +5563,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idUse
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:82)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:82)
 	at Services.UserService.find(UserService.java:28)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:66)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:66)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5601,9 +5601,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idUse
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:82)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:82)
 	at Services.UserService.find(UserService.java:28)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:66)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:66)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5639,9 +5639,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idUse
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.BaseDAOImpl.find(BaseDAOImpl.java:82)
+	at dao.mysql.BaseDAOImpl.find(BaseDAOImpl.java:82)
 	at Services.UserService.find(UserService.java:28)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:66)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:66)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5716,9 +5716,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
 	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
-	at Controllers.forProfessor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5726,7 +5726,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5763,9 +5763,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5773,7 +5773,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5810,9 +5810,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5820,7 +5820,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5857,9 +5857,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
 	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
-	at Controllers.forProfessor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5867,7 +5867,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5904,9 +5904,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5914,7 +5914,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -5955,9 +5955,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
 	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
-	at Controllers.forProfessor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -5965,7 +5965,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6002,9 +6002,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6012,7 +6012,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6049,9 +6049,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
 	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
-	at Controllers.forProfessor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6059,7 +6059,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6096,9 +6096,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6106,7 +6106,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6143,9 +6143,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
 	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
-	at Controllers.forProfessor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6153,7 +6153,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6190,9 +6190,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6200,7 +6200,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6237,9 +6237,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
 	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
-	at levelMYSQL.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
 	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
-	at Controllers.forProfessor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:34)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6247,7 +6247,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'Profe
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6284,9 +6284,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2002)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:145)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6294,7 +6294,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'stude
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6330,10 +6330,10 @@ java.sql.SQLException: Column 'idStudent' not found.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
 	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
 	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2577)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentExtend(MySQLParticularQueriesDAO.java:115)
-	at levelMYSQL.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:147)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentExtend(MySQLParticularQueriesDAO.java:115)
+	at dao.mysql.MySQLParticularQueriesDAO.getStudentsByProfessor(MySQLParticularQueriesDAO.java:147)
 	at Services.ParticularService.getStudentsByProfessor(ParticularService.java:85)
-	at Controllers.forProfessor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
+	at controllers.professor.api.ProfessorStudentsApiController.doGet(ProfessorStudentsApiController.java:45)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6341,7 +6341,7 @@ java.sql.SQLException: Column 'idStudent' not found.
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6588,9 +6588,9 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6598,7 +6598,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6633,9 +6633,9 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6643,7 +6643,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6673,9 +6673,9 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6683,7 +6683,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6718,9 +6718,9 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6728,7 +6728,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6769,9 +6769,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6779,7 +6779,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6815,9 +6815,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6825,7 +6825,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -6866,9 +6866,9 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
-	at levelMYSQL.BaseDAOImpl.insert(BaseDAOImpl.java:43)
+	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at Controllers.forAdmin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6876,7 +6876,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at Filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
@@ -7012,3 +7012,612 @@ Delete from database 1 records.
 Find record in database.
 Find record in database.
 Find 8 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Insert record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 8 records in database.
+Find record in database.
+Find record in database.
+Find 8 records in database.
+Delete from database 1 records.
+Find record in database.
+Find record in database.
+Find 7 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Error: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Create pool connection.
+Find 5 records in database.
+Not find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Error: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:79)
+	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Error: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:80)
+	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Error: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1432)
+	at dao.mysql.MySQLCourseDAO.getCourseByProfessor(MySQLCourseDAO.java:80)
+	at Services.CourseService.getCourseModelForProfessor(CourseService.java:52)
+	at controllers.professor.web.ProfessorStudentsController.doGet(ProfessorStudentsController.java:35)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:73)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 8 records in database.
+Delete from database 4 records.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Insert record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Update in database 1 records.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Delete from database 1 records.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Insert record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 8 records in database.
+Create pool connection.
+Find record in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Create pool connection.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 7 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find 7 records in database.
+Find record in database.
+Find record in database.
+Find 6 records in database.
+Find record in database.
+Find record in database.
+Find 8 records in database.
+Find record in database.
+Find record in database.
+Find 6 records in database.
+Find record in database.
+Find record in database.
+Find 7 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 5 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 2 records in database.
+Find record in database.
+Find record in database.
+Find record in database.
+Find 7 records in database.

@@ -1,10 +1,10 @@
-package Controllers;
+package controllers;
 /**
  * Created by Anna on 12/6/2015.
  */
 
-import Commands.CommandLocator;
-import Commands.TypeMethod;
+import commands.CommandLocator;
+import commands.TypeMethod;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

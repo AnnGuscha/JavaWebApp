@@ -1,7 +1,7 @@
-package Services;
+package services;
 
-import Entity.Mark;
-import levelDAO.MarkDAO;
+import dao.MarkDAO;
+import entity.Mark;
 
 import java.util.List;
 

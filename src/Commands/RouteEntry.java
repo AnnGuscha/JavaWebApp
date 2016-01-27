@@ -1,6 +1,6 @@
-package Commands;
+package commands;
 
-import Controllers.IController;
+import controllers.IController;
 
 /**
  * Created by Anna on 12/21/2015.

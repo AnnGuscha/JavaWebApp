@@ -1,13 +1,13 @@
-package Services;
+package services;
 
 
-import ExtendedEntity.CourseExtend;
-import ExtendedEntity.MarkExtend;
-import ExtendedEntity.StudentExtend;
-import Models.forProfessor.MarkModel;
-import Models.forProfessor.StudentsForProfessorModel;
-import Models.forStudent.CourseModel;
-import levelDAO.ParticularQueriesDAO;
+import dao.ParticularQueriesDAO;
+import entity.extended.CourseExtend;
+import entity.extended.MarkExtend;
+import entity.extended.StudentExtend;
+import models.professor.MarkModel;
+import models.professor.StudentsForProfessorModel;
+import models.student.CourseModel;
 
 import java.util.ArrayList;
 import java.util.List;

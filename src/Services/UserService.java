@@ -1,7 +1,7 @@
-package Services;
+package services;
 
-import Entity.User;
-import levelDAO.UserDAO;
+import dao.UserDAO;
+import entity.User;
 
 import java.util.List;
 

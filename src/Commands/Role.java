@@ -1,4 +1,4 @@
-package Commands;
+package commands;
 
 /**
  * Created by Anna on 12/22/2015.

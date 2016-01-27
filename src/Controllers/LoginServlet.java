@@ -1,10 +1,10 @@
-package Controllers;
+package controllers;
 
-import Commands.Role;
-import Entity.User;
-import Infrastructure.ServletRole;
-import Services.ServiceLocator;
-import Services.UserService;
+import commands.Role;
+import entity.User;
+import infrastructure.ServletRole;
+import services.ServiceLocator;
+import services.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -61,7 +61,7 @@ public class LoginServlet extends HttpServlet {
 //            response.addCookie(loginCookie);
             response.sendRedirect(getDefaultPage(user));
         } else {
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/Views/Authentication.jsp");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/Authentication.jsp");
             PrintWriter out = response.getWriter();
             out.println("<font color=red>Either login name or password is wrong.</font>");
             rd.include(request, response);
@@ -71,7 +71,7 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/Views/Authentication.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/Authentication.jsp");
         rd.include(request, response);
     }
 }

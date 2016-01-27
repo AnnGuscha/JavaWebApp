@@ -1,4 +1,4 @@
-package Commands;
+package commands;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

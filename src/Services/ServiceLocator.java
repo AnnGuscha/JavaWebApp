@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import levelDAO.DAOFactory;
+import dao.DAOFactory;
 
 /**
  * Created by Anna on 12/8/2015.

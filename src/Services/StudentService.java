@@ -1,7 +1,7 @@
-package Services;
+package services;
 
-import Entity.Student;
-import levelDAO.StudentDAO;
+import dao.StudentDAO;
+import entity.Student;
 
 import java.util.List;
 
