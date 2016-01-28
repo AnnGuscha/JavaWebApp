@@ -14,15 +14,16 @@ import java.io.IOException;
 
 @WebServlet(
         name = "AdminController",
-        urlPatterns = {"/index"}
+        urlPatterns = {"/admin/index"}
 )
 
 public class AdminController extends HttpServlet {
 
+    public static final String ADMIN_INDEX_JSP = "/views/admin/index.jsp";
+
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
-        String nextJSP = "/views/admin/index.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_INDEX_JSP);
         dispatcher.forward(request, resp);
     }
 }
