@@ -17,24 +17,23 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "ListStudentsEditController",
-        urlPatterns = {"/liststudents/edit/*"}
+        urlPatterns = {"/admin/liststudents/edit/*"}
 )
 
 public class ListStudentsEditController extends HttpServlet {
+    public static final String ADMIN_LISTSTUDENTS_EDIT_JSP = "/views/admin/liststudents/Edit.jsp";
+    public static final String LIST_STUDENTS_ATTRIBUTE_NAME = "listStudents";
     ListStudentsService listStudentsService = ServiceLocator.getListStudentsService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         String rawParam = request.getPathInfo();
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
 
         //get object from dao
         ListStudents listStudents = listStudentsService.find(idParam);
-        //create model
 
-        String nextJSP = "/views/admin/liststudents/Edit.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("listStudents", listStudents);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_LISTSTUDENTS_EDIT_JSP);
+        request.setAttribute(LIST_STUDENTS_ATTRIBUTE_NAME, listStudents);
         dispatcher.forward(request, resp);
     }
 }

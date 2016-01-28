@@ -17,14 +17,13 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "controllers.student.api.StudentEditApiController",
-        urlPatterns = {"/api/student_home/edit"}
+        urlPatterns = {"/api/student/edit"}
 )
 
 public class StudentEditApiController extends HttpServlet {
 
     StudentService studentService = ServiceLocator.getStudentService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession();
@@ -38,12 +37,11 @@ public class StudentEditApiController extends HttpServlet {
         String name = request.getParameter("name");
         String surName = request.getParameter("surName");
         String patronymicName = request.getParameter("patronymicName");
-        //dao/service update stud
+        //service update student
         Student newStudent = new Student(id, name, surName, patronymicName, userId);
         studentService.update(newStudent);
-        //redirect
 
-        response.sendRedirect("/student_home");
+        response.sendRedirect("/student");
     }
 
 }

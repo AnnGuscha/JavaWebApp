@@ -16,7 +16,7 @@
     <h2>Professor</h2>
 
     <p>
-        <a href="professor_home/edit"> <img
+        <a href="/professor/edit"> <img
                 src="/content/images/pen-20.png"/></a><%= professor.getSurName() %> <%= professor.getFirstName() %> <%= professor.getPatronymicName() %>
     </p>
 

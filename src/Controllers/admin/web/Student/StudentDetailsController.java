@@ -17,24 +17,23 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "StudentDetailsController",
-        urlPatterns = {"/student/details/*"}
+        urlPatterns = {"/admin/student/details/*"}
 )
 public class StudentDetailsController extends HttpServlet {
 
+    public static final String ADMIN_STUDENT_DETAILS_JSP = "/views/admin/student/Details.jsp";
+    public static final String STUDENT_ATTRIBUTE_NAME = "student";
     StudentService studentService = ServiceLocator.getStudentService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         String rawParam = request.getPathInfo();
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
 
         //get object from dao
         Student student = studentService.find(idParam);
-        //create model
 
-        String nextJSP = "/views/admin/student/Details.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("student", student);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_STUDENT_DETAILS_JSP);
+        request.setAttribute(STUDENT_ATTRIBUTE_NAME, student);
         dispatcher.forward(request, resp);
     }
 }

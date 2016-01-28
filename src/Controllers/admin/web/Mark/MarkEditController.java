@@ -21,15 +21,18 @@ import java.util.List;
 
 @WebServlet(
         name = "MarkEditController",
-        urlPatterns = {"/mark/edit/*"}
+        urlPatterns = {"/admin/mark/edit/*"}
 )
 
 
 public class MarkEditController extends HttpServlet {
+
+    public static final String ADMIN_MARK_EDIT_JSP = "/views/admin/mark/Edit.jsp";
+    public static final String MARK_ATTRIBUTE_NAME = "mark";
+    public static final String LIST_COURSES_ATTRIBUTE_NAME = "listCourses";
     MarkService markService = ServiceLocator.getMarkService();
     CourseService courseService = ServiceLocator.getCourseService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         String rawParam = request.getPathInfo();
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
@@ -37,12 +40,10 @@ public class MarkEditController extends HttpServlet {
         //get object from dao
         Mark mark = markService.find(idParam);
         List<Course> listCourses = courseService.getAll();
-        //create model
 
-        String nextJSP = "/views/admin/mark/Edit.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("mark", mark);
-        request.setAttribute("listCourses", listCourses);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_MARK_EDIT_JSP);
+        request.setAttribute(MARK_ATTRIBUTE_NAME, mark);
+        request.setAttribute(LIST_COURSES_ATTRIBUTE_NAME, listCourses);
         dispatcher.forward(request, resp);
     }
 }

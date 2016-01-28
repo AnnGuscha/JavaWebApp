@@ -21,7 +21,7 @@ import java.util.List;
  */
 @WebServlet(
         name = "ProfessorApiController",
-        urlPatterns = {"/api/professor"}
+        urlPatterns = {"/api/admin/professor"}
 )
 
 public class ProfessorApiController extends HttpServlet {

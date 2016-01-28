@@ -16,7 +16,7 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "StudentEditApiController",
-        urlPatterns = {"/api/student/edit"}
+        urlPatterns = {"/api/admin/student/edit"}
 )
 
 public class StudentEditApiController extends HttpServlet {
@@ -37,7 +37,7 @@ public class StudentEditApiController extends HttpServlet {
         studentService.update(newStudent);
         //redirect
 
-        response.sendRedirect("/student");
+        response.sendRedirect("/admin/student");
     }
 
 }

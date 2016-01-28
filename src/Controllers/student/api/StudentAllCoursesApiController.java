@@ -22,14 +22,13 @@ import java.util.List;
  */
 @WebServlet(
         name = "StudentAllCoursesApiController",
-        urlPatterns = {"/api/student_allcourses"}
+        urlPatterns = {"/api/student/allcourses"}
 )
 
 public class StudentAllCoursesApiController extends HttpServlet {
 
     ParticularService particularService = ServiceLocator.getParticularService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession();

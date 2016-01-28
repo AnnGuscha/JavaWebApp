@@ -21,13 +21,12 @@ import java.util.List;
  */
 @WebServlet(
         name = "ProfessorHomeApiController",
-        urlPatterns = {"/api/professor_home"}
+        urlPatterns = {"/api/professor"}
 )
 
 public class ProfessorHomeApiController extends HttpServlet {
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         JQueryDataTableParamModel param = getRequestParam(request);

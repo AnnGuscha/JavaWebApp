@@ -17,13 +17,12 @@ import java.io.IOException;
 
 @WebServlet(
         name = "ProfessorDeleteMarkController",
-        urlPatterns = {"/professor_home/delete_mark"}
+        urlPatterns = {"/professor/mark/delete"}
 )
 
 public class ProfessorDeleteMarkController extends HttpServlet {
     MarkService markService = ServiceLocator.getMarkService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int idStudent = Integer.parseInt(request.getParameter("id"));
@@ -31,7 +30,6 @@ public class ProfessorDeleteMarkController extends HttpServlet {
         Mark mark = new Mark(idCourse, idStudent);
         //get object from dao
         markService.delete(mark);
-        //create model
-        response.sendRedirect("/professor_students");
+        response.sendRedirect("/professor/students");
     }
 }

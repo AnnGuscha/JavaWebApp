@@ -48,7 +48,7 @@ public class AuthenticationFilter implements Filter {
         if (authEntry == null) {
             isConfrimed = true;
         } else {
-            if (authEntry.y == Role.Anonymous) {
+            if (authEntry.y == Role.ANONYMOUS) {
                 isConfrimed = true;
             } else {
                 //Cookie loginCookie = getCookie(req);
@@ -80,64 +80,64 @@ public class AuthenticationFilter implements Filter {
     private ArrayList<Tuple<String, Role>> getAuthList() {
         ArrayList<Tuple<String, Role>> authList;
         authList = new ArrayList<>();
-        authList.add(new Tuple<>("/api/course", Role.Admin));
-        authList.add(new Tuple<>("/api/course/create", Role.Admin));
-        authList.add(new Tuple<>("/api/course/edit", Role.Admin));
-        authList.add(new Tuple<>("/course", Role.Admin));
-        authList.add(new Tuple<>("/course/create", Role.Admin));
-        //authList.add(new Tuple<>("/course/edit/*", Role.Admin));
-
-        authList.add(new Tuple<>("/api/student", Role.Admin));
-        authList.add(new Tuple<>("/api/student/create", Role.Admin));
-        authList.add(new Tuple<>("/api/student/edit", Role.Admin));
-        authList.add(new Tuple<>("/student", Role.Admin));
-        authList.add(new Tuple<>("/student/create", Role.Admin));
-        //authList.add(new Tuple<>("/student/edit/*", Role.Admin));
-        // authList.add(new Tuple<>("/student/details/*", Role.Admin));
-        //authList.add(new Tuple<>("/student/delete/*", Role.Admin));
-
-        authList.add(new Tuple<>("/api/professor", Role.Admin));
-        authList.add(new Tuple<>("/api/professor/create", Role.Admin));
-        authList.add(new Tuple<>("/api/professor/edit", Role.Admin));
-        authList.add(new Tuple<>("/professor", Role.Admin));
-        authList.add(new Tuple<>("/professor/create", Role.Admin));
-        //authList.add(new Tuple<>("/professor/edit/*", Role.Admin));
-
-        authList.add(new Tuple<>("/api/mark", Role.Admin));
-        authList.add(new Tuple<>("/api/mark/create", Role.Admin));
-        authList.add(new Tuple<>("/api/mark/edit", Role.Admin));
-        authList.add(new Tuple<>("/mark", Role.Admin));
-        authList.add(new Tuple<>("/mark/create", Role.Admin));
-        //authList.add(new Tuple<>("/mark/edit/*", Role.Admin));
-
-        authList.add(new Tuple<>("/api/liststudents", Role.Admin));
-        authList.add(new Tuple<>("/api/liststudents/create", Role.Admin));
-        authList.add(new Tuple<>("/api/liststudents/edit", Role.Admin));
-        authList.add(new Tuple<>("/liststudents", Role.Admin));
-        authList.add(new Tuple<>("/liststudents/create", Role.Admin));
-        //authList.add(new Tuple<>("/liststudents/edit/*", Role.Admin));
-
-        authList.add(new Tuple<>("/api/professor_home/create_mark", Role.Professor));
-        authList.add(new Tuple<>("/professor_home/create_mark", Role.Professor));
-        authList.add(new Tuple<>("/api/professor_home/edit", Role.Professor));
-        authList.add(new Tuple<>("/professor_home/edit", Role.Professor));
-        authList.add(new Tuple<>("/api/professor_home/edit_mark", Role.Professor));
-        authList.add(new Tuple<>("/professor_home/edit_mark", Role.Professor));
-        authList.add(new Tuple<>("/api/professor_home", Role.Professor));
-        authList.add(new Tuple<>("/professor_home", Role.Professor));
-        authList.add(new Tuple<>("/api/professor_students", Role.Professor));
-        authList.add(new Tuple<>("/professor_students", Role.Professor));
-
-        authList.add(new Tuple<>("/api/student_allcourses", Role.Student));
-        authList.add(new Tuple<>("/api/student_courses", Role.Student));
-        authList.add(new Tuple<>("/api/student_home/edit", Role.Student));
-        authList.add(new Tuple<>("/api/student_home", Role.Student));
-        authList.add(new Tuple<>("/student_allcourses", Role.Student));
-        authList.add(new Tuple<>("/student_courses", Role.Student));
-        authList.add(new Tuple<>("/student_home/edit", Role.Student));
-        authList.add(new Tuple<>("/student_home", Role.Student));
-        //authList.add(new Tuple<>("/student/subs/*", Role.Student));
-        //authList.add(new Tuple<>("/student/unsubs/*", Role.Student));
+//        authList.add(new Tuple<>("/api/admin/course", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/course/create", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/course/edit", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/course", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/course/create", Role.ADMIN));
+//        //authList.add(new Tuple<>("/admin/course/edit/*", Role.ADMIN));
+//
+//        authList.add(new Tuple<>("/api/admin/student", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/student/create", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/student/edit", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/student", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/student/create", Role.ADMIN));
+//        //authList.add(new Tuple<>("/admin/student/edit/*", Role.ADMIN));
+//        // authList.add(new Tuple<>("/admin/student/details/*", Role.ADMIN));
+//        //authList.add(new Tuple<>("/admin/student/delete/*", Role.ADMIN));
+//
+//        authList.add(new Tuple<>("/api/admin/professor", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/professor/create", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/professor/edit", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/professor", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/professor/create", Role.ADMIN));
+//        //authList.add(new Tuple<>("/admin/professor/edit/*", Role.ADMIN));
+//
+//        authList.add(new Tuple<>("/api/admin/mark", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/mark/create", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/mark/edit", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/mark", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/mark/create", Role.ADMIN));
+//        //authList.add(new Tuple<>("/admin/mark/edit/*", Role.ADMIN));
+//
+//        authList.add(new Tuple<>("/api/admin/liststudents", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/liststudents/create", Role.ADMIN));
+//        authList.add(new Tuple<>("/api/admin/liststudents/edit", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/liststudents", Role.ADMIN));
+//        authList.add(new Tuple<>("/admin/liststudents/create", Role.ADMIN));
+//        //authList.add(new Tuple<>("/admin/liststudents/edit/*", Role.ADMIN));
+//
+//        authList.add(new Tuple<>("/api/professor_home/create_mark", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/professor_home/create_mark", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/api/professor_home/edit", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/professor_home/edit", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/api/professor_home/edit_mark", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/professor_home/edit_mark", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/api/professor_home", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/professor_home", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/api/professor_students", Role.PROFESSOR));
+//        authList.add(new Tuple<>("/professor_students", Role.PROFESSOR));
+//
+//        authList.add(new Tuple<>("/api/student_allcourses", Role.STUDENT));
+//        authList.add(new Tuple<>("/api/student_courses", Role.STUDENT));
+//        authList.add(new Tuple<>("/api/student_home/edit", Role.STUDENT));
+//        authList.add(new Tuple<>("/api/student_home", Role.STUDENT));
+//        authList.add(new Tuple<>("/student_allcourses", Role.STUDENT));
+//        authList.add(new Tuple<>("/student_courses", Role.STUDENT));
+//        authList.add(new Tuple<>("/student_home/edit", Role.STUDENT));
+//        authList.add(new Tuple<>("/student_home", Role.STUDENT));
+        //authList.add(new Tuple<>("/api/student/subs/*", Role.STUDENT));
+        //authList.add(new Tuple<>("/api/student/unsubs/*", Role.STUDENT));
         return authList;
     }
 

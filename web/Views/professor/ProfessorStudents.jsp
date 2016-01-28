@@ -18,7 +18,7 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/professor_students",
+            "sAjaxSource": "/api/professor/students",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
@@ -30,10 +30,10 @@
                 {
                     "render": function (data, type, row) {
                         if (data == null)
-                            return ' <a href=\"professor_home/create_mark?id=' + row.id + '&course=' + course + '\"><img src="/content/images/add-20.png"/></a> ';
+                            return ' <a href=\"/professor/mark/create?id=' + row.id + '&course=' + course + '\"><img src="/content/images/add-20.png"/></a> ';
                         else
-                            return data + ' <a href=\"professor_home/edit_mark?id=' + row.id + '&course=' + course + '\"><img src="/content/images/pen-20.png"/></a>' +
-                                    '<a href=\"professor_home/delete_mark?id=' + row.id + '&course=' + course + '\"><img src="/content/images/delete-20.png"/></a>';
+                            return data + ' <a href=\"/professor/mark/edit?id=' + row.id + '&course=' + course + '\"><img src="/content/images/pen-20.png"/></a>' +
+                                    '<a href=\"/professor/mark/delete?id=' + row.id + '&course=' + course + '\"><img src="/content/images/delete-20.png"/></a>';
                     },
                     "width": "30%",
                     "targets": 2

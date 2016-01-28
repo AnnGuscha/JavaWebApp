@@ -18,14 +18,15 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "controllers.professor.web.ProfessorEditController",
-        urlPatterns = {"/professor_home/edit"}
+        urlPatterns = {"/professor/edit"}
 )
 
 public class ProfessorEditController extends HttpServlet {
 
+    public static final String PROFESSOR_PROFESSOR_EDIT_JSP = "/views/professor/ProfessorEdit.jsp";
+    public static final String PROFESSOR_ATTRIBUTE_NAME = "professor";
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = request.getSession();
@@ -36,11 +37,9 @@ public class ProfessorEditController extends HttpServlet {
             userId = Integer.parseInt(session.getAttribute("userId").toString());
         //get object from dao
         Professor professor = professorService.findByUserId(userId);
-        //create model
 
-        String nextJSP = "/views/professor/ProfessorEdit.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("professor", professor);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(PROFESSOR_PROFESSOR_EDIT_JSP);
+        request.setAttribute(PROFESSOR_ATTRIBUTE_NAME, professor);
         dispatcher.forward(request, resp);
     }
 }

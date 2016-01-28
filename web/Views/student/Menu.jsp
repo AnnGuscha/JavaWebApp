@@ -14,16 +14,16 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a href="HomeController" class="navbar-brand">Home</a>
+            <a href="#" class="navbar-brand">Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" role="navigation">
-                <li><a href="/student_home" class="navbar-brand">About me</a></li>
-                <li><a href="/student_courses" class="navbar-brand">My aducation</a></li>
-                <li><a href="/student_allcourses" class="navbar-brand">All courses</a></li>
+                <li><a href="/student" class="navbar-brand">About me</a></li>
+                <li><a href="/student/courses" class="navbar-brand">My aducation</a></li>
+                <li><a href="/student/allcourses" class="navbar-brand">All courses</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="" class="navbar-brand">Hi <%=userName %>
+                <li><a href="#" class="navbar-brand">Hi <%=userName %>
                 </a></li>
                 <li><a href="/logout">Log Out</a></li>
             </ul>

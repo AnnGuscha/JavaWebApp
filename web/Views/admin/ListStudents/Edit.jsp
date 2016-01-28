@@ -22,7 +22,7 @@
         ListStudents listStudents = (ListStudents) request.getAttribute("listStudents");
     %>
 
-    <form action="/api/liststudents/edit" method=post role="form" data-toggle="validator">
+    <form action="/api/admin/liststudents/edit" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
             <input type="hidden" id="idListStudents" name="idListStudents" value="<%= listStudents.getId() %>"/>
 

@@ -24,8 +24,8 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" role="navigation">
-                <li><a href="/professor_home" class="navbar-brand">About me</a></li>
-                <li><a href="/professor_students" class="navbar-brand">My students</a></li>
+                <li><a href="/professor" class="navbar-brand">About me</a></li>
+                <li><a href="/professor/students" class="navbar-brand">My students</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="" class="navbar-brand">Hi <%=userName %>

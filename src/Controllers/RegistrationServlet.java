@@ -30,14 +30,14 @@ public class RegistrationServlet extends HttpServlet {
 
     private static String getDefaultPage(User user) {
         switch (Role.values()[user.getRole()]) {
-            case Admin:
-                return "/index";
-            case Professor:
-                return "/professor_home";
-            case Student:
-                return "/student_home";
+            case ADMIN:
+                return "/admin/index";
+            case PROFESSOR:
+                return "/professor";
+            case STUDENT:
+                return "/student";
             default:
-                return "hello,jsp";
+                return "hello.jsp";
         }
     }
 

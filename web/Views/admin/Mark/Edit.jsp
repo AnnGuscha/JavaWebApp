@@ -32,7 +32,7 @@
         List<Course> courses = (List<Course>) request.getAttribute("listCourses");
     %>
 
-    <form action="/api/mark/edit" method=post role="form" data-toggle="validator">
+    <form action="/api/admin/mark/edit" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
             <input type="hidden" id="idMark" name="idMark" value="<%= mark.getId() %>"/>
 

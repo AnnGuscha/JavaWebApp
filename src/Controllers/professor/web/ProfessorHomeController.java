@@ -18,10 +18,12 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "ProfessorHomeController",
-        urlPatterns = {"/professor_home"}
+        urlPatterns = {"/professor"}
 )
 
 public class ProfessorHomeController extends HttpServlet {
+    public static final String PROFESSOR_PROFESSOR_HOME_JSP = "/views/professor/ProfessorHome.jsp";
+    public static final String PROFESSOR_ATTRIBUTE_NAME = "professor";
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
@@ -35,9 +37,8 @@ public class ProfessorHomeController extends HttpServlet {
 
         Professor professor = professorService.findByUserId(userId);
 
-        String nextJSP = "/views/professor/ProfessorHome.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("professor", professor);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(PROFESSOR_PROFESSOR_HOME_JSP);
+        request.setAttribute(PROFESSOR_ATTRIBUTE_NAME, professor);
         dispatcher.forward(request, resp);
     }
 

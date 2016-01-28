@@ -18,12 +18,15 @@ import java.io.IOException;
 
 @WebServlet(
         name = "ProfessorCreateMarkController",
-        urlPatterns = {"/professor_home/create_mark"}
+        urlPatterns = {"/professor/mark/create"}
 )
 
 public class ProfessorCreateMarkController extends HttpServlet {
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
+    public static final String PROFESSOR_CREATE_MARK_JSP = "/views/professor/CreateMark.jsp";
+    public static final String COURSE_ATTRIBUTE_NAME = "course";
+    public static final String STUDENT_ATTRIBUTE_NAME = "student";
+
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
         int idStudent = Integer.parseInt(request.getParameter("id"));
@@ -31,10 +34,11 @@ public class ProfessorCreateMarkController extends HttpServlet {
         //get object from dao
         Student student = ServiceLocator.getStudentService().find(idStudent);
         Course course = ServiceLocator.getCourseService().find(idCourse);
-        String nextJSP = "/views/professor/CreateMark.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("course", course);
-        request.setAttribute("student", student);
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(PROFESSOR_CREATE_MARK_JSP);
+        request.setAttribute(COURSE_ATTRIBUTE_NAME, course);
+        request.setAttribute(STUDENT_ATTRIBUTE_NAME, student);
         dispatcher.forward(request, resp);
+
     }
 }

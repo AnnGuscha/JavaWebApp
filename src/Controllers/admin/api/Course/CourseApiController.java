@@ -21,7 +21,7 @@ import java.util.List;
  */
 @WebServlet(
         name = "CourseApiController",
-        urlPatterns = {"/api/course"}
+        urlPatterns = {"/api/admin/course"}
 )
 
 public class CourseApiController extends HttpServlet {
@@ -74,7 +74,7 @@ public class CourseApiController extends HttpServlet {
         Course newCourse = new Course(name, idProfessor, description);
         courseService.insert(newCourse);
 
-        response.sendRedirect("/course");
+        response.sendRedirect("/admin/course");
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -91,7 +91,7 @@ public class CourseApiController extends HttpServlet {
             Course newCourse = new Course(id, name, idProfessor, description);
             courseService.update(newCourse);
 
-            response.sendRedirect("/course");
+            response.sendRedirect("/admin/course");
         }
     }
 }

@@ -16,14 +16,13 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "ListStudentsEditApiController",
-        urlPatterns = {"/api/liststudents/edit"}
+        urlPatterns = {"/api/admin/liststudents/edit"}
 )
 
 public class ListStudentsEditApiController extends HttpServlet {
 
     ListStudentsService listStudentsService = ServiceLocator.getListStudentsService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int id = Integer.parseInt(request.getParameter("idListStudents"));
@@ -34,6 +33,6 @@ public class ListStudentsEditApiController extends HttpServlet {
         ListStudents listStudents = new ListStudents(id, idCourse, idStudent);
         listStudentsService.update(listStudents);
 
-        response.sendRedirect("/liststudents");
+        response.sendRedirect("/admin/liststudents");
     }
 }

@@ -31,7 +31,7 @@
         <%= student.getPatronymicName() %>
     </h4>
 
-    <a href="/student/edit/<%= student.getId() %>"> <img src="/content/images/pen-20.png"/></a>
+    <a href="/admin/student/edit/<%= student.getId() %>"> <img src="/content/images/pen-20.png"/></a>
 
 </div>
 </body>

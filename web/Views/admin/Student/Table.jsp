@@ -14,16 +14,15 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/student",
+            "sAjaxSource": "/api/admin/student",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + "\" href=\"student/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
-                                    //'<a href=\"Details/' + data + '\">Details</a> |' +
-                                ' <a href=\"student/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
+                        return ' <a  data = \"' + data + "\" href=\"/admin/student/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
+                                ' <a href=\"/admin/student/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
                     },
                     "width": "120px",
                     "targets": 0
@@ -49,7 +48,7 @@
                 $(this).addClass('selected');
             }
             var href = $('a:contains(" ")', this).attr('data');
-            window.location.href = "student/details/" + href;
+            window.location.href = "admin/student/details/" + href;
 
         });
     });
@@ -61,7 +60,7 @@
     <h2>Students</h2>
 
     <p>
-        <a href="student/create">Create</a>
+        <a href="/admin/student/create">Create</a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>

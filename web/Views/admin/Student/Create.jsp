@@ -12,7 +12,7 @@
 <body>
 <jsp:include page="../Menu.jsp"/>
 <div class="container">
-    <form action="/api/student/create" method="post" role="form" data-toggle="validator">
+    <form action="/api/admin/student/create" method="post" role="form" data-toggle="validator">
 
         <c:if test="${empty action}">
             <c:set var="action" value="add"/>

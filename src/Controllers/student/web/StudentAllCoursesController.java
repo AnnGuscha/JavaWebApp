@@ -1,8 +1,5 @@
 package controllers.student.web;
 
-import services.ServiceLocator;
-import services.StudentService;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,17 +13,15 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "StudentAllCoursesController",
-        urlPatterns = {"/student_allcourses"}
+        urlPatterns = {"/student/allcourses"}
 )
 
 public class StudentAllCoursesController extends HttpServlet {
-    StudentService studentService = ServiceLocator.getStudentService();
+    public static final String STUDENT_ALL_COURSES_JSP = "/views/student/AllCourses.jsp";
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
-        String nextJSP = "/views/student/AllCourses.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(STUDENT_ALL_COURSES_JSP);
         dispatcher.forward(request, resp);
     }
 }

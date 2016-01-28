@@ -14,16 +14,16 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/mark",
+            "sAjaxSource": "/api/admin/mark",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + "\" href=\"mark/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
+                        return ' <a  data = \"' + data + "\" href=\"/admin/mark/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
                                     //'<a href=\"Details/' + data + '\">Details</a> |' +
-                                ' <a href=\"mark/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
+                                ' <a href=\"/admin/mark/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
                     },
                     "width": "120px",
                     "targets": 0
@@ -60,7 +60,7 @@
     <h2>Marks</h2>
 
     <p>
-        <a href="mark/create">Create</a>
+        <a href="/admin/mark/create">Create</a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>

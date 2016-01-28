@@ -19,21 +19,21 @@ import java.util.List;
 
 @WebServlet(
         name = "MarkCreateController",
-        urlPatterns = {"/mark/create"}
+        urlPatterns = {"/admin/mark/create"}
 )
 
 public class MarkCreateController extends HttpServlet {
 
+    public static final String ADMIN_MARK_CREATE_JSP = "/views/admin/mark/Create.jsp";
+    public static final String LIST_COURSES_ATTRIBUTE_NAME = "listCourses";
     CourseService courseService = ServiceLocator.getCourseService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
-        String nextJSP = "/views/admin/mark/Create.jsp";
         List<Course> listCourses = courseService.getAll();
 
-        request.setAttribute("listCourses", listCourses);
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        request.setAttribute(LIST_COURSES_ATTRIBUTE_NAME, listCourses);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_MARK_CREATE_JSP);
         dispatcher.forward(request, resp);
     }
 }

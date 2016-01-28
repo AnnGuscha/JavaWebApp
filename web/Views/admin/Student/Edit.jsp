@@ -18,7 +18,7 @@
 <div class="container">
     <h2>Student</h2>
     <%Student student = (Student) request.getAttribute("student");%>
-    <form action="/api/student/edit" method=post role="form" data-toggle="validator">
+    <form action="/api/admin/student/edit" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
             <input type="hidden" id="idStudent" name="idStudent" value="<%= student.getId() %>"/>
 

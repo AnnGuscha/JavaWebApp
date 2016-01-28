@@ -21,15 +21,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/index">Project name</a>
+            <a class="navbar-brand" href="/admin/index">Project name</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" role="navigation">
-                <li><a href="/student" class="navbar-brand">Students</a></li>
-                <li><a href="/professor" class="navbar-brand">Professors</a></li>
-                <li><a href="/course" class="navbar-brand">Courses</a></li>
-                <li><a href="/mark" class="navbar-brand">Marks</a></li>
-                <li><a href="/liststudents" class="navbar-brand">ListStudents</a></li>
+                <li><a href="/admin/student" class="navbar-brand">Students</a></li>
+                <li><a href="/admin/professor" class="navbar-brand">Professors</a></li>
+                <li><a href="/admin/course" class="navbar-brand">Courses</a></li>
+                <li><a href="/admin/mark" class="navbar-brand">Marks</a></li>
+                <li><a href="/admin/liststudents" class="navbar-brand">ListStudents</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="" class="navbar-brand">Hi <%=userName %>

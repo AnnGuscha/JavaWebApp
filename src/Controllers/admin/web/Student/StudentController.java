@@ -13,15 +13,16 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "StudentController",
-        urlPatterns = {"/student"}
+        urlPatterns = {"/admin/student"}
 )
 
 public class StudentController extends HttpServlet {
-    //private static final Logger log = Logger.getLogger(StudentController.class);
+
+    public static final String ADMIN_STUDENT_TABLE_JSP = "/views/admin/student/Table.jsp";
+
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
-        String nextJSP = "/views/admin/student/Table.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_STUDENT_TABLE_JSP);
         dispatcher.forward(request, resp);
     }
 

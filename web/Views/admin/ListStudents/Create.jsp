@@ -17,7 +17,7 @@
 <div class="container">
     <h2>List students</h2>
 
-    <form action="/api/liststudents/create" method=post role="form" data-toggle="validator">
+    <form action="/api/admin/liststudents/create" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
             <input type="hidden" id="id" name="id" value=""/>
 

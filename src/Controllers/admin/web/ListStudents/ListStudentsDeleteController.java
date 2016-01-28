@@ -16,7 +16,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "ListStudentsDeleteController",
-        urlPatterns = {"/liststudents/delete/*"}
+        urlPatterns = {"/admin/liststudents/delete/*"}
 )
 
 public class ListStudentsDeleteController extends HttpServlet {
@@ -28,6 +28,6 @@ public class ListStudentsDeleteController extends HttpServlet {
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
 
         listStudentsService.delete(idParam);
-        response.sendRedirect("/liststudents");
+        response.sendRedirect("/admin/liststudents");
     }
 }

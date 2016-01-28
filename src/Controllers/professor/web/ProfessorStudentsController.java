@@ -18,10 +18,13 @@ import java.io.IOException;
 
 @WebServlet(
         name = "ProfessorStudentsController",
-        urlPatterns = {"/professor_students"}
+        urlPatterns = {"/professor/students"}
 )
 
 public class ProfessorStudentsController extends HttpServlet {
+
+    public static final String COURSE_MODEL_ATTRIBUTE_NAME = "courseModel";
+    public static final String PROFESSOR_PROFESSOR_STUDENTS_JSP = "/views/professor/ProfessorStudents.jsp";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = request.getSession();
@@ -33,9 +36,8 @@ public class ProfessorStudentsController extends HttpServlet {
         int idProfessor = ServiceLocator.getProfessorService().findByUserId(userId).getId();
 
         CourseModel courseModel = ServiceLocator.getCourseService().getCourseModelForProfessor(idProfessor);
-        request.setAttribute("courseModel", courseModel);
-        String nextJSP = "/views/professor/ProfessorStudents.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        request.setAttribute(COURSE_MODEL_ATTRIBUTE_NAME, courseModel);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(PROFESSOR_PROFESSOR_STUDENTS_JSP);
         dispatcher.forward(request, resp);
     }
 }

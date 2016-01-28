@@ -18,11 +18,13 @@ import java.io.IOException;
 
 @WebServlet(
         name = "CourseEditController",
-        urlPatterns = {"/course/edit/*"}
+        urlPatterns = {"/admin/course/edit/*"}
 )
 
 
 public class CourseEditController extends HttpServlet {
+    public static final String COURSE_ATTRIBUTE_NAME = "course";
+    public static final String ADMIN_COURSE_EDIT_JSP = "/views/admin/course/Edit.jsp";
     CourseService markService = ServiceLocator.getCourseService();
 
     //private static final Logger log = Logger.getLogger(StudentController.class);
@@ -36,9 +38,8 @@ public class CourseEditController extends HttpServlet {
 
         //create model
 
-        String nextJSP = "/views/admin/course/Edit.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("course", course);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_COURSE_EDIT_JSP);
+        request.setAttribute(COURSE_ATTRIBUTE_NAME, course);
         dispatcher.forward(request, resp);
     }
 }

@@ -18,7 +18,7 @@
     <p>
         <%= student.getSurName() %> <%= student.getName() %> <%= student.getPatronymicName() %>
     </p>
-    <a href="student_home/edit"> <img src="/content/images/pen-20.png"/></a>
+    <a href="/student/edit"> <img src="/content/images/pen-20.png"/></a>
 </div>
 </body>
 </html>

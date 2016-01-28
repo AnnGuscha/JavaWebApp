@@ -13,7 +13,7 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/student_allcourses",
+            "sAjaxSource": "/api/student/allcourses",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
@@ -21,9 +21,9 @@
                 {
                     "render": function (data, type, row) {
                         if (row.isSubscribed == true)
-                            return ' <a href=\"student/unsubs/' + data + '\">Unsubscribe</a> ';
+                            return ' <a href=\"/api/student/unsubs/' + data + '\">Unsubscribe</a> ';
                         else
-                            return ' <a href=\"student/subs/' + data + '\">Subscribe</a> ';
+                            return ' <a href=\"/api/student/subs/' + data + '\">Subscribe</a> ';
                     },
                     "width": "120px",
                     "targets": 0

@@ -14,16 +14,16 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/professor",
+            "sAjaxSource": "/api/admin/professor",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + "\" href=\"professor/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
+                        return ' <a  data = \"' + data + "\" href=\"/admin/professor/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
                                     //'<a href=\"Details/' + data + '\">Details</a> |' +
-                                ' <a href=\"professor/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
+                                ' <a href=\"/admin/professor/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
                     },
                     "width": "120px",
                     "targets": 0
@@ -33,7 +33,8 @@
                 {"data": "id"},
                 {"data": "firstName"},
                 {"data": "surName"},
-                {"data": "patronymicName"}
+                {"data": "patronymicName"},
+                {"data": "userId"}
             ]
         });
 
@@ -60,7 +61,7 @@
     <h2>Professors</h2>
 
     <p>
-        <a href="professor/create">Create</a>
+        <a href="/admin/professor/create">Create</a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
@@ -69,6 +70,7 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Patronymic Name</th>
+            <th>User id</th>
         </tr>
         </thead>
     </table>

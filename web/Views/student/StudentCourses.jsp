@@ -13,14 +13,14 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/student_courses",
+            "sAjaxSource": "/api/student/courses",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a href=\"student/unsubs/' + data + '\">Unsubscribe</a> ';
+                        return ' <a href=\"/api/student/unsubs/' + data + '\">Unsubscribe</a> ';
                     },
                     "width": "120px",
                     "targets": 0

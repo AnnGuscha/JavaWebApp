@@ -17,7 +17,7 @@
 <div class="container">
     <h2>Professor</h2>
 
-    <form action="/api/professor/create" method=post role="form" data-toggle="validator">
+    <form action="/api/admin/professor/create" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
             <input type="hidden" id="idProfessor" name="idProfessor" value=""/>
 

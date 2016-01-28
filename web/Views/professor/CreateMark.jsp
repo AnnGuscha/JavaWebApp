@@ -24,7 +24,7 @@
         String studentName = student.getSurName() + " " + student.getName() + " " + student.getPatronymicName();
     %>
 
-    <form action="/api/professor_home/create_mark" method=post role="form" data-toggle="validator">
+    <form action="/api/professor/mark/create" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
 
             <label for="idCourse" class="control-label col-xs-4">Course:</label>

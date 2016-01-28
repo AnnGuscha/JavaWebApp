@@ -1,4 +1,4 @@
-package controllers.student.web;
+package controllers.student.api;
 
 import entity.ListStudents;
 import services.ListStudentsService;
@@ -17,31 +17,26 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        name = "StudentSubsCourseController",
-        urlPatterns = {"/student/subs/*"}
+        name = "StudentUnsubsCourseApiController",
+        urlPatterns = {"/api/student/unsubs/*"}
 )
 
-public class StudentSubsCourseController extends HttpServlet {
+public class StudentUnsubsCourseApiController extends HttpServlet {
     ListStudentsService listStudentsService = ServiceLocator.getListStudentsService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String rawParam = request.getPathInfo();
         int idParam = Integer.parseInt(rawParam.split("/")[1]);
-
         HttpSession session = request.getSession();
         int userId = 0;
         if (session.getAttribute("user") == null) {
             response.sendRedirect("/login");
         } else
             userId = Integer.parseInt(session.getAttribute("userId").toString());
-
         int idStudent = ServiceLocator.getStudentService().findByUserId(userId).getId();
-        ListStudents newListStudents = new ListStudents(idParam, idStudent);
-
+        ListStudents listStudents = new ListStudents(idParam, idStudent);
         //get object from dao
-        listStudentsService.insert(newListStudents);
-        //create model
-        response.sendRedirect("/student_courses");
+        listStudentsService.delete(listStudents);
+        response.sendRedirect("/student/courses");
     }
 }

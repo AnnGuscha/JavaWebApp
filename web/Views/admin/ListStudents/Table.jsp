@@ -14,16 +14,16 @@
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "api/liststudents",
+            "sAjaxSource": "/api/admin/liststudents",
             "bProcessing": true,
             "bRetrieve": true,
             "searching": true,
             "columnDefs": [
                 {
                     "render": function (data, type, row) {
-                        return ' <a  data = \"' + data + "\" href=\"liststudents/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
+                        return ' <a  data = \"' + data + "\" href=\"/admin/liststudents/edit/" + data + '\" > <img src="/content/images/pen-20.png"/></a> |' +
                                     //'<a href=\"Details/' + data + '\">Details</a> |' +
-                                ' <a href=\"liststudents/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
+                                ' <a href=\"/admin/liststudents/delete/' + data + '\"><img src="/content/images/delete-20.png"/></a> ';
                     },
                     "width": "120px",
                     "targets": 0
@@ -59,7 +59,7 @@
     <h2>Students and Courses</h2>
 
     <p>
-        <a href="liststudents/create">Create</a>
+        <a href="/admin/liststudents/create">Create</a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>

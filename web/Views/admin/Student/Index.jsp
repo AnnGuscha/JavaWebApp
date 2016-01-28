@@ -18,7 +18,7 @@
 <div class="container">
     <h2>Students</h2>
     <!--Search Form -->
-    <form action="/student" method="get" id="seachStudentForm" role="form">
+    <form action="/admin/student" method="get" id="seachStudentForm" role="form">
         <input type="hidden" id="searchAction" name="searchAction" value="searchByName"/>
 
         <div class="form-group col-xs-5">
@@ -37,7 +37,7 @@
                 ${message}
         </div>
     </c:if>
-    <form action="/student" method="post" id="studentForm" role="form">
+    <form action="/admin/student" method="post" id="studentForm" role="form">
         <input type="hidden" id="idStudent" name="idStudent">
         <input type="hidden" id="action" name="action">
         <c:choose>
@@ -57,7 +57,7 @@
                         </c:if>
                         <tr class="${classSucess}">
                             <td>
-                                <a href="/student?idStudent=${student.getId()}&searchAction=searchById">${student.getId()}</a>
+                                <a href="/admin/student?idStudent=${student.getId()}&searchAction=searchById">${student.getId()}</a>
                             </td>
                             <td>${student.getId()}</td>
                             <td>${student.getName()}</td>

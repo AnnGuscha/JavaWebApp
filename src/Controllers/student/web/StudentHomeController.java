@@ -18,13 +18,14 @@ import java.io.IOException;
  */
 @WebServlet(
         name = "StudentHomeController",
-        urlPatterns = {"/student_home"}
+        urlPatterns = {"/student"}
 )
 
 public class StudentHomeController extends HttpServlet {
+    public static final String STUDENT_STUDENT_HOME_JSP = "/views/student/StudentHome.jsp";
+    public static final String STUDENT_ATTRIBUTE_NAME = "student";
     StudentService studentService = ServiceLocator.getStudentService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = request.getSession();
@@ -32,11 +33,11 @@ public class StudentHomeController extends HttpServlet {
         if (session.getAttribute("user") == null) {
             resp.sendRedirect("/login");
         } else userId = Integer.parseInt(session.getAttribute("userId").toString());
+
         Student curStudent = studentService.findByUserId(userId);
 
-        String nextJSP = "/views/student/StudentHome.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
-        request.setAttribute("student", curStudent);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(STUDENT_STUDENT_HOME_JSP);
+        request.setAttribute(STUDENT_ATTRIBUTE_NAME, curStudent);
         dispatcher.forward(request, resp);
     }
 

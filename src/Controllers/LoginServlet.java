@@ -24,7 +24,7 @@ import java.io.PrintWriter;
         name = "LoginServlet",
         urlPatterns = {"/login"}
 )
-@ServletRole(role = Role.Anonymous)
+@ServletRole(role = Role.ANONYMOUS)
 public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -32,14 +32,14 @@ public class LoginServlet extends HttpServlet {
 
     private static String getDefaultPage(User user) {
         switch (Role.values()[user.getRole()]) {
-            case Admin:
-                return "/index";
-            case Professor:
-                return "/professor_home";
-            case Student:
-                return "/student_home";
+            case ADMIN:
+                return "/admin/index";
+            case PROFESSOR:
+                return "/professor";
+            case STUDENT:
+                return "/student";
             default:
-                return "hello,jsp";
+                return "hello.jsp";
         }
     }
 

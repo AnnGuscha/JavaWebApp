@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 
 @WebServlet(
         name = "ProfessorStudentsApiController",
-        urlPatterns = {"/api/professor_students"}
+        urlPatterns = {"/api/professor/students"}
 )
 
 public class ProfessorStudentsApiController extends HttpServlet {

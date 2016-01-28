@@ -21,7 +21,7 @@
         MarkModel mark = (MarkModel) request.getAttribute("mark");
     %>
 
-    <form action="/api/professor_home/edit_mark" method=post role="form" data-toggle="validator">
+    <form action="/api/professor/mark/edit" method=post role="form" data-toggle="validator">
         <div class="form-group col-xs-4">
             <input type="hidden" id="idMark" name="idMark" value="<%= mark.getId() %>"/>
 
