@@ -7849,3 +7849,37 @@ Find record in database.
 Find record in database.
 Find record in database.
 Find 3 records in database.
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 9 records in database.
+Found 9 entities
