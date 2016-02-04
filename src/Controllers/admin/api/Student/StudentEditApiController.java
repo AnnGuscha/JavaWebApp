@@ -1,6 +1,7 @@
 package controllers.admin.api.Student;
 
 import entity.Student;
+import services.ServiceException;
 import services.ServiceLocator;
 import services.StudentService;
 
@@ -23,7 +24,6 @@ public class StudentEditApiController extends HttpServlet {
 
     StudentService studentService = ServiceLocator.getStudentService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //parse sanded student
@@ -34,7 +34,11 @@ public class StudentEditApiController extends HttpServlet {
         int userId = Integer.parseInt(request.getParameter("userId"));
         //dao/service update stud
         Student newStudent = new Student(id, name, surName, patronymicName, userId);
-        studentService.update(newStudent);
+        try {
+            studentService.update(newStudent);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
         //redirect
 
         response.sendRedirect("/admin/student");

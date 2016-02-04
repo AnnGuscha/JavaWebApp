@@ -2,6 +2,7 @@ package controllers.admin.api.ListStudents;
 
 import entity.ListStudents;
 import services.ListStudentsService;
+import services.ServiceException;
 import services.ServiceLocator;
 
 import javax.servlet.ServletException;
@@ -31,7 +32,11 @@ public class ListStudentsEditApiController extends HttpServlet {
 
         //choice model or entity
         ListStudents listStudents = new ListStudents(id, idCourse, idStudent);
-        listStudentsService.update(listStudents);
+        try {
+            listStudentsService.update(listStudents);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
 
         response.sendRedirect("/admin/liststudents");
     }

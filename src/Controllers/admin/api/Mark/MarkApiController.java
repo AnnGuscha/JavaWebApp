@@ -7,6 +7,7 @@ import dto.JsonDTO;
 import entity.Mark;
 import services.MarkService;
 import services.ServiceLocator;
+import util.DataTableUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,26 +29,13 @@ public class MarkApiController extends HttpServlet {
 
     MarkService markService = ServiceLocator.getMarkService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        JQueryDataTableParamModel param = getRequestParam(request);
+        JQueryDataTableParamModel param = DataTableUtil.getRequestParam(request);
 
         String json = getJsonAll(param);
 
         responseJson(response, json);
-    }
-
-    private JQueryDataTableParamModel getRequestParam(HttpServletRequest request) {
-        JQueryDataTableParamModel param = new JQueryDataTableParamModel();
-        param.sEcho = request.getParameter("sEcho");
-        param.iColumns = Integer.parseInt(request.getParameter("iColumns"));
-        param.iDisplayLength = Integer.parseInt(request.getParameter("iDisplayLength"));
-        param.iDisplayStart = Integer.parseInt(request.getParameter("iDisplayStart"));
-        param.iSortingCols = Integer.parseInt(request.getParameter("iSortingCols"));
-        param.sSearch = request.getParameter("sSearch");
-        param.sColumns = request.getParameter("sColumns");
-        return param;
     }
 
     private void responseJson(HttpServletResponse response, String json) throws IOException {

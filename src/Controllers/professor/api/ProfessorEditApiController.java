@@ -2,6 +2,7 @@ package controllers.professor.api;
 
 import entity.Professor;
 import services.ProfessorService;
+import services.ServiceException;
 import services.ServiceLocator;
 
 import javax.servlet.ServletException;
@@ -40,7 +41,11 @@ public class ProfessorEditApiController extends HttpServlet {
         String patronymicName = request.getParameter("patronymicName");
         //dao/service update stud
         Professor professor = new Professor(id, name, surName, patronymicName, userId);
-        professorService.update(professor);
+        try {
+            professorService.update(professor);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
         //redirect
 
         response.sendRedirect("/professor");

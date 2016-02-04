@@ -1,12 +1,13 @@
-package controllers.admin.api.Professor;
+package controllers.admin.api.user;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
-import entity.Professor;
-import services.ProfessorService;
+import entity.User;
 import services.ServiceLocator;
+import services.UserService;
+import util.DataTableUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,26 +21,21 @@ import java.util.List;
  * Created by Anna on 12/13/2015.
  */
 @WebServlet(
-        name = "ProfessorApiController",
-        urlPatterns = {"/api/admin/professor"}
+        name = "UserApiController",
+        urlPatterns = {"/api/admin/user"}
 )
 
-public class ProfessorApiController extends HttpServlet {
+public class UserApiController extends HttpServlet {
 
-    ProfessorService professorService = ServiceLocator.getProfessorService();
+    UserService userService = ServiceLocator.getUserService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        JQueryDataTableParamModel param = getRequestParam(request);
+        JQueryDataTableParamModel param = DataTableUtil.getRequestParam(request);
 
         String json = getJsonAll(param);
 
         responseJson(response, json);
-    }
-
-    private JQueryDataTableParamModel getRequestParam(HttpServletRequest request) {
-        JQueryDataTableParamModel param = new JQueryDataTableParamModel(request);
-        return param;
     }
 
     private void responseJson(HttpServletResponse response, String json) throws IOException {
@@ -49,9 +45,9 @@ public class ProfessorApiController extends HttpServlet {
     }
 
     private String getJsonAll(JQueryDataTableParamModel param) {
-        List<Professor> professorList = professorService.getAll();
-        int size = professorList.size();
-        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, professorList);
+        List<User> userList = userService.getAll();
+        int size = userList.size();
+        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, userList);
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();

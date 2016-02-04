@@ -1,6 +1,7 @@
 package services;
 
 
+import dao.DAOException;
 import dao.ParticularQueriesDAO;
 import entity.extended.CourseExtend;
 import entity.extended.MarkExtend;
@@ -8,6 +9,7 @@ import entity.extended.StudentExtend;
 import models.professor.MarkModel;
 import models.professor.StudentsForProfessorModel;
 import models.student.CourseModel;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.List;
  * Created by Anna on 12/18/2015.
  */
 public class ParticularService {
+    private static Logger Log = Logger.getLogger(ParticularService.class.getName());
     private static ParticularService ourInstance = new ParticularService();
     private ParticularQueriesDAO particularQueriesDAO;
 
@@ -28,81 +31,132 @@ public class ParticularService {
     }
 
     public List<CourseModel> getCoursesForStudent(int id) {
+        List<CourseExtend> courseExtendList = null;
+        List<CourseModel> courseModelList = null;
+        try {
+            courseExtendList = particularQueriesDAO.getCoursesForStudent(id);
+            Log.info("Found courses for student with id=" + id);
 
-        List<CourseExtend> courseExtentdList = particularQueriesDAO.getCoursesForStudent(id);
-
-        List<CourseModel> courseModelList = new ArrayList<>();
-
-        for (CourseExtend item : courseExtentdList) {
-            CourseModel courseModel = new CourseModel();
-            courseModel.setId(item.getId());
-            courseModel.setName(item.getName());
-            courseModel.setIdProfessor(item.getIdProfessor());
-            courseModel.setDescription(item.getDescription());
-            courseModel.setNameProfessor(item.getNameProfessor());
-            courseModel.setMark(item.getMark() != null ? item.getMark() : "");
-            courseModel.setSubscribed(true);
-            courseModelList.add(courseModel);
+            courseModelList = new ArrayList<>();
+            for (CourseExtend item : courseExtendList) {
+                CourseModel courseModel = new CourseModel();
+                courseModel.setId(item.getId());
+                courseModel.setName(item.getName());
+                courseModel.setIdProfessor(item.getIdProfessor());
+                courseModel.setDescription(item.getDescription());
+                courseModel.setNameProfessor(item.getNameProfessor());
+                courseModel.setMark(item.getMark() != null ? item.getMark() : "");
+                courseModel.setSubscribed(true);
+                courseModelList.add(courseModel);
+            }
+            Log.info("Created model courses for student with id=" + id);
+        } catch (DAOException e) {
+            Log.error("Can not find courses for student with id=" + id);
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return courseModelList;
         }
-        return courseModelList;
+
     }
 
     public List<CourseModel> getAllCourses(int id) {
-        List<CourseExtend> courseExtentdList = particularQueriesDAO.getCourses(id);
-
-        List<CourseModel> courseModelList = new ArrayList<>();
-
-        for (CourseExtend item : courseExtentdList) {
-            CourseModel courseModel = new CourseModel();
-            courseModel.setId(item.getId());
-            courseModel.setName(item.getName());
-            courseModel.setIdProfessor(item.getIdProfessor());
-            courseModel.setDescription(item.getDescription());
-            courseModel.setNameProfessor(item.getNameProfessor());
-            courseModel.setSubscribed(item.getIsSubscription());
-            courseModelList.add(courseModel);
+        List<CourseExtend> courseExtendList = null;
+        List<CourseModel> courseModelList = null;
+        try {
+            courseExtendList = particularQueriesDAO.getCourses(id);
+            Log.info("Found courses for student with id=" + id);
+            courseModelList = new ArrayList<>();
+            for (CourseExtend item : courseExtendList) {
+                CourseModel courseModel = new CourseModel();
+                courseModel.setId(item.getId());
+                courseModel.setName(item.getName());
+                courseModel.setIdProfessor(item.getIdProfessor());
+                courseModel.setDescription(item.getDescription());
+                courseModel.setNameProfessor(item.getNameProfessor());
+                courseModel.setSubscribed(item.getIsSubscription());
+                courseModelList.add(courseModel);
+            }
+            Log.info("Created model for courses with id=" + id);
+        } catch (DAOException e) {
+            Log.info("Can not find courses with id=" + id);
+            e.printStackTrace();
+            throw new ServiceException("Can not find");
+        } finally {
+            return courseModelList;
         }
-        return courseModelList;
     }
 
     public List<StudentsForProfessorModel> getStudentsByCourse(int idCourse) {
 
-        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByCourse(idCourse);
-
-        List<StudentsForProfessorModel> studentsModelList = new ArrayList<>();
-        for (StudentExtend item : studentExtendList) {
-            StudentsForProfessorModel studentsModel = new StudentsForProfessorModel();
-            studentsModel.setId(item.getId());
-            studentsModel.setName(item.getName());
-            studentsModelList.add(studentsModel);
+        List<StudentExtend> studentExtendList = null;
+        List<StudentsForProfessorModel> studentsModelList = null;
+        try {
+            studentExtendList = particularQueriesDAO.getStudentsByCourse(idCourse);
+            Log.info("Found students with idCourse=" + idCourse);
+            studentsModelList = new ArrayList<>();
+            for (StudentExtend item : studentExtendList) {
+                StudentsForProfessorModel studentsModel = new StudentsForProfessorModel();
+                studentsModel.setId(item.getId());
+                studentsModel.setName(item.getName());
+                studentsModelList.add(studentsModel);
+            }
+            Log.info("Created model for students with idCourse=" + idCourse);
+        } catch (DAOException e) {
+            Log.info("Can not find students with idCourse=" + idCourse);
+            e.printStackTrace();
+            throw new ServiceException("Can not find");
+        } finally {
+            return studentsModelList;
         }
-        return studentsModelList;
     }
 
     public List<StudentsForProfessorModel> getStudentsByProfessor(int idProfessor) {
 
-        List<StudentExtend> studentExtendList = particularQueriesDAO.getStudentsByProfessor(idProfessor);
-
-        List<StudentsForProfessorModel> studentsModelList = new ArrayList<>();
-        for (StudentExtend item : studentExtendList) {
-            StudentsForProfessorModel studentsModel = new StudentsForProfessorModel();
-            studentsModel.setId(item.getId());
-            studentsModel.setName(item.getSurName() + " " + item.getName() + " " + item.getPatronymicName());
-            studentsModel.setMark(item.getMark());
-            studentsModelList.add(studentsModel);
+        List<StudentExtend> studentExtendList = null;
+        List<StudentsForProfessorModel> studentsModelList = null;
+        try {
+            studentExtendList = particularQueriesDAO.getStudentsByProfessor(idProfessor);
+            Log.info("Found students with idProfessor=" + idProfessor);
+            studentsModelList = new ArrayList<>();
+            for (StudentExtend item : studentExtendList) {
+                StudentsForProfessorModel studentsModel = new StudentsForProfessorModel();
+                studentsModel.setId(item.getId());
+                studentsModel.setName(item.getSurName() + " " + item.getName() + " " + item.getPatronymicName());
+                studentsModel.setMark(item.getMark());
+                studentsModelList.add(studentsModel);
+            }
+            Log.info("Created model for students with idProfessor=" + idProfessor);
+        } catch (DAOException e) {
+            Log.info("Can not find students with idProfessor=" + idProfessor);
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return studentsModelList;
         }
-        return studentsModelList;
     }
 
     public MarkModel findMark(int idCourse, int idStudent) {
-        MarkModel model = new MarkModel();
-        MarkExtend mark = particularQueriesDAO.find(idCourse, idStudent);
-        model.setId(mark.getId());
-        model.setIdStudent(mark.getIdStudent());
-        model.setIdCourse(mark.getIdCourse());
-        model.setNameStudent(mark.getNameStudent());
-        model.setNameCourse(mark.getNameCourse());
-        model.setComment(mark.getComment());
-        return model;
+        MarkModel model = null;
+        MarkExtend mark = null;
+        try {
+            mark = particularQueriesDAO.find(idCourse, idStudent);
+            Log.info("Found mark");
+            model = new MarkModel();
+            model.setId(mark.getId());
+            model.setIdStudent(mark.getIdStudent());
+            model.setIdCourse(mark.getIdCourse());
+            model.setNameStudent(mark.getNameStudent());
+            model.setNameCourse(mark.getNameCourse());
+            model.setComment(mark.getComment());
+            Log.info("Created model for mark");
+        } catch (DAOException e) {
+            Log.error("Can not find mark");
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return model;
+        }
+
     }
 }

@@ -1,4 +1,4 @@
-package controllers.admin.web;
+package controllers.admin.web.User;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,21 +9,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Anna on 12/20/2015.
+ * Created by Anna on 12/13/2015.
  */
 
 @WebServlet(
-        name = "AdminController",
-        urlPatterns = {"/admin"}
+        name = "UserController",
+        urlPatterns = {"/admin/user"}
 )
 
-public class AdminController extends HttpServlet {
+public class UserController extends HttpServlet {
 
-    public static final String ADMIN_INDEX_JSP = "/views/admin/index.jsp";
+    public static final String ADMIN_USER_TABLE_JSP = "/views/admin/user/Table.jsp";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_INDEX_JSP);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_USER_TABLE_JSP);
         dispatcher.forward(request, resp);
     }
+
 }

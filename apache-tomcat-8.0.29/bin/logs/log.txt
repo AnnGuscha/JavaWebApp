@@ -7883,3 +7883,2985 @@ Find 6 records in database.
 Found 6 entities
 Find 9 records in database.
 Found 9 entities
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Not find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 9 records in database.
+Found 9 entities
+Find 7 records in database.
+Found 7 entities
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Insert record in database.
+Created entity
+Find 3 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Delete from database 1 records.
+Deleted entity
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Not find record in database.
+Found user with login=?????????µ????
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 9 records in database.
+Found 9 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 4
+Found entity with id=4
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 4
+Found entity with id=4
+Find 4 records in database.
+Found 4 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 4
+Found entity with id=4
+Update in database 1 records.
+Updated entity
+Find 4 records in database.
+Found 4 entities
+Delete from database 1 records.
+Deleted entity
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 3 records in database.
+Found 3 entities
+Find record in database.
+Found user with login=admin
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 3 records in database.
+Found 3 entities
+Find 3 records in database.
+Found 3 entities
+Insert record in database.
+Created entity
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 5
+Found entity with id=5
+Update in database 1 records.
+Updated entity
+Find 4 records in database.
+Found 4 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find record in database with id = 1
+Found student with idUser=1
+Find 7 records in database.
+Found 7 entities
+Find 4 records in database.
+Found 4 entities
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=admin
+Find 4 records in database.
+Found 4 entities
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Find record in database.
+Found user with login=student
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Error:
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at manager.ConnectionPool.getConnection(ConnectionPool.java:53)
+	at manager.ConnectionPool.retrieve(ConnectionPool.java:64)
+	at dao.mysql.MySQLUserDAO.find(MySQLUserDAO.java:59)
+	at services.UserService.find(UserService.java:35)
+	at controllers.LoginServlet.doGet(LoginServlet.java:72)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at filters.AuthenticationFilter.doFilter(AuthenticationFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Find record in database with id = 1
+Found student with idUser=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found student with idUser=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 7 records in database.
+Found 7 entities
+Find 6 records in database.
+Found 6 entities
+Find 9 records in database.
+Found 9 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find record in database with id = 4
+Found entity with id=4
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find 4 records in database.
+Found 4 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Not find record in database with id = 0
+Found entity with id=0
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Not find record in database with id = 0
+Found entity with id=0
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Find record in database.
+Found user with login=admin
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find 4 records in database.
+Found 4 entities
+Find 4 records in database.
+Found 4 entities
+Find 9 records in database.
+Found 9 entities
+Find 5 records in database.
+Found 5 entities
+Find 7 records in database.
+Found 7 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 9 records in database.
+Found 9 entities
+Find 6 records in database.
+Found 6 entities
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 1
+Found entity with id=1
+Find 4 records in database.
+Found 4 entities
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found user with login=admin
+Find 4 records in database.
+Found 4 entities
+Find 9 records in database.
+Found 9 entities
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Create pool connection.
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found mark
+Created model for mark
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Insert record in database.
+Created entity
+Find 3 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Delete from database 1 records.
+Deleted entity
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found entity with id=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 7 records in database.
+Found 7 entities
+Find record in database with id = 5
+Found entity with id=5
+Find 7 records in database.
+Found 7 entities
+Insert record in database.
+Created entity
+Find 8 records in database.
+Found 8 entities
+Delete from database 1 records.
+Deleted entity
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Insert record in database.
+Created entity
+Insert record in database.
+Created entity
+Find 7 records in database.
+Found 7 entities
+Delete from database 1 records.
+Deleted entity
+Find 6 records in database.
+Found 6 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 5 records in database.
+Found 5 entities
+Find 9 records in database.
+Found 9 entities
+Find 9 records in database.
+Found 9 entities
+Find 4 records in database.
+Found 4 entities
+Find 4 records in database.
+Found 4 entities
+Find 4 records in database.
+Found 4 entities
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database with id = 0
+Found student with idUser=0
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 6 records in database.
+Found 6 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find record in database with id = 6
+Found entity with id=6
+Update in database 1 records.
+Updated entity
+Find 6 records in database.
+Found 6 entities
+Delete from database 1 records.
+Deleted entity
+Find 5 records in database.
+Found 5 entities
+Find 9 records in database.
+Found 9 entities
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database.
+Found user with login=admin
+Find 5 records in database.
+Found 5 entities
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=2
+Created model for courses with id=2
+Find 2 records in database.
+Found courses for student with id=2
+Created model courses for student with id=2
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Update in database 1 records.
+Updated entity
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Update in database 1 records.
+Updated entity
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Update in database 1 records.
+Updated entity
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find 4 records in database.
+Found 4 entities
+Find record in database with id = 3
+Found entity with id=3
+Update in database 1 records.
+Updated entity
+Find 4 records in database.
+Found 4 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Create pool connection.
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found student with idUser=2
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Create pool connection.
+Not find record in database.
+Find record in database.
+Found user with login=1
+Insert record in database.
+Created entity
+Find record in database.
+Found user with login=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find record in database.
+Find record in database.
+Found user with login=1
+Not find record in database.
+Find record in database.
+Found user with login=2
+Insert record in database.
+Created entity
+Find record in database.
+Found user with login=2
+Insert record in database.
+Created entity
+Not find record in database with id = 7
+Found student with idUser=7
+Create pool connection.
+Find 8 records in database.
+Found 8 entities
+Find record in database.
+Found user with login=admin
+Find 8 records in database.
+Found 8 entities
+Find 6 records in database.
+Found 6 entities
+Delete from database 1 records.
+Deleted entity
+Find 5 records in database.
+Found 5 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 8 records in database.
+Found 8 entities
+Delete from database 1 records.
+Deleted entity
+Find 7 records in database.
+Found 7 entities
+Not find record in database.
+Find record in database.
+Found user with login=2
+Insert record in database.
+Created entity
+Find record in database.
+Found user with login=2
+Insert record in database.
+Created entity
+Not find record in database with id = 8
+Found student with idUser=8
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 8 records in database.
+Found 8 entities
+Find record in database.
+Find record in database.
+Found user with login=2
+Not find record in database.
+Find record in database.
+Found user with login=3
+Insert record in database.
+Created entity
+Find record in database.
+Found user with login=3
+Insert record in database.
+Created entity
+Find record in database with id = 9
+Found student with idUser=9
+Find 9 records in database.
+Found 9 entities
+Find 7 records in database.
+Found 7 entities
+Delete from database 1 records.
+Deleted entity
+Find 6 records in database.
+Found 6 entities
+Delete from database 1 records.
+Deleted entity
+Find 5 records in database.
+Found 5 entities
+Delete from database 1 records.
+Deleted entity
+Find 4 records in database.
+Found 4 entities
+Delete from database 1 records.
+Deleted entity
+Find 3 records in database.
+Found 3 entities
+Find 9 records in database.
+Found 9 entities
+Delete from database 1 records.
+Deleted entity
+Find 8 records in database.
+Found 8 entities
+Delete from database 1 records.
+Deleted entity
+Find 7 records in database.
+Found 7 entities
+Create pool connection.
+Not find record in database.
+Find record in database.
+Found user with login=1
+Insert record in database.
+Created entity
+Find record in database.
+Found user with login=1
+Insert record in database.
+Created entity
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database.
+Found user with login=2
+Find record in database.
+Found user with login=1
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database with id = 10
+Found student with idUser=10
+Not find record in database with id = 10
+Found student with idUser=10
+Find record in database.
+Found user with login=admin
+Find 8 records in database.
+Found 8 entities
+Find record in database.
+Found user with login=1
+Not find record in database with id = 10
+Found student with idUser=10
+Create pool connection.
+Find record in database.
+Found user with login=1
+Find record in database.
+Found student with idUser=10
+Not find record in database with id = 10
+Found entity with id=10
+Create pool connection.
+Find record in database.
+Found user with login=1
+Find record in database.
+Found student with idUser=10
+Find record in database.
+Found student with idUser=10
+Update in database 1 records.
+Updated entity
+Find record in database.
+Found student with idUser=10
+Find 0 records in database.
+Found courses for student with id=10
+Created model courses for student with id=10
+Find record in database.
+Found student with idUser=10
+Find 5 records in database.
+Found courses for student with id=11
+Created model for courses with id=11
+Find record in database.
+Found student with idUser=10
+Insert record in database.
+Created entity
+Find 0 records in database.
+Found courses for student with id=10
+Created model courses for student with id=10
+Find record in database.
+Found student with idUser=10
+Find 5 records in database.
+Found courses for student with id=11
+Created model for courses with id=11
+Find record in database.
+Found student with idUser=10
+Insert record in database.
+Created entity
+Find 0 records in database.
+Found courses for student with id=10
+Created model courses for student with id=10
+Find 0 records in database.
+Found courses for student with id=10
+Created model courses for student with id=10
+Find record in database.
+Found student with idUser=10
+Find 5 records in database.
+Found courses for student with id=11
+Created model for courses with id=11
+Create pool connection.
+Find record in database.
+Found user with login=1
+Find record in database.
+Found student with idUser=10
+Find record in database.
+Found student with idUser=10
+Find 2 records in database.
+Found courses for student with id=11
+Created model courses for student with id=11
+Find record in database.
+Found student with idUser=10
+Delete from database 1 records.
+Deleted entity
+Find record in database.
+Found student with idUser=10
+Find 1 records in database.
+Found courses for student with id=11
+Created model courses for student with id=11
+Find record in database.
+Found student with idUser=10
+Find 5 records in database.
+Found courses for student with id=11
+Created model for courses with id=11
+Find record in database.
+Found student with idUser=10
+Find 1 records in database.
+Found courses for student with id=11
+Created model courses for student with id=11
+Find record in database.
+Found student with idUser=10
+Delete from database 1 records.
+Deleted entity
+Find record in database.
+Found student with idUser=10
+Find 0 records in database.
+Found courses for student with id=11
+Created model courses for student with id=11
+Find record in database.
+Found student with idUser=10
+Find 5 records in database.
+Found courses for student with id=11
+Created model for courses with id=11
+Find record in database.
+Found student with idUser=10
+Find record in database.
+Found student with idUser=10
+Find record in database.
+Found user with login=admin
+Find 8 records in database.
+Found 8 entities
+Delete from database 1 records.
+Deleted entity
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 9 records in database.
+Found 9 entities
+Find 4 records in database.
+Found 4 entities
+Delete from database 1 records.
+Deleted entity
+Find 3 records in database.
+Found 3 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 7 records in database.
+Found 7 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Delete from database 0 records.
+Deleted entity

@@ -1,16 +1,18 @@
 package services;
 
+import dao.BaseDAO;
+import dao.DAOException;
 import dao.ListStudentsDAO;
 import entity.ListStudents;
-
-import java.util.List;
+import org.apache.log4j.Logger;
 
 /**
  * Created by Anna on 12/13/2015.
  */
-public class ListStudentsService {
+public class ListStudentsService extends BaseService<ListStudents> {
+    private static Logger Log = Logger.getLogger(ListStudentsService.class.getName());
     private static ListStudentsService ourInstance = new ListStudentsService();
-    private ListStudentsDAO listStudentsDAO;
+    private static ListStudentsDAO listStudentsDAO;// = ServiceLocator.getFactory().getListStudentsDAO();
 
     private ListStudentsService() {
         listStudentsDAO = ServiceLocator.getFactory().getListStudentsDAO();
@@ -20,27 +22,22 @@ public class ListStudentsService {
         return ourInstance;
     }
 
-    public List<ListStudents> getAll() {
-        return listStudentsDAO.getAll();
-    }
-
-    public ListStudents find(int id) {
-        return listStudentsDAO.find(id);
-    }
-
-    public int insert(ListStudents listStudents) {
-        return listStudentsDAO.insert(listStudents);
-    }
-
-    public boolean update(ListStudents newListStudents) {
-        return listStudentsDAO.update(newListStudents);
-    }
-
-    public boolean delete(int id) {
-        return listStudentsDAO.delete(id);
+    @Override
+    BaseDAO getDAO() {
+        return listStudentsDAO;
     }
 
     public boolean delete(ListStudents listStudents) {
-        return listStudentsDAO.delete(listStudents);
+        boolean result = false;
+        try {
+            result = listStudentsDAO.delete(listStudents);
+            Log.info("Deleted entity");
+        } catch (DAOException e) {
+            Log.error("Can not delete entity");
+            e.printStackTrace();
+            throw new ServiceException("Can not update", e);
+        } finally {
+            return result;
+        }
     }
 }

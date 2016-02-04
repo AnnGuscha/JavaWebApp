@@ -2,6 +2,7 @@ package controllers.admin.api.Mark;
 
 import entity.Mark;
 import services.MarkService;
+import services.ServiceException;
 import services.ServiceLocator;
 
 import javax.servlet.ServletException;
@@ -32,7 +33,11 @@ public class MarkEditApiController extends HttpServlet {
 
         //choice model or entity
         Mark newMark = new Mark(id, idCourse, idStudent, comment);
-        markService.update(newMark);
+        try {
+            markService.update(newMark);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
 
         response.sendRedirect("/admin/mark");
     }

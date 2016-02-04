@@ -1,16 +1,18 @@
 package services;
 
+import dao.BaseDAO;
+import dao.DAOException;
 import dao.UserDAO;
 import entity.User;
-
-import java.util.List;
+import org.apache.log4j.Logger;
 
 /**
  * Created by Anna on 12/21/2015.
  */
-public class UserService {
+public class UserService extends BaseService<User> {
+    private static Logger Log = Logger.getLogger(UserService.class.getName());
     private static UserService ourInstance = new UserService();
-    private UserDAO userDAO;
+    private static UserDAO userDAO ;//= ServiceLocator.getFactory().getUserDAO();
 
     private UserService() {
         userDAO = ServiceLocator.getFactory().getUserDAO();
@@ -20,31 +22,36 @@ public class UserService {
         return ourInstance;
     }
 
-    public List<User> getAll() {
-        return userDAO.getAll();
+    @Override
+    BaseDAO getDAO() {
+        return userDAO;
     }
 
-    public User find(int id) {
-        return userDAO.find(id);
-    }
-
-    public User find(String login, String pwd) {
-        return userDAO.find(login, pwd);
+    public User find(String login, String pwd) throws ServiceException{
+        User entity = null;
+        try {
+            entity = userDAO.find(login, pwd);
+            Log.info("Found user with login=" + login);
+        } catch (DAOException e) {
+            Log.error("Can not find user with login=" + login, e);
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return entity;
+        }
     }
 
     public User find(String login) {
-        return userDAO.find(login);
-    }
-
-    public int insert(User user) {
-        return userDAO.insert(user);
-    }
-
-    public boolean update(User newUser) {
-        return userDAO.update(newUser);
-    }
-
-    public boolean delete(int id) {
-        return userDAO.delete(id);
+        User entity = null;
+        try {
+            entity = userDAO.find(login);
+            Log.info("Found user with login=" + login);
+        } catch (DAOException e) {
+            Log.error("Can not find user with login=" + login, e);
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return entity;
+        }
     }
 }

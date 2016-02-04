@@ -69,14 +69,10 @@ public class ProfessorStudentsApiController extends HttpServlet {
         if (sSearch != null)
             studentList = studentList.stream().filter(item -> item.getName().toLowerCase().contains(sSearch.toLowerCase())).collect(Collectors.toList());
 
-//sorting
+        //sorting
         int sortColumnIndex = param.iSortCol_0;
         String sortDirection = param.sSortDir_0;// asc or desc
         switch (sortColumnIndex) {
-//            case 0: {
-//                studentList = (studentList.stream().sorted((item1, item2) -> Integer.compare(item1.getId(), item2.getId()))).collect(Collectors.toList());
-//            }
-//            break;
             case 0: {
                 studentList = (studentList.stream().sorted((item1, item2) -> item1.getName().compareTo(item2.getName()))).collect(Collectors.toList());
             }

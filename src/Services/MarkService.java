@@ -1,16 +1,18 @@
 package services;
 
+import dao.BaseDAO;
+import dao.DAOException;
 import dao.MarkDAO;
 import entity.Mark;
-
-import java.util.List;
+import org.apache.log4j.Logger;
 
 /**
  * Created by Anna on 12/13/2015.
  */
-public class MarkService {
+public class MarkService extends BaseService<Mark>{
+    private static Logger Log = Logger.getLogger(MarkService.class.getName());
     private static MarkService ourInstance = new MarkService();
-    private MarkDAO markDAO;
+    private static MarkDAO markDAO ;//= ServiceLocator.getFactory().getMarkDAO();
 
     private MarkService() {
         markDAO = ServiceLocator.getFactory().getMarkDAO();
@@ -20,31 +22,36 @@ public class MarkService {
         return ourInstance;
     }
 
-    public List<Mark> getAll() {
-        return markDAO.getAll();
-    }
-
-    public Mark find(int id) {
-        return markDAO.find(id);
+    @Override
+    BaseDAO getDAO() {
+        return markDAO;
     }
 
     public Mark find(int idCourse, int idStudent) {
-        return markDAO.find(idCourse, idStudent);
-    }
-
-    public int insert(Mark mark) {
-        return markDAO.insert(mark);
-    }
-
-    public boolean update(Mark newMark) {
-        return markDAO.update(newMark);
-    }
-
-    public boolean delete(int id) {
-        return markDAO.delete(id);
+        Mark entity = null;
+        try {
+            entity = markDAO.find(idCourse, idStudent);
+            Log.info("Found mark with idCourse=" + idCourse + " and idStudent=" + idStudent);
+        } catch (DAOException e) {
+            Log.error("Can not find entity");
+            e.printStackTrace();
+            throw new ServiceException("Can not find ", e);
+        } finally {
+            return entity;
+        }
     }
 
     public boolean delete(Mark mark) {
-        return markDAO.delete(mark);
+        boolean result = false;
+        try {
+            result = markDAO.delete(mark);
+            Log.info("Deleted mark");
+        } catch (DAOException e) {
+            Log.error("Can not find entity");
+            e.printStackTrace();
+            throw new ServiceException("Can not find ", e);
+        } finally {
+            return result;
+        }
     }
 }

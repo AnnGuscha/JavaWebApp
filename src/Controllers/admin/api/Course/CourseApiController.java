@@ -6,6 +6,7 @@ import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
 import entity.Course;
 import services.CourseService;
+import services.ServiceException;
 import services.ServiceLocator;
 
 import javax.servlet.ServletException;
@@ -28,7 +29,6 @@ public class CourseApiController extends HttpServlet {
 
     CourseService courseService = ServiceLocator.getCourseService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         JQueryDataTableParamModel param = getRequestParam(request);
@@ -89,7 +89,11 @@ public class CourseApiController extends HttpServlet {
 
             //choice model or entity
             Course newCourse = new Course(id, name, idProfessor, description);
-            courseService.update(newCourse);
+            try {
+                courseService.update(newCourse);
+            } catch (ServiceException e) {
+                e.printStackTrace();
+            }
 
             response.sendRedirect("/admin/course");
         }

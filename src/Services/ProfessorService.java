@@ -1,16 +1,19 @@
 package services;
 
+import dao.BaseDAO;
+import dao.DAOException;
 import dao.ProfessorDAO;
 import entity.Professor;
-
-import java.util.List;
+import org.apache.log4j.Logger;
 
 /**
  * Created by Anna on 12/13/2015.
  */
-public class ProfessorService {
+public class ProfessorService extends BaseService<Professor>{
+
+    private static Logger Log = Logger.getLogger(ProfessorService.class.getName());
     private static ProfessorService ourInstance = new ProfessorService();
-    private ProfessorDAO professorDAO;
+    private static ProfessorDAO professorDAO;//= ServiceLocator.getFactory().getProfessorDAO();
 
     private ProfessorService() {
         professorDAO = ServiceLocator.getFactory().getProfessorDAO();
@@ -20,27 +23,22 @@ public class ProfessorService {
         return ourInstance;
     }
 
-    public List<Professor> getAll() {
-        return professorDAO.getAll();
-    }
-
-    public Professor find(int id) {
-        return professorDAO.find(id);
+    @Override
+    BaseDAO getDAO() {
+        return ServiceLocator.getFactory().getProfessorDAO();
     }
 
     public Professor findByUserId(int userId) {
-        return professorDAO.findByUserId(userId);
-    }
-
-    public int insert(Professor professor) {
-        return professorDAO.insert(professor);
-    }
-
-    public boolean update(Professor newProfessor) {
-        return professorDAO.update(newProfessor);
-    }
-
-    public boolean delete(int id) {
-        return professorDAO.delete(id);
+        Professor entity=null;
+        try {
+            entity = professorDAO.findByUserId(userId);
+            Log.info("Found professor with idUser="+userId);
+        } catch (DAOException e) {
+            Log.error("Can not find professor with idUser="+userId);
+            e.printStackTrace();
+            throw new ServiceException("Can not find ",e);
+        }finally {
+            return entity;
+        }
     }
 }

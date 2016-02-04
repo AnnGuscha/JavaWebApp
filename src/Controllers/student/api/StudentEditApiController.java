@@ -1,6 +1,7 @@
 package controllers.student.api;
 
 import entity.Student;
+import services.ServiceException;
 import services.ServiceLocator;
 import services.StudentService;
 
@@ -39,7 +40,11 @@ public class StudentEditApiController extends HttpServlet {
         String patronymicName = request.getParameter("patronymicName");
         //service update student
         Student newStudent = new Student(id, name, surName, patronymicName, userId);
-        studentService.update(newStudent);
+        try {
+            studentService.update(newStudent);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
 
         response.sendRedirect("/student");
     }

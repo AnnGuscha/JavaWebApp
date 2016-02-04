@@ -2,6 +2,7 @@ package controllers.admin.api.Professor;
 
 import entity.Professor;
 import services.ProfessorService;
+import services.ServiceException;
 import services.ServiceLocator;
 
 import javax.servlet.ServletException;
@@ -23,7 +24,6 @@ public class ProfessorEditApiController extends HttpServlet {
 
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
-    //private static final Logger log = Logger.getLogger(StudentController.class);
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int id = Integer.parseInt(request.getParameter("idProfessor"));
@@ -34,7 +34,11 @@ public class ProfessorEditApiController extends HttpServlet {
 
         //choice model or entity
         Professor newProfessor = new Professor(id, firstName, surName, patronymicName, userId);
-        professorService.update(newProfessor);
+        try {
+            professorService.update(newProfessor);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
 
         response.sendRedirect("/admin/professor");
     }
