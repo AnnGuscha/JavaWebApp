@@ -1,50 +1,56 @@
 package services;
 
+import dao.BaseDAO;
+import dao.DAOException;
 import dao.StudentDAO;
 import entity.Student;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 
-/**
- * Created by Anna on 12/13/2015.
- */
-public class StudentService {
+public class StudentService extends BaseService<Student> {
+    private static Logger Log = Logger.getLogger(StudentService.class.getName());
     private static StudentService ourInstance = new StudentService();
-    private StudentDAO studentDAO;
+    private static StudentDAO studentDAO;
 
     private StudentService() {
-        studentDAO = ServiceLocator.getFactory().getStudentDAO();
+        studentDAO=ServiceLocator.getFactory().getStudentDAO();
     }
 
     public static StudentService getInstance() {
         return ourInstance;
     }
 
-    public List<Student> getAll() {
-        return studentDAO.getAll();
+    @Override
+    BaseDAO getDAO() {
+        return studentDAO;
     }
 
-    public Student findByUserId(int userId) {
-        return studentDAO.find(userId);
+    public Student findByUserId(int userId) throws ServiceException{
+        Student entity = null;
+        try {
+            entity = studentDAO.findByUserId(userId);
+            Log.info("Found student with idUser=" + userId);
+        } catch (DAOException e) {
+            Log.error("Can not find user ", e);
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return entity;
+        }
     }
 
     public List<Student> find(String name) {
-        return studentDAO.find(name);
-    }
-
-    public Student find(int id) {
-        return studentDAO.find(id);
-    }
-
-    public int insert(Student student) {
-        return studentDAO.insert(student);
-    }
-
-    public boolean update(Student newStudent) {
-        return studentDAO.update(newStudent);
-    }
-
-    public boolean delete(int id) {
-        return studentDAO.delete(id);
+        List<Student> entities = null;
+        try {
+            entities = studentDAO.find(name);
+            Log.info("Found courses with name=" + name);
+        } catch (DAOException e) {
+            Log.error("Can not find student with name=" + name, e);
+            e.printStackTrace();
+            throw new ServiceException("Can not find", e);
+        } finally {
+            return entities;
+        }
     }
 }

@@ -1,12 +1,16 @@
-package controllers.admin.api.Professor;
+package controllers.admin.api.professor;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
 import entity.Professor;
+import manager.ManagerFactory;
+import org.apache.log4j.Logger;
 import services.ProfessorService;
+import services.ServiceException;
 import services.ServiceLocator;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -25,16 +30,24 @@ import java.util.List;
 )
 
 public class ProfessorApiController extends HttpServlet {
-
+    private static final Logger log = Logger.getLogger(ProfessorApiController.class);
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         JQueryDataTableParamModel param = getRequestParam(request);
-
-        String json = getJsonAll(param);
-
-        responseJson(response, json);
+        List<Professor> professorList = null;
+        try {
+            professorList = professorService.getAll();
+            String json = getJsonAll(param, professorList);
+            responseJson(response, json);
+        } catch (ServiceException e) {
+            log.error("Can not find entity", e);
+            e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
+        }
     }
 
     private JQueryDataTableParamModel getRequestParam(HttpServletRequest request) {
@@ -48,8 +61,8 @@ public class ProfessorApiController extends HttpServlet {
         response.getWriter().write(json);
     }
 
-    private String getJsonAll(JQueryDataTableParamModel param) {
-        List<Professor> professorList = professorService.getAll();
+    private String getJsonAll(JQueryDataTableParamModel param, List<Professor> professorList) {
+
         int size = professorList.size();
         JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, professorList);
         Gson gson = new GsonBuilder()

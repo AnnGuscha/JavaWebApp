@@ -3,9 +3,11 @@ package controllers;
 import entity.User;
 import manager.Locale;
 import manager.ManagerFactory;
+import org.apache.log4j.Logger;
 import services.ServiceException;
 import services.ServiceLocator;
 import services.UserService;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,7 +26,7 @@ import java.io.PrintWriter;
         urlPatterns = {"/api/profile/edit"}
 )
 public class ProfileEditApiController extends HttpServlet {
-
+    private static final Logger log = Logger.getLogger(ProfileEditApiController.class);
     UserService userService = ServiceLocator.getUserService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,9 +43,11 @@ public class ProfileEditApiController extends HttpServlet {
             HttpSession session = request.getSession();
             session.putValue("locale", Locale.valueOf(user.getLocale().toUpperCase()));
         } catch (ServiceException e) {
-            PrintWriter out = response.getWriter();
-            out.println("<font color=red>"+ ManagerFactory.getMessageManager().getObject("error.app")+"</font>");
+            log.error("Can not update entity", e);
             e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
         }
 
         response.sendRedirect("/profile");

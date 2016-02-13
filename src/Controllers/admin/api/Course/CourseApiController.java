@@ -1,13 +1,17 @@
-package controllers.admin.api.Course;
+package controllers.admin.api.course;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
 import entity.Course;
+import manager.ManagerFactory;
+import org.apache.log4j.Logger;
 import services.CourseService;
 import services.ServiceException;
 import services.ServiceLocator;
+import util.RequestUtil;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,27 +19,34 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
-/**
- * Created by Anna on 12/13/2015.
- */
 @WebServlet(
         name = "CourseApiController",
         urlPatterns = {"/api/admin/course"}
 )
 
 public class CourseApiController extends HttpServlet {
-
+    private static Logger Log = Logger.getLogger(CourseApiController.class.getName());
     CourseService courseService = ServiceLocator.getCourseService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         JQueryDataTableParamModel param = getRequestParam(request);
 
-        String json = getJsonAll(param);
-
-        responseJson(response, json);
+        List<Course> courseList = null;
+        try {
+            courseList = courseService.getAll();
+            String json = getJsonAll(param, courseList);
+            responseJson(response, json);
+        } catch (ServiceException e) {
+            Log.error("Can not find entities",e);
+            e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
+        }
     }
 
     private JQueryDataTableParamModel getRequestParam(HttpServletRequest request) {
@@ -49,9 +60,7 @@ public class CourseApiController extends HttpServlet {
         response.getWriter().write(json);
     }
 
-    private String getJsonAll(JQueryDataTableParamModel param) {
-
-        List<Course> courseList = courseService.getAll();
+    private String getJsonAll(JQueryDataTableParamModel param, List<Course> courseList) {
 
         int size = courseList.size();
 
@@ -65,36 +74,33 @@ public class CourseApiController extends HttpServlet {
     }
 
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        int idProfessor = Integer.parseInt(request.getParameter("idProfessor"));
-        String name = request.getParameter("name");
-        String description = request.getParameter("description");
-
-        //choice model or entity
-        Course newCourse = new Course(name, idProfessor, description);
-        courseService.insert(newCourse);
-
-        response.sendRedirect("/admin/course");
+        try {
+            courseService.insert(RequestUtil.getCourse(request));
+            response.sendRedirect("/admin/course");
+        } catch (ServiceException e) {
+            Log.error("Can not create entities", e);
+            e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
+        }
     }
+
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         if (request.getParameter("_method").equals("put"))
             doPut(request, response);
         else {
-            int id = Integer.parseInt(request.getParameter("idCourse"));
-            int idProfessor = Integer.parseInt(request.getParameter("idProfessor"));
-            String name = request.getParameter("name");
-            String description = request.getParameter("description");
-
-            //choice model or entity
-            Course newCourse = new Course(id, name, idProfessor, description);
             try {
-                courseService.update(newCourse);
+                courseService.update(RequestUtil.getCourse(request));
             } catch (ServiceException e) {
+                Log.error("Can not update entities",e);
                 e.printStackTrace();
+                PrintWriter out = response.getWriter();
+                String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+                out.println("<font color=red>" + message + "</font>");
             }
-
             response.sendRedirect("/admin/course");
         }
     }

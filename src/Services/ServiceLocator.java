@@ -2,9 +2,6 @@ package services;
 
 import dao.DAOFactory;
 
-/**
- * Created by Anna on 12/8/2015.
- */
 public class ServiceLocator {
 
     private static ServiceLocator ourInstance = new ServiceLocator();

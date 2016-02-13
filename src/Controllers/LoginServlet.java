@@ -1,10 +1,14 @@
 package controllers;
 
-import commands.Role;
 import entity.User;
 import infrastructure.ServletRole;
+import manager.Locale;
+import manager.ManagerFactory;
+import manager.Role;
+import services.ServiceException;
 import services.ServiceLocator;
 import services.UserService;
+import util.DefaultUtil;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -27,44 +31,36 @@ import java.io.PrintWriter;
 @ServletRole(role = Role.ANONYMOUS)
 public class LoginServlet extends HttpServlet {
 
-    private static final long serialVersionUID = 1L;
     private UserService userService = ServiceLocator.getUserService();
-
-    private static String getDefaultPage(User user) {
-        switch (Role.values()[user.getRole()]) {
-            case ADMIN:
-                return "/admin/index";
-            case PROFESSOR:
-                return "/professor";
-            case STUDENT:
-                return "/student";
-            default:
-                return "hello.jsp";
-        }
-    }
 
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
-
         // get request parameters for userID and password
         String login = request.getParameter("login");
         String pwd = request.getParameter("password");
-        User user = userService.find(login, pwd);
-        if (user != null) {
-            HttpSession session = request.getSession();
-            session.setAttribute("userId", user.getId());
-            session.setAttribute("user", user.getLogin());
-            session.setAttribute("role", user.getRole());
-            session.setMaxInactiveInterval(30 * 60);
+        try {
+            User user = userService.find(login, pwd);
+            if (user != null) {
+                HttpSession session = request.getSession();
+                session.setAttribute("userId", user.getId());
+                session.setAttribute("user", user.getLogin());
+                session.putValue("role", Role.getRole(user.getRole()));
+                session.putValue("locale", Locale.valueOf(user.getLocale().toUpperCase()));
+                if(request.getParameter("isRem")==null)
+                    session.setMaxInactiveInterval(30 * 60);
 //            Cookie loginCookie = new Cookie("user", login);
 //            loginCookie.setMaxAge(30 * 60);
 //            response.addCookie(loginCookie);
-            response.sendRedirect(getDefaultPage(user));
-        } else {
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/Authentication.jsp");
+                response.sendRedirect(DefaultUtil.getDefaultPage(user));
+            } else {
+                RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/Authentication.jsp");
+                PrintWriter out = response.getWriter();
+                out.println("<font color=red>"+ ManagerFactory.getMessageManager().getObject("error.login")+"</font>");
+                rd.include(request, response);
+            }
+        }catch (ServiceException e){
             PrintWriter out = response.getWriter();
-            out.println("<font color=red>Either login name or password is wrong.</font>");
-            rd.include(request, response);
+            out.println("<font color=red>"+ManagerFactory.getMessageManager().getObject("error.app")+"</font>");
         }
     }
 
@@ -73,5 +69,24 @@ public class LoginServlet extends HttpServlet {
 
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/Authentication.jsp");
         rd.include(request, response);
-    }
+//        try {
+//            User user = userService.find("admin", "1");
+//            if (user != null) {
+//                HttpSession session = request.getSession(true);
+//                session.setAttribute("userId", user.getId());
+//                session.setAttribute("user", user.getLogin());
+//                session.putValue("role", Role.getRole(user.getRole()));
+//                session.putValue("locale", Locale.valueOf(user.getLocale().toUpperCase()));
+//                response.sendRedirect(DefaultUtil.getDefaultPage(user));
+//            } else {
+//                RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/Authentication.jsp");
+//                PrintWriter out = response.getWriter();
+//                out.println("<font color=red>"+ ManagerFactory.getMessageManager().getObject("error.login")+"</font>");
+//                rd.include(request, response);
+//            }
+//        }catch (ServiceException e){
+//            PrintWriter out = response.getWriter();
+//            out.println("<font color=red>"+ManagerFactory.getMessageManager().getObject("error.app")+"</font>");
+//        }
+   }
 }

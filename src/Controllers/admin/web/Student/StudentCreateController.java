@@ -1,4 +1,6 @@
-package controllers.admin.web.Student;
+package controllers.admin.web.student;
+
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,8 +19,8 @@ import java.io.IOException;
 )
 
 public class StudentCreateController extends HttpServlet {
-
     public static final String ADMIN_STUDENT_CREATE_JSP = "/views/admin/student/Create.jsp";
+    private static final Logger log = Logger.getLogger(StudentCreateController.class);
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_STUDENT_CREATE_JSP);

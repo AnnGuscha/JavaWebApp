@@ -6,13 +6,10 @@ import dao.MarkDAO;
 import entity.Mark;
 import org.apache.log4j.Logger;
 
-/**
- * Created by Anna on 12/13/2015.
- */
 public class MarkService extends BaseService<Mark>{
     private static Logger Log = Logger.getLogger(MarkService.class.getName());
     private static MarkService ourInstance = new MarkService();
-    private static MarkDAO markDAO ;//= ServiceLocator.getFactory().getMarkDAO();
+    private static MarkDAO markDAO;
 
     private MarkService() {
         markDAO = ServiceLocator.getFactory().getMarkDAO();
@@ -27,13 +24,13 @@ public class MarkService extends BaseService<Mark>{
         return markDAO;
     }
 
-    public Mark find(int idCourse, int idStudent) {
+    public Mark find(int idCourse, int idStudent) throws ServiceException {
         Mark entity = null;
         try {
             entity = markDAO.find(idCourse, idStudent);
             Log.info("Found mark with idCourse=" + idCourse + " and idStudent=" + idStudent);
         } catch (DAOException e) {
-            Log.error("Can not find entity");
+            Log.error("Can not find entity", e);
             e.printStackTrace();
             throw new ServiceException("Can not find ", e);
         } finally {
@@ -41,13 +38,13 @@ public class MarkService extends BaseService<Mark>{
         }
     }
 
-    public boolean delete(Mark mark) {
+    public boolean delete(Mark mark) throws ServiceException {
         boolean result = false;
         try {
             result = markDAO.delete(mark);
             Log.info("Deleted mark");
         } catch (DAOException e) {
-            Log.error("Can not find entity");
+            Log.error("Can not find entity", e);
             e.printStackTrace();
             throw new ServiceException("Can not find ", e);
         } finally {

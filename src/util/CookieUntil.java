@@ -7,7 +7,7 @@ public class CookieUntil {
     public CookieUntil() {
     }
 
-    private Cookie getCookie(HttpServletRequest req) {
+    public static Cookie getCookie(HttpServletRequest req) {
         Cookie loginCookie = null;
         Cookie[] cookies = req.getCookies();
         if (cookies != null) {

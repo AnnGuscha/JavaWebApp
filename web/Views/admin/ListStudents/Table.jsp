@@ -1,19 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Anna
-  Date: 12/13/2015
-  Time: 2:35 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page import="manager.Locale" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
-<jsp:include page="../Header.jsp"/>
-
+<jsp:include page="../../Header.jsp"/>
+<fmt:setLocale value="<%=((Locale)session.getValue(\"locale\")).toString()%>"/>
+<fmt:setBundle basename="properties.resfile" var="loc"/>
 <script type="text/javascript">
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
+            "language": {"url": "/datatable/lang/dataTables.<%=session.getValue("locale").toString()%>"},
             "sAjaxSource": "/api/admin/liststudents",
             "bProcessing": true,
             "bRetrieve": true,
@@ -36,7 +32,6 @@
             ]
         });
 
-
         $('#myDataTable tbody').on('click', 'tr', function () {
 
             if ($(this).hasClass('selected')) {
@@ -53,20 +48,18 @@
     });
 </script>
 <body>
-<jsp:include page="../Menu.jsp"/>
-
+<jsp:include page="../../Menu.jsp"/>
 <div id="demo">
-    <h2>Students and Courses</h2>
-
+    <h2><fmt:message bundle="${loc}" key="list_students"/></h2>
     <p>
-        <a href="/admin/liststudents/create">Create</a>
+        <a href="/admin/liststudents/create"><fmt:message bundle="${loc}" key="create"/></a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
         <tr>
             <th></th>
-            <th>Course</th>
-            <th>Student</th>
+            <th><fmt:message bundle="${loc}" key="course"/></th>
+            <th><fmt:message bundle="${loc}" key="student"/></th>
         </tr>
         </thead>
     </table>

@@ -1,9 +1,12 @@
 package controllers.professor.api;
 
 import entity.Professor;
+import manager.ManagerFactory;
+import org.apache.log4j.Logger;
 import services.ProfessorService;
 import services.ServiceException;
 import services.ServiceLocator;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Created by Anna on 12/9/2015.
@@ -22,7 +26,7 @@ import java.io.IOException;
 )
 
 public class ProfessorEditApiController extends HttpServlet {
-
+    private static final Logger log = Logger.getLogger(ProfessorEditApiController.class);
     ProfessorService professorService = ServiceLocator.getProfessorService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -44,7 +48,11 @@ public class ProfessorEditApiController extends HttpServlet {
         try {
             professorService.update(professor);
         } catch (ServiceException e) {
+            log.error("Can not update entity", e);
             e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
         }
         //redirect
 

@@ -6,13 +6,10 @@ import dao.ListStudentsDAO;
 import entity.ListStudents;
 import org.apache.log4j.Logger;
 
-/**
- * Created by Anna on 12/13/2015.
- */
 public class ListStudentsService extends BaseService<ListStudents> {
     private static Logger Log = Logger.getLogger(ListStudentsService.class.getName());
     private static ListStudentsService ourInstance = new ListStudentsService();
-    private static ListStudentsDAO listStudentsDAO;// = ServiceLocator.getFactory().getListStudentsDAO();
+    private static ListStudentsDAO listStudentsDAO;
 
     private ListStudentsService() {
         listStudentsDAO = ServiceLocator.getFactory().getListStudentsDAO();
@@ -27,13 +24,13 @@ public class ListStudentsService extends BaseService<ListStudents> {
         return listStudentsDAO;
     }
 
-    public boolean delete(ListStudents listStudents) {
+    public boolean delete(ListStudents listStudents) throws ServiceException {
         boolean result = false;
         try {
             result = listStudentsDAO.delete(listStudents);
             Log.info("Deleted entity");
         } catch (DAOException e) {
-            Log.error("Can not delete entity");
+            Log.error("Can not delete entity", e);
             e.printStackTrace();
             throw new ServiceException("Can not update", e);
         } finally {

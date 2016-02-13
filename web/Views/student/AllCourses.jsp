@@ -1,18 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Anna
-  Date: 12/16/2015
-  Time: 6:51 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page import="manager.Locale" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <jsp:include page="../Header.jsp"/>
-
+<fmt:setLocale value="<%=((Locale)session.getValue(\"locale\")).toString()%>"/>
+<fmt:setBundle basename="properties.resfile" var="loc"/>
 <script type="text/javascript">
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
+            "language": {"url": "/datatable/lang/dataTables.<%=session.getValue("locale").toString()%>"},
             "sAjaxSource": "/api/student/allcourses",
             "bProcessing": true,
             "bRetrieve": true,
@@ -54,21 +51,19 @@
     });
 </script>
 <body>
-<jsp:include page="Menu.jsp"/>
-
+<jsp:include page="../Menu.jsp"/>
 <div id="demo">
-    <h2>All courses</h2>
+    <h2><fmt:message bundle="${loc}" key="all_courses"/></h2>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
         <tr>
             <th></th>
-            <th>Name course</th>
-            <th>Professor</th>
-            <th>Description</th>
+            <th><fmt:message bundle="${loc}" key="course_name"/></th>
+            <th><fmt:message bundle="${loc}" key="professor"/></th>
+            <th><fmt:message bundle="${loc}" key="description"/></th>
         </tr>
         </thead>
     </table>
-
 </div>
 </body>
 </html>

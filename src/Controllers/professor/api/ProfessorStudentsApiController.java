@@ -4,9 +4,13 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
+import manager.ManagerFactory;
 import models.professor.StudentsForProfessorModel;
+import org.apache.log4j.Logger;
 import services.ParticularService;
+import services.ServiceException;
 import services.ServiceLocator;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -29,7 +34,7 @@ import java.util.stream.Collectors;
 )
 
 public class ProfessorStudentsApiController extends HttpServlet {
-
+    private static final Logger log = Logger.getLogger(ProfessorStudentsApiController.class);
     ParticularService particularService = ServiceLocator.getParticularService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,9 +47,18 @@ public class ProfessorStudentsApiController extends HttpServlet {
             userId = Integer.parseInt(session.getAttribute("userId").toString());
 
         JQueryDataTableParamModel param = getRequestParam(request);
-
-        int idProfessor = ServiceLocator.getProfessorService().findByUserId(userId).getId();
-        List<StudentsForProfessorModel> studentList = particularService.getStudentsByProfessor(idProfessor);
+        List<StudentsForProfessorModel> studentList = null;
+        int idProfessor = 0;
+        try {
+            idProfessor = ServiceLocator.getProfessorService().findByUserId(userId).getId();
+            studentList = particularService.getStudentsByProfessor(idProfessor);
+        } catch (ServiceException e) {
+            log.error("Can not find entity", e);
+            e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
+        }
 
         String json = getJsonAll(param, studentList);
 

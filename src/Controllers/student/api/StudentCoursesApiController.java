@@ -4,9 +4,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
+import entity.Student;
+import manager.ManagerFactory;
 import models.student.CourseModel;
+import org.apache.log4j.Logger;
 import services.ParticularService;
+import services.ServiceException;
 import services.ServiceLocator;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -27,7 +33,7 @@ import java.util.List;
 )
 
 public class StudentCoursesApiController extends HttpServlet {
-
+    private static final Logger log = Logger.getLogger(StudentCoursesApiController.class);
     ParticularService particularService = ServiceLocator.getParticularService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -40,8 +46,18 @@ public class StudentCoursesApiController extends HttpServlet {
                 Integer.parseInt(session.getAttribute("userId").toString());
 
         JQueryDataTableParamModel param = getRequestParam(request);
-
-        List<CourseModel> courseList = particularService.getCoursesForStudent(userId);
+        Student curStudent = null;
+        List<CourseModel> courseList = null;
+        try {
+            curStudent = ServiceLocator.getStudentService().findByUserId(userId);
+            courseList = particularService.getCoursesForStudent(curStudent.getId());
+        } catch (ServiceException e) {
+            log.error("Can not find entity", e);
+            e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
+        }
 
         String json = getJsonAll(param, courseList);
 

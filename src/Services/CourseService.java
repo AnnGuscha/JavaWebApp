@@ -11,13 +11,10 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Anna on 12/13/2015.
- */
 public class CourseService extends BaseService<Course> {
     private static Logger Log = Logger.getLogger(CourseService.class.getName());
     private static CourseService ourInstance = new CourseService();
-    private static CourseDAO courseDAO;// = ServiceLocator.getFactory().getCourseDAO();;
+    private static CourseDAO courseDAO;
 
     private CourseService() {
         courseDAO= ServiceLocator.getFactory().getCourseDAO();
@@ -32,7 +29,7 @@ public class CourseService extends BaseService<Course> {
         return courseDAO;
     }
 
-    public List<CourseModel> getCourseModelList() {
+    public List<CourseModel> getCourseModelList() throws ServiceException {
 
         List<CourseExtend> courseExtendList = null;
         List<CourseModel> courseModelList=null;
@@ -62,7 +59,7 @@ public class CourseService extends BaseService<Course> {
         }
     }
 
-    public models.professor.CourseModel getCourseModelForProfessor(int idProfessor) {
+    public models.professor.CourseModel getCourseModelForProfessor(int idProfessor) throws ServiceException {
 
         Course course;
         models.professor.CourseModel courseModel=null;

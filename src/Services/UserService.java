@@ -6,13 +6,10 @@ import dao.UserDAO;
 import entity.User;
 import org.apache.log4j.Logger;
 
-/**
- * Created by Anna on 12/21/2015.
- */
 public class UserService extends BaseService<User> {
     private static Logger Log = Logger.getLogger(UserService.class.getName());
     private static UserService ourInstance = new UserService();
-    private static UserDAO userDAO ;//= ServiceLocator.getFactory().getUserDAO();
+    private static UserDAO userDAO;
 
     private UserService() {
         userDAO = ServiceLocator.getFactory().getUserDAO();
@@ -41,7 +38,7 @@ public class UserService extends BaseService<User> {
         }
     }
 
-    public User find(String login) {
+    public User find(String login) throws ServiceException {
         User entity = null;
         try {
             entity = userDAO.find(login);

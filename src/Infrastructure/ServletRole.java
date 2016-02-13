@@ -4,7 +4,7 @@ package infrastructure;
  * Created by Anna on 12/22/2015.
  */
 
-import commands.Role;
+import manager.Role;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

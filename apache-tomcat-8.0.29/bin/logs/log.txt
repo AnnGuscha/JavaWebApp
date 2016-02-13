@@ -1757,7 +1757,7 @@ java.sql.SQLException: Parameter index out of range (2 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1796,7 +1796,7 @@ java.sql.SQLException: Parameter index out of range (2 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1835,7 +1835,7 @@ java.sql.SQLException: Parameter index out of range (2 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForUpdate(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1886,7 +1886,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1932,7 +1932,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -1978,7 +1978,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2024,7 +2024,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'idSPr
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:99)
 	at Infrastructure.ProfessorService.update(ProfessorService.java:38)
-	at controllers.admin.api.Professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
+	at controllers.admin.api.professor.ProfessorEditApiController.doPost(ProfessorEditApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2069,7 +2069,7 @@ java.sql.SQLException: No value specified for parameter 4
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1159)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2108,7 +2108,7 @@ java.sql.SQLException: No value specified for parameter 4
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1159)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2150,7 +2150,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2189,7 +2189,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2228,7 +2228,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForSelect(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2270,7 +2270,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2309,7 +2309,7 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at dao.mysql.MySQLProfessorDAO.fillStatementParamsForInsert(MySQLProfessorDAO.java:15)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:41)
 	at Infrastructure.ProfessorService.insert(ProfessorService.java:34)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2362,7 +2362,7 @@ java.sql.SQLException: Parameter index out of range (4 > number of parameters, w
 	at dao.mysql.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:15)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.CourseService.update(CourseService.java:36)
-	at controllers.admin.api.Course.CourseEditApiController.doPost(CourseEditApiController.java:38)
+	at controllers.admin.api.course.CourseEditApiController.doPost(CourseEditApiController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -2403,7 +2403,7 @@ java.sql.SQLException: Parameter index out of range (4 > number of parameters, w
 	at dao.mysql.MySQLCourseDAO.fillStatementParamsForUpdate(MySQLCourseDAO.java:15)
 	at dao.mysql.BaseDAOImpl.update(BaseDAOImpl.java:98)
 	at Infrastructure.CourseService.update(CourseService.java:36)
-	at controllers.admin.api.Course.CourseEditApiController.doPost(CourseEditApiController.java:38)
+	at controllers.admin.api.course.CourseEditApiController.doPost(CourseEditApiController.java:38)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6590,7 +6590,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6635,7 +6635,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6675,7 +6675,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6720,7 +6720,7 @@ java.sql.SQLException: Field 'Id' doesn't have a default value
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6771,7 +6771,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6817,7 +6817,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -6868,7 +6868,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1193)
 	at dao.mysql.BaseDAOImpl.insert(BaseDAOImpl.java:43)
 	at Services.ProfessorService.insert(ProfessorService.java:36)
-	at controllers.admin.api.Professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
+	at controllers.admin.api.professor.ProfessorCreateApiController.doPost(ProfessorCreateApiController.java:37)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
@@ -10865,3 +10865,213 @@ Find record in database with id = 1
 Found entity with id=1
 Delete from database 0 records.
 Deleted entity
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 5 records in database.
+Found 5 entities
+Find 7 records in database.
+Found 7 entities
+Find 3 records in database.
+Found 3 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 5 records in database.
+Found 5 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 5 records in database.
+Found 5 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find 6 records in database.
+Found 6 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 5 records in database.
+Found 5 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find 5 records in database.
+Found 5 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Find 5 records in database.
+Found 5 entities
+Find 5 records in database.
+Found 5 entities
+Find 6 records in database.
+Found 6 entities
+Find 9 records in database.
+Found 9 entities
+Find 3 records in database.
+Found 3 entities
+Find record in database.
+Found user with login=student
+Find record in database.
+Found student with idUser=2
+Find record in database.
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=1
+Created model for courses with id=1
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database.
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=1
+Created model for courses with id=1
+Find record in database.
+Found student with idUser=2
+Find 2 records in database.
+Found courses for student with id=1
+Created model courses for student with id=1
+Find record in database with id = 2
+Found entity with id=2
+Find record in database with id = 2
+Found entity with id=2
+Update in database 1 records.
+Updated entity
+Find record in database with id = 2
+Found entity with id=2
+Find record in database.
+Found student with idUser=2
+Find 5 records in database.
+Found courses for student with id=1
+Created model for courses with id=1
+Find record in database.
+Found user with login=professor
+Find record in database.
+Found professor with idUser=3
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find 7 records in database.
+Found 7 entities
+Delete from database 0 records.
+Deleted entity
+Find 7 records in database.
+Found 7 entities
+Not find record in database with id = 15
+Found entity with id=15
+Not find record in database with id = 15
+Found entity with id=15
+Not find record in database with id = 15
+Found entity with id=15
+Find 7 records in database.
+Found 7 entities
+Find 7 records in database.
+Found 7 entities
+Find record in database.
+Found user with login=admin
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 7 records in database.
+Found 7 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 7 records in database.
+Found 7 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 6 records in database.
+Found 6 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 9 records in database.
+Found 9 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 3 records in database.
+Found 3 entities

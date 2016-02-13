@@ -1,5 +1,7 @@
 package controllers.student.web;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +20,7 @@ import java.io.IOException;
 
 public class StudentAllCoursesController extends HttpServlet {
     public static final String STUDENT_ALL_COURSES_JSP = "/views/student/AllCourses.jsp";
+    private static final Logger log = Logger.getLogger(StudentAllCoursesController.class);
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
 

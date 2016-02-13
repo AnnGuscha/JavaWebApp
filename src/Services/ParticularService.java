@@ -14,9 +14,6 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Anna on 12/18/2015.
- */
 public class ParticularService {
     private static Logger Log = Logger.getLogger(ParticularService.class.getName());
     private static ParticularService ourInstance = new ParticularService();
@@ -30,7 +27,7 @@ public class ParticularService {
         return ourInstance;
     }
 
-    public List<CourseModel> getCoursesForStudent(int id) {
+    public List<CourseModel> getCoursesForStudent(int id) throws ServiceException {
         List<CourseExtend> courseExtendList = null;
         List<CourseModel> courseModelList = null;
         try {
@@ -51,7 +48,7 @@ public class ParticularService {
             }
             Log.info("Created model courses for student with id=" + id);
         } catch (DAOException e) {
-            Log.error("Can not find courses for student with id=" + id);
+            Log.error("Can not find course", e);
             e.printStackTrace();
             throw new ServiceException("Can not find", e);
         } finally {
@@ -60,7 +57,7 @@ public class ParticularService {
 
     }
 
-    public List<CourseModel> getAllCourses(int id) {
+    public List<CourseModel> getAllCourses(int id) throws ServiceException {
         List<CourseExtend> courseExtendList = null;
         List<CourseModel> courseModelList = null;
         try {
@@ -87,7 +84,7 @@ public class ParticularService {
         }
     }
 
-    public List<StudentsForProfessorModel> getStudentsByCourse(int idCourse) {
+    public List<StudentsForProfessorModel> getStudentsByCourse(int idCourse) throws ServiceException {
 
         List<StudentExtend> studentExtendList = null;
         List<StudentsForProfessorModel> studentsModelList = null;
@@ -111,7 +108,7 @@ public class ParticularService {
         }
     }
 
-    public List<StudentsForProfessorModel> getStudentsByProfessor(int idProfessor) {
+    public List<StudentsForProfessorModel> getStudentsByProfessor(int idProfessor) throws ServiceException {
 
         List<StudentExtend> studentExtendList = null;
         List<StudentsForProfessorModel> studentsModelList = null;
@@ -136,7 +133,7 @@ public class ParticularService {
         }
     }
 
-    public MarkModel findMark(int idCourse, int idStudent) {
+    public MarkModel findMark(int idCourse, int idStudent) throws ServiceException {
         MarkModel model = null;
         MarkExtend mark = null;
         try {
@@ -151,12 +148,11 @@ public class ParticularService {
             model.setComment(mark.getComment());
             Log.info("Created model for mark");
         } catch (DAOException e) {
-            Log.error("Can not find mark");
+            Log.error("Can not find mark", e);
             e.printStackTrace();
             throw new ServiceException("Can not find", e);
         } finally {
             return model;
         }
-
     }
 }

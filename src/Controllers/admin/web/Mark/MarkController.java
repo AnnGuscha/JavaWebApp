@@ -1,4 +1,6 @@
-package controllers.admin.web.Mark;
+package controllers.admin.web.mark;
+
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,8 +20,8 @@ import java.io.IOException;
 )
 
 public class MarkController extends HttpServlet {
-
     public static final String ADMIN_MARK_TABLE_JSP = "/views/admin/mark/Table.jsp";
+    private static final Logger log = Logger.getLogger(MarkController.class);
 
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(ADMIN_MARK_TABLE_JSP);

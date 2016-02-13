@@ -1,20 +1,17 @@
-<%@ page import="entity.Student" %><%--
-  Created by IntelliJ IDEA.
-  User: Anna
-  Date: 12/16/2015
-  Time: 5:58 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page import="entity.Student" %>
+<%@ page import="manager.Locale" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <jsp:include page="../Header.jsp"/>
 <body>
-<jsp:include page="Menu.jsp"/>
+<%String locale = session.getValue("locale").toString();%>
+<fmt:setLocale value="<%=((Locale)session.getValue(\"locale\")).getLanguage()%>"/>
+<fmt:setBundle basename="properties.resfile" var="loc"/>
+<jsp:include page="../Menu.jsp"/>
 <% Student student = (Student) request.getAttribute("student");%>
 <div id="demo">
-
-    <h2>Student</h2>
-
+    <h2><fmt:message bundle="${loc}" key="student"/></h2>
     <p>
         <%= student.getSurName() %> <%= student.getName() %> <%= student.getPatronymicName() %>
     </p>

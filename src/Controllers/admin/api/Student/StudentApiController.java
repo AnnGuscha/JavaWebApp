@@ -1,12 +1,16 @@
-package controllers.admin.api.Student;
+package controllers.admin.api.student;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dto.JQueryDataTableParamModel;
 import dto.JsonDTO;
 import entity.Student;
+import manager.ManagerFactory;
+import org.apache.log4j.Logger;
+import services.ServiceException;
 import services.ServiceLocator;
 import services.StudentService;
+import util.SessionUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -27,15 +32,25 @@ import java.util.stream.Collectors;
 )
 
 public class StudentApiController extends HttpServlet {
+    private static final Logger log = Logger.getLogger(StudentApiController.class);
     StudentService studentService = ServiceLocator.getStudentService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         JQueryDataTableParamModel param = getRequestParam(request);
 
-        String json = getJsonAll(param);
-
-        responseJson(response, json);
+        List<Student> studentList = null;
+        try {
+            studentList = studentService.getAll();
+            String json = getJsonAll(param, getUpdatedStudents(param, studentList));
+            responseJson(response, json);
+        } catch (ServiceException e) {
+            log.error("Can not find entity", e);
+            e.printStackTrace();
+            PrintWriter out = response.getWriter();
+            String message = ManagerFactory.getMessageManager(SessionUtil.getLocale(request)).getObject("error.app");
+            out.println("<font color=red>" + message + "</font>");
+        }
     }
 
     private JQueryDataTableParamModel getRequestParam(HttpServletRequest request) {
@@ -49,10 +64,19 @@ public class StudentApiController extends HttpServlet {
         response.getWriter().write(json);
     }
 
-    private String getJsonAll(JQueryDataTableParamModel param) {
+    private String getJsonAll(JQueryDataTableParamModel param, List<Student> studentList) {
 
-        List<Student> studentList = studentService.getAll();
+        int size = studentList.size();
+        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, studentList);
 
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+
+        return gson.toJson(jsonDTO);
+    }
+
+    private List<Student> getUpdatedStudents(JQueryDataTableParamModel param, List<Student> studentList) {
         //filter
 
         //search
@@ -84,15 +108,7 @@ public class StudentApiController extends HttpServlet {
         if (sortDirection == "desc") {
             Collections.reverse(studentList);
         }
-
-        int size = studentList.size();
-        JsonDTO jsonDTO = new JsonDTO(param.sEcho, size, size, studentList);
-
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .create();
-
-        return gson.toJson(jsonDTO);
+        return studentList;
     }
 }
 

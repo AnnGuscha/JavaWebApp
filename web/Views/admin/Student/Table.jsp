@@ -1,19 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Anna
-  Date: 12/10/2015
-  Time: 9:05 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page import="manager.Locale" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
-<jsp:include page="../Header.jsp"/>
-
+<jsp:include page="../../Header.jsp"/>
+<fmt:setLocale value="<%=((Locale)session.getValue(\"locale\")).toString()%>"/>
+<fmt:setBundle basename="properties.resfile" var="loc"/>
 <script type="text/javascript">
     $(document).ready(function () {
         var table = $('#myDataTable').dataTable({
             "bServerSide": true,
+            "language": {"url": "/datatable/lang/dataTables.<%=session.getValue("locale").toString()%>"},
             "sAjaxSource": "/api/admin/student",
             "bProcessing": true,
             "bRetrieve": true,
@@ -48,28 +44,26 @@
                 $(this).addClass('selected');
             }
             var href = $('a:contains(" ")', this).attr('data');
-            window.location.href = "admin/student/details/" + href;
+            window.location.href = "/admin/student/details/" + href;
 
         });
     });
 </script>
 <body>
-<jsp:include page="../Menu.jsp"/>
-
+<jsp:include page="../../Menu.jsp"/>
 <div id="demo">
-    <h2>Students</h2>
-
+    <h2><fmt:message bundle="${loc}" key="students"/></h2>
     <p>
-        <a href="/admin/student/create">Create</a>
+        <a href="/admin/student/create"><fmt:message bundle="${loc}" key="create"/></a>
     </p>
     <table id="myDataTable" class="table table-striped table-bordered hover" cellspacing="0" width="100%">
         <thead>
         <tr>
             <th></th>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Patronymic name</th>
-            <th>User id</th>
+            <th><fmt:message bundle="${loc}" key="name"/></th>
+            <th><fmt:message bundle="${loc}" key="surname"/></th>
+            <th><fmt:message bundle="${loc}" key="patronymic_name"/></th>
+            <th><fmt:message bundle="${loc}" key="user"/></th>
         </tr>
         </thead>
     </table>
