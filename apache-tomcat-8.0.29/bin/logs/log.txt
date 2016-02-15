@@ -11075,3 +11075,195 @@ Find record in database with id = 1
 Found entity with id=1
 Find 3 records in database.
 Found 3 entities
+Create pool connection.
+Not find record in database.
+Found user with login=ad
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 7 records in database.
+Found 7 entities
+Find record in database.
+Found user with login=professor
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database.
+Found user with login=student
+Find record in database with id = 2
+Found entity with id=2
+Find record in database.
+Found student with idUser=2
+Find record in database with id = 2
+Found entity with id=2
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Update in database 1 records.
+Updated entity
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 3 records in database.
+Found 3 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 3 records in database.
+Found 3 entities
+Create pool connection.
+Find record in database.
+Found user with login=admin
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 5 records in database.
+Found 5 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 9 records in database.
+Found 9 entities
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find record in database with id = 1
+Found entity with id=1
+Find 7 records in database.
+Found 7 entities
+Find record in database.
+Found user with login=professor
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find record in database.
+Found course with professorId=2
+Find record in database with id = 3
+Found entity with id=3
+Find record in database.
+Found professor with idUser=3
+Find 3 records in database.
+Found students with idProfessor=2
+Created model for students with idProfessor=2
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Update in database 1 records.
+Updated entity
+Find record in database with id = 3
+Found entity with id=3
+Find record in database with id = 3
+Found entity with id=3
+Update in database 1 records.
+Updated entity
+Find record in database with id = 3
+Found entity with id=3

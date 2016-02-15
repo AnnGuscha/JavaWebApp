@@ -21,9 +21,8 @@ public class MenuTag extends TagSupport {
     @Override
     public int doStartTag() throws JspException {
         try {
-            String path = Role.getRole(role).name().toLowerCase() + "/Menu.jsp";
-//            pageContext.getOut().print( "<jsp:include page=\""+ Role.getRole(role).name().toLowerCase()+"../../Menu.jsp\"/>" );
-            pageContext.getOut().print("<jsp:include page=\"" + path + "\"/>");
+            String userName = Role.getRole(role).toString();
+            pageContext.getOut().print("Profile");
 
         } catch (IOException ioException) {
             throw new JspException("Error: " + ioException.getMessage());

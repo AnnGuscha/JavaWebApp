@@ -1,11 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Anna
-  Date: 12/8/2015
-  Time: 12:04 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="manager.Locale" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<fmt:setLocale value="<%=Locale.DEFAULT.toString()%>"/>
+<fmt:setBundle basename="properties.resfile" var="loc"/>
 <html>
 <head>
     <title>$Title$</title>
@@ -16,7 +13,7 @@
     <link href="offcanvas.css" rel="stylesheet">
     <script src="/js/bootstrap.min.js"></script>
 </head>
-<body style="background-image: url(/content/images/partners.jpg); background-position: center;background-repeat: no-repeat;">
+<body>
 <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -26,32 +23,55 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Сведения</a></li>
-                <li><a href="#">Контаты</a></li>
-            </ul>
+            <a class="navbar-brand" href="#"></a>
         </div>
     </div>
 </div>
 <div class="container">
+    <br><br><br>
+    <h4><p>При ргистрации пользователь по умолчанию становится студентом. </p>
 
-            <h2>Должности</h2>
+        <p>Изменить его роль может только другой пользователь с правами администратора.</p>
+    </h4>
+    <br/>
 
-            <p>
-                Create
-            </p>
+    <p>Тестовые профили:</p>
 
-    <hr>
+    <div class="form-group col-xs-4">
+        <div>
+            Администратор
+            <br/>
+            Логин: admin
+            <br/>
+            Пароль: 1
+        </div>
+        <br/>
 
-    <footer>
-        <p>Моё Приложение</p>
-    </footer>
+        <div>
+            Преподаватель
+            <br/>
+            Логин: professor
+            <br/>
+            Пароль: 1
+        </div>
+        <br/>
+
+        <div>
+            Студент
+            <br/>
+            Логин: student
+            <br/>
+            Пароль: 1
+        </div>
+        <br/>
+
+        <a href="/login" type="button" class="btn btn-lg btn-primary  btn-md btn-block">
+            <fmt:message bundle="${loc}" key="login"/>
+        </a>
+        <a href="/registr" type="button" class="btn btn-lg btn-primary  btn-md btn-block">
+            <fmt:message bundle="${loc}" key="registration"/>
+        </a>
+    </div>
 </div>
-<script src="/js/jquery/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
